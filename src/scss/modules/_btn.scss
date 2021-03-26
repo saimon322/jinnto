@@ -1,0 +1,28 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding: 10px 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    user-select: none;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+
+    @include media-up(md) {
+        padding: 11px 24px;
+    }
+
+    &--red {
+        color: #fff;
+        background-color: $red;
+        border-color: $red;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+}

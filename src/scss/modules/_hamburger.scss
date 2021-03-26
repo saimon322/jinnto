@@ -1,0 +1,40 @@
+.hamburger {
+    position: relative;
+    width: 19px;
+    height: 20px;
+
+    @include media-up(lg) {
+        display: none;
+    }
+
+    span {
+        width: 19px;
+        height: 3px;
+        background: $blue;
+        position: absolute;
+        left: 0;
+        transition: .3s ease;
+
+        &:nth-child(1) {
+            top: 4px;
+        }
+
+        &:nth-child(2) {
+            top: 13px;
+        }
+    }
+
+    &.active span {
+        width: 21px;
+        top: 8px;
+        left: -1px;
+
+        &:nth-child(1) {
+            transform: rotate(225deg);
+        }
+
+        &:nth-child(2) {
+            transform: rotate(135deg);
+        }
+    }
+}
