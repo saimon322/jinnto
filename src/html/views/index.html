@@ -1,10 +1,34 @@
 <%=_.template(require('../parts/header.html'))({
     title: "Jinnto",
-    menu: {}
+    menu: {approach: 'current-menu-item'}
 }) %>
 
 <main class="site-main">
-    
+    <section class="main-offer">
+        <div class="main-offer__bg" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
+            <img src="img/base/main-offer.jpg" alt="">
+        </div>
+        <div class="main-offer__content">
+            <h1 class="main-offer__title" data-aos="fade-right" data-aos-delay="600">
+                Reveal kids’ superpowers
+            </h1>
+            <div class="main-offer__text" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500">
+                Science games. Monthly delivered
+            </div>
+            <div class="main-offer__footer" data-aos="fade-up" data-aos-delay="800">
+                <a href="#" class="main-offer__btn btn btn--red">
+                    Start the fun
+                </a>
+            </div>
+        </div>
+    </section><!-- /.main-offer -->
+
+    <section class="about-us">
+        <div class="container">
+            <h2>What’s Jinnto?</h2>
+        </div>
+    </section><!-- /.about-us -->
+
 </main><!-- / .site-main -->
 
 <%=_.template(require('../parts/footer.html'))() %>

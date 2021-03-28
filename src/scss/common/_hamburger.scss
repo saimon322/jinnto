@@ -2,8 +2,9 @@
     position: relative;
     width: 19px;
     height: 20px;
+    animation: linkSlideDown .60s;
 
-    @include media-up(lg) {
+    @include media-up(md) {
         display: none;
     }
 

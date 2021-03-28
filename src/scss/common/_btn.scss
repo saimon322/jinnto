@@ -11,9 +11,12 @@
     color: #fff;
     border-radius: 50px;
     cursor: pointer;
+    transition: .25s;
 
     @include media-up(md) {
         padding: 11px 24px;
+        font-size: 15px;
+        line-height: 19px;
     }
 
     &--red {
@@ -23,6 +26,7 @@
 
         &:hover {
             background-color: #fff;
+            color: $red;
         }
     }
 }

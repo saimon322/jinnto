@@ -1,0 +1,7 @@
+.about-us {
+    padding: 52px 0 67px;
+
+    @include media-up(lg) {
+        padding: 102px 0 137px;
+    }
+}

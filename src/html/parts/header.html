@@ -29,45 +29,51 @@
 <body>
 
 <header class="header">
-    <a href="#" class="header__banner h-banner">
-        <div class="h-banner__content container">
-            <div class="h-banner__text">Save 40% on your first month</div>
-        </div>
-    </a>
+    <div class="header__banner h-banner" data-aos="slide-down" data-aos-duration="800">
+        <a href="#" class="h-banner__link">
+            <div class="h-banner__content container">
+                <div class="h-banner__text">Save 40% on your first month</div>
+            </div>
+        </a>
+    </div>
 
-    <div class="header__main">
-        <div class="header__content container">
-            <div class="header__block">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
+    <div class="header__wrapper">
+        <div class="header__main">
+            <div class="header__content container">
+                <div class="header__block">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <a href="/" class="header__logo">
+                        <svg width='106' height='25'>
+                            <use xlink:href='#logo'></use>
+                        </svg>
+                    </a>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="<%=menu.approach%>">
+                                <a href="#">Our approach</a>
+                            </li>
+                            <li class="<%=menu.gift%>">
+                                <a href="#">Make a gift</a>
+                            </li>
+                            <li class="<%=menu.discounts%> nav__discounts">
+                                <a href="#">Discounts</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <a href="/" class="header__logo">
-                    <svg width='126' height='30'>
-                        <use xlink:href='#logo'></use>
-                    </svg>
-                </a>
-
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="<%=menu.name1%>">
-                            <a href="#">Our approach</a>
-                        </li>
-                        <li class="<%=menu.name2%>">
-                            <a href="#">Make a gift</a>
-                        </li>
-                        <li class="<%=menu.name2%> active">
-                            <a href="#">Discounts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header__block">
-                <a href="#" class="header__link">Sign in</a>
-                <a href="#" class="header__btn btn btn--red">Start the fun</a>
+                <div class="header__block">
+                    <a href="#" class="header__link">Sign in</a>
+                    <a href="#" class="header__btn btn btn--red">Start the fun</a>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="header__overlay" ></div>
 </header><!-- / .header -->
