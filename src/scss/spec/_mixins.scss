@@ -73,3 +73,33 @@
         @include media-down($name)
     }
 }
+
+@mixin text-15 {
+    font-size: 15px;
+    line-height: 27px;
+
+    @include media-up(md) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    @include media-up(xl) {
+        font-size: 20px;
+        line-height: 34px;
+    }
+}
+
+@mixin text-17 {
+    font-size: 17px;
+    line-height: 28px;
+
+    @include media-up(md) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    @include media-up(xl) {
+        font-size: 20px;
+        line-height: 34px;            
+    }
+}

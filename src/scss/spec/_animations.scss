@@ -1,0 +1,96 @@
+// Header links
+@keyframes linkSlideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    33% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// Stars
+@keyframes starYellow {
+    0% {
+        color: $yellow;
+    }
+
+    40% {
+        color: $gray;
+    }
+
+    100% {
+        color: $yellow;
+    }
+}
+
+@keyframes starGray {
+    0% {
+        color: $gray;
+    }
+
+    60% {
+        color: $yellow;
+    }
+
+    100% {
+        color: $gray;
+    }
+}
+
+// Circles
+@keyframes circleDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(25%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes circleUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// BG icons
+@keyframes icon1 {
+    from {
+        transform: rotate(0deg) translateX(-20%) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(-20%) rotate(-360deg);
+    }
+}
+
+@keyframes icon2 {
+    from {
+        transform: rotate(0deg) translateX(20%) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg) translateX(20%) rotate(360deg);
+    }
+}

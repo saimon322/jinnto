@@ -1,0 +1,59 @@
+.circle {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+
+    &:first-child {
+        width: 94px;
+        height: 94px;
+        bottom: -30px;
+        left: -20px;
+        animation: circleUp 4000ms linear infinite;
+
+        @include media-up(lg) {
+            bottom: auto;
+            top: -35px;
+            left: -50px;
+            width: 120px;
+            height: 120px;
+        }
+
+        @include media-up(xl) {
+            top: -40px;
+            left: -75px;
+            width: 146px;
+            height: 146px;
+        }
+    }
+
+    &:last-child {
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        right: -13px;
+        animation: circleDown 4000ms linear infinite;
+
+        @include media-up(lg) {
+            top: auto;
+            bottom: -30px;
+            right: -30px;
+            width: 90px;
+            height: 90px;
+        }
+
+        @include media-up(xl) {
+            bottom: -27px;
+            right: -49px;
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    &--cyan {
+        background: $bg-cyan;
+    }
+
+    &--yellow {
+        background: $yellow;
+    }
+}

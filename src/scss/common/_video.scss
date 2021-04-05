@@ -1,0 +1,59 @@
+.video {
+    position: relative;
+    
+    &__link {
+        display: block;
+        width: 100%;
+        padding-top: 67.45%;
+        border-radius: 10px;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 38px;
+        height: 38px;
+        color: $cyan;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity .3s;
+
+        @include media-up(lg) {
+            color: $pink;
+            width: 54px;
+            height: 54px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            transition: transform .3s;
+        }
+    }
+
+    &:hover &__btn {
+        opacity: 1;
+        
+        svg {
+            transform: scale(1.2);
+        }
+    }
+}

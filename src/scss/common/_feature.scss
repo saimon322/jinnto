@@ -1,0 +1,78 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 142px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+    @include media-up(md) {
+        width: 160px;
+        height: 160px;
+        margin-right: 40px;
+    }
+
+    @include media-up(xl) {
+        width: 186px;
+        height: 186px;
+        margin-right: 75px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--cyan {
+        background: $cyan;
+    }
+
+    &--pink {
+        background: $pink;
+    }
+
+    &--green {
+        background: $green;
+    }
+
+    &--red {
+        background: $red;
+    }
+
+    &--purple {
+        background: $purple;
+    }
+
+    &--orange {
+        background: $orange;
+    }
+
+    &__icon {
+        transform: scale(0.75);
+        margin-bottom: 5px;
+
+        @include media-up(md) {
+            transform: none;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        padding: 0 15px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #fff;
+        text-align: center;
+
+        @include media-up(md) {
+            padding: 0 25px;
+        }
+
+        @include media-up(xl) {
+            font-size: 18px;
+            line-height: 23px;            
+        }
+    }
+}

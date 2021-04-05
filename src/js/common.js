@@ -1,14 +1,10 @@
 import AOS from 'aos';
 import Swiper from 'swiper/swiper-bundle.min.js';
+import Parallax from 'parallax-js';
 import './svg-sprite';
 
 $(function() {
     'use strict';
-
-    // Init AOS
-    AOS.init({
-        duration: 500
-    });
 
     const $body = $('body');
     const $nav = $('.nav');
@@ -51,7 +47,7 @@ $(function() {
     }
 
     // Header on scroll event listener
-    var lastScrollTop = 0;
+    let lastScrollTop = 0;
     calcScroll();
     window.addEventListener('scroll', function() {
         calcScroll();
@@ -59,14 +55,107 @@ $(function() {
 
     // Calculate scroll position
     function calcScroll() {
-        var st = window.pageYOffset || document.documentElement.scrollTop;
+        let st = window.pageYOffset || document.documentElement.scrollTop;
 
         $header.toggleClass('nav-small', (st > 125));
         $header.toggleClass('nav-up', (st > 200 && st > lastScrollTop));
-        
-        console.log(st + ' ' + lastScrollTop);
 
         lastScrollTop = st <= 0 ? 0 : st;
+    }
+
+    // Init AOS
+    AOS.init({
+        duration: 500
+    });
+
+    // Parallax init
+    const parallax = $('.parallax');
+    if (parallax.length) {
+        parallax.each(function() {
+            new Parallax(this);
+        })
+    }
+
+    // Stages cursor
+    const stages = $('.stages');
+    if (stages.length) {
+
+        // Class for dot elements
+        class Dot {
+            constructor(line) {
+                this.sprite = line.find('circle').get(0);
+                this.track = line.find('path').get(0);
+                return this;
+            }
+            move(u) {
+                const p = this.track.getPointAtLength(u * this.track.getTotalLength());
+                this.sprite.setAttribute("transform", `translate(${p.x}, ${p.y})`);
+            }
+        };
+
+        // Array with stages parameters
+        let stagesArr = [];
+        $('.stage').each(function(){
+            let stage = {};
+            stage.item = $(this);
+            stage.top = stage.item.position().top;
+            stage.bot = stage.top + stage.item.outerHeight();
+
+            // Stage box
+            stage.box = stage.item.find('.stage__box');
+            stage.boxTop = stage.top;
+            stage.boxBot = stage.boxTop + stage.box.outerHeight();
+            
+            // Stage line and dot
+            let line = stage.item.find('.stage__line');
+            if (line.length) {
+                stage.lineTop = line.offset().top - stages.offset().top;
+                stage.lineHeight = line.height();
+                stage.dot = new Dot(line);
+            }
+
+            stagesArr.push(stage);
+        })
+
+        // Function for change stages on scroll
+        function stagesScroll() {
+            let winTop = $(window).scrollTop();
+            let winHeight = $(window).height();
+            let stagesTop = $('.stages').offset().top;
+            let windowMid = Math.max(-50, (winTop - stagesTop + winHeight / 2));
+    
+            stagesArr.forEach(function(stage) {
+                let $stage = stage.item;
+                let $box = stage.box;
+                let $dot = stage.dot;
+                if (windowMid - 50 < stage.boxTop) {
+                    // View over stage 
+                    $box.removeClass('cursor-in cursor-out');
+                } 
+                else if (windowMid + 50 > stage.boxBot) {
+                    // View under stage 
+                    $box.removeClass('cursor-in').addClass('cursor-out');
+                    $stage.addClass('visible-dot');
+
+                    if (windowMid - 50 > stage.bot)
+                        $stage.removeClass('visible-dot');
+                } 
+                else {
+                    // View inside stage
+                    $box.removeClass('cursor-out').addClass('cursor-in');
+                    $stage.removeClass('visible-dot');
+                }
+                
+                // Move dot with the scroll
+                if ($dot)
+                    $dot.move(( windowMid - stage.lineTop) / stage.lineHeight);
+            })
+        }
+
+        stagesScroll();
+        window.addEventListener('scroll', function() {
+            stagesScroll();
+        }, {passive: true})
     }
 
     // Init slider

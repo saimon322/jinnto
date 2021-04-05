@@ -1,0 +1,38 @@
+.stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+    position: absolute;
+
+    &:nth-child(odd) {
+        width: 7px;
+        height: 7px;
+        animation: starYellow 1500ms infinite;
+
+        @include media-up(md) {
+            width: 9px;
+            height: 10px;
+        }
+    }
+
+    &:nth-child(even) {
+        width: 6px;
+        height: 6px;
+        animation: starGray 1500ms infinite;
+
+        @include media-up(md) {
+            width: 9px;
+            height: 10px;
+        }
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}

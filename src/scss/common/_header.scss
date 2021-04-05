@@ -40,7 +40,7 @@
     }
 
     &.nav-up &__main {
-        transform: translateY(-100%);
+        transform: translateY(-110%);
     }
 
     &__content {
@@ -160,22 +160,5 @@
         line-height: 19px;
         text-align: center;
         color: #FFFFFF;
-    }
-}
-
-@keyframes linkSlideDown {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-
-    33% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
     }
 }

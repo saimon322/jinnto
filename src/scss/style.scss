@@ -11,6 +11,7 @@
 @import "spec/variables";
 @import "spec/mixins";
 @import "spec/global";
+@import "spec/animations";
 @import "spec/visually-hidden";
 
 /* ==========================================================================
@@ -22,8 +23,17 @@
 @import "common/nav";
 @import "common/footer";
 
+@import "common/video";
+@import "common/circles";
+@import "common/stars";
+@import "common/feature";
+
 /* ==========================================================================
     MAIN PAGE
     ========================================================================== */
 @import "modules/main-offer";
 @import "modules/about-us";
+@import "modules/what-inside";
+@import "modules/box-section";
+@import "modules/heroes";
+@import "modules/stages";

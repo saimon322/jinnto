@@ -1,0 +1,142 @@
+.heroes {
+    position: relative;
+    padding: 50px 0;
+
+    @include media-up(md) {
+        padding: 80px 0;
+    }
+
+    @include media-up(lg) {
+        padding: 124px 0 115px;
+    }
+
+    &__main {
+        @include media-up(md) {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            width: 340px;
+            transform: translate(-50%, -50%);
+            padding-top: 15px;
+        }
+    }
+
+    &__text {
+        @include text-17;
+        color: $blue-80;
+        margin-bottom: 43px;
+
+        @include media-up(md) {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 30px;
+
+            @include media-up(lg) {
+                margin-bottom: 90px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__scene {
+        display: flex;
+        justify-content: center;
+        padding-right: 20px;
+
+        @include media-up(md) {
+            justify-content: space-between;
+        }
+
+        @include media-up(xl) {
+            padding: 0 135px 0 155px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        user-select: none;
+    
+        &:first-child {
+            width: 140px;
+    
+            @include media-up(lg) {
+                width: 280px;
+            }
+        }
+    
+        &:last-child {
+            width: 150px;
+            margin-top: -15px;
+            margin-left: -15px;
+    
+            @include media-up(lg) {
+                width: 280px;
+                margin-left: 0;
+            }
+        }
+    
+        img {
+            width: 100%;
+        }
+    }
+
+    &__icons {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        
+        @include media-up(lg) {
+            display: block;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:nth-child(1) {
+            background-image: url(../img/icons/gray-pi.svg);
+            background-size: 61px;
+            left: 6.2%;
+            top: 29.1%;
+            animation: icon1 7000ms linear infinite;
+        }
+
+        &:nth-child(2) {
+            background-image: url(../img/icons/gray-magnet.svg);
+            background-size: 105px;
+            left: calc(50% - 226px);
+            bottom: 12.4%;
+            animation: icon2 7200ms linear infinite;
+        }
+
+        &:nth-child(3) {
+            background-image: url(../img/icons/gray-atom.svg);
+            background-size: 67px;
+            left: calc(50% + 130px);
+            top: 10.7%;
+            animation: icon1 6800ms linear infinite;
+        }
+
+        &:nth-child(4) {
+            background-image: url(../img/icons/gray-battery.svg);
+            background-size: 90px;
+            right: 9.72%;
+            bottom: 33.5%;
+            animation: icon2 7400ms linear infinite;
+        }
+    }
+}
