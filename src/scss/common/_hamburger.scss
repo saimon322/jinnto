@@ -1,5 +1,6 @@
 .hamburger {
     position: relative;
+    z-index: 1;
     width: 19px;
     height: 20px;
     animation: linkSlideDown .60s;

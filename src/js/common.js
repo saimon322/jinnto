@@ -6,30 +6,22 @@ import './svg-sprite';
 $(function() {
     'use strict';
 
+    const $window = $(window);
     const $body = $('body');
     const $nav = $('.nav');
     const $header = $('.header');
     const $menuBtn = $('.hamburger');
 
     // Header mobile menu
-    function navTransition() {
-        $nav.toggleClass('transitioned', window.matchMedia('(max-width: 767px)').matches);
-    }
-
-    navTransition();
-    window.addEventListener('resize', () => {
-        navTransition();
-    }, { passive: true })
 
     $menuBtn.on('click', () => {
         $menuBtn.toggleClass('active');
         $body.toggleClass('overflow');
-        $nav.show().toggleClass('show');
-		$header.toggleClass('nav-open');
+		$header.toggleClass('nav-show');
     });
 
     $(document).on('mouseup', function (e) {
-        if ($nav.hasClass('show')) {
+        if ($header.hasClass('nav-show')) {
             if (!$nav.is(e.target) &&
                 $nav.has(e.target).length === 0 &&
                 !$menuBtn.is(e.target) &&
@@ -42,8 +34,20 @@ $(function() {
     function closeMenu() {
         $menuBtn.removeClass('active');
         $body.removeClass('overflow');
-        $nav.removeClass('show');
-		$header.removeClass('nav-open');
+		$header.removeClass('nav-show');
+    }
+
+    navTransition();
+    window.addEventListener('resize', () => {
+        navTransition();
+
+        if (window.matchMedia('(min-width: 768px)').matches) {
+            closeMenu();
+        }
+    }, { passive: true })
+    
+    function navTransition() {
+        $nav.toggleClass('transitioned', window.matchMedia('(max-width: 767px)').matches);
     }
 
     // Header on scroll event listener
@@ -107,7 +111,7 @@ $(function() {
             stage.boxBot = stage.boxTop + stage.box.outerHeight();
             
             // Stage line and dot
-            let line = stage.item.find('.stage__line');
+            let line = stage.item.find('.stage__line--desktop');
             if (line.length) {
                 stage.lineTop = line.offset().top - stages.offset().top;
                 stage.lineHeight = line.height();
@@ -119,9 +123,9 @@ $(function() {
 
         // Function for change stages on scroll
         function stagesScroll() {
-            let winTop = $(window).scrollTop();
-            let winHeight = $(window).height();
-            let stagesTop = $('.stages').offset().top;
+            let winTop = $window.scrollTop();
+            let winHeight = $window.height();
+            let stagesTop = stages.offset().top;
             let windowMid = Math.max(-50, (winTop - stagesTop + winHeight / 2));
     
             stagesArr.forEach(function(stage) {
@@ -177,7 +181,7 @@ $(function() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', vh + 'px');
     window.addEventListener('resize', () => {
-        let vh = window.innerHeight * 0.01;
+        vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', vh + 'px');
     });
 

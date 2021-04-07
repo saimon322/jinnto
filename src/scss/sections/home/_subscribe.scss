@@ -1,0 +1,29 @@
+.subscribe {
+    background: $bg-soft;
+
+    &__main {
+        padding: 54px 30px 38px 37px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        @include text-17;
+        color: $blue-70;
+    }
+
+    &__btn {
+        margin-top: 27px;
+    }
+
+    &__img {
+        text-align: right;
+        padding: 0 15px 0 57px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

@@ -20,20 +20,26 @@
 @import "common/btn";
 @import "common/header";
 @import "common/hamburger";
+@import "common/socials";
 @import "common/nav";
 @import "common/footer";
 
-@import "common/video";
-@import "common/circles";
-@import "common/stars";
-@import "common/feature";
+/* ==========================================================================
+    MODULES
+    ========================================================================== */
+@import "modules/video";
+@import "modules/circles";
+@import "modules/stars";
+@import "modules/feature";
 
 /* ==========================================================================
     MAIN PAGE
     ========================================================================== */
-@import "modules/main-offer";
-@import "modules/about-us";
-@import "modules/what-inside";
-@import "modules/box-section";
-@import "modules/heroes";
-@import "modules/stages";
+@import "sections/home/main-offer";
+@import "sections/home/about-us";
+@import "sections/home/what-inside";
+@import "sections/home/box-section";
+@import "sections/home/heroes";
+@import "sections/home/stages";
+@import "sections/home/powers";
+@import "sections/home/subscribe";

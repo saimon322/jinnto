@@ -13,7 +13,8 @@
     &__box {
         position: relative;
         overflow: hidden;
-        padding: 71px 103px 90px 20px;
+        min-height: 431px;
+        padding: 71px 20px 90px 20px;
 
         @include media-up(md) {
             display: flex;
@@ -61,6 +62,7 @@
 
     &__content {
         position: relative;
+        z-index: 1;
     }
 
     &__title {
@@ -71,6 +73,11 @@
     &__text {
         @include text-17;
         color: $blue-80;
+        width: 74%;
+
+        @include media-up(md) {
+            width: 100%;
+        }
 
         p {
             margin-bottom: 30px;
@@ -97,10 +104,52 @@
         }
     }
 
+    &__icons {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    &__icon {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include media-up(lg) {
+            width: 60px;
+            height: 60px;
+        }
+
+        &:nth-child(1) {
+            right: 5%;
+            top: 4%;
+            animation: icon1 7000ms linear infinite;
+
+            @include media-up(md) {
+                top: 5%;
+            }
+        }
+
+        &:nth-child(2) {
+            animation: icon2 7200ms linear infinite;
+            display: none;
+
+            @include media-up(lg) {
+                display: block;
+            }
+        }
+    }
+
     &__main {
         position: relative;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin-top: -52px;
 
@@ -118,8 +167,6 @@
     }
 
     &__img {
-        width: 100%;
-
         img {
             max-width: 100%;
         }
@@ -129,7 +176,6 @@
         position: relative;
         z-index: 1;
         width: 100%;
-        padding: 80px 0;
     }
 
     &__fact {
@@ -138,20 +184,35 @@
     }
 
     &__line {
-        display: none;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         pointer-events: none;
 
-        @include media-up(lg) {
-            display: block;
-        }
-
         circle {
             opacity: 0;
             transition: opacity .1s;
+        }
+
+        &--mobile {
+            @include media-up(lg) {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            @include media-down(md) {
+                display: none;
+            }
+
+            @include media-down(lg) {
+                width: 70%;
+
+                svg {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -202,6 +263,31 @@
             }
         }
 
+        &__icon {
+            &:nth-child(1) {
+                background-image: url(../img/icons/red-microscope.svg);
+                background-size: 44px;
+
+                @include media-up(lg) {
+                    background-size: 54px;
+                    right: auto;
+                    left: 8%;
+                    top: 10%;
+                }
+
+                @include media-up(xl) {
+                    left: 15%;
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: url(../img/icons/red-bottle.svg);
+                background-size: 51px;
+                right: 3%;
+                bottom: 3%;
+            }
+        }
+
         &__main {
             @include media-up(xl) {
                 padding-right: 6.1%;
@@ -209,7 +295,11 @@
         }
 
         &__footer {
-            padding: 110px 0 117px;
+            padding: 100px 0 80px;
+
+            @include media-up(lg) {
+                padding: 110px 0 117px;                
+            }
         }
 
         &__line {
@@ -256,7 +346,32 @@
                 transform: none;
                 right: calc((100% - 446px) / 2);
                 transform: translateX(50%);
-                bottom: 53px;
+                bottom: 153px;
+            }
+        }
+
+        &__icon {
+            &:nth-child(1) {
+                background-image: url(../img/icons/green-battery.svg);
+                background-size: 44px;
+
+                @include media-up(lg) {
+                    background-size: 59px;
+                    top: auto;
+                    right: 10%;
+                    bottom: 5%;
+                }
+
+                @include media-up(xl) {
+                    right: 30%;
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: url(../img/icons/green-star.svg);
+                background-size: 10px;
+                left: 3%;
+                top: 10%;
             }
         }
 
@@ -270,12 +385,27 @@
             }
         }
 
+        &__img {
+            @include media-up(lg) {
+                transform: scale(-1, 1);                
+            }
+        }
+
         &__footer {
-            padding: 74px 0 180px;
+            padding: 80px 0 100px;
+
+            @include media-up(lg) {
+                padding: 74px 0 180px;                
+            }
         }
 
         &__line {
-            margin-left: -2.1%;
+            margin-top: 30px;
+
+            @include media-up(lg) {
+                margin-top: 0;
+                margin-left: -2.1%;
+            }
         }
     }
 
@@ -318,7 +448,36 @@
             transform: scale(-1, 1);
 
             @include media-up(lg) {
-                display: none;
+                transform: none;
+                right: auto;
+                left: calc((100% - 423px) / 2);
+                transform: translateX(-50%);
+                bottom: 53px;
+            }
+        }
+
+        &__icon {
+            &:nth-child(1) {
+                background-image: url(../img/icons/orange-skeleton.svg);
+                background-size: 22px;
+
+                @include media-up(lg) {
+                    background-size: 28px;
+                    right: auto;
+                    left: 8%;
+                    top: 10%;
+                }
+
+                @include media-up(xl) {
+                    left: 15%;
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: url(../img/icons/orange-eyelashes.svg);
+                background-size: 44px;
+                right: 3%;
+                bottom: 3%;
             }
         }
 

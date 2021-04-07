@@ -76,14 +76,14 @@
         }
 
         @include media-up(lg) {
-            height: 108px;
+            line-height: 80px;
             position: relative;
             
-            &:after {
+            &:before {
                 content: '';
                 position: absolute;
-                left: 177px;
-                top: 83px;
+                left: -18px;
+                top: 40px;
                 display: block;
                 width: 6px;
                 height: 6px;
@@ -111,7 +111,7 @@
         }
     }
 
-    &__btn {
+    &__footer {
         margin-top: 28px;
 
         @include media-down(sm) {

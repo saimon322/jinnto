@@ -1,0 +1,145 @@
+.powers {
+    padding: 100px 0 72px;
+
+    &__header {
+        max-width: 822px;
+        padding: 0 10px;
+        margin: 0 auto 16px;
+        text-align: center;
+
+        @include media-up(md) {
+            margin-bottom: 7px;
+        }
+    }
+
+    &__subtitle {
+        color: $red;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        @include text-17;
+        color: $blue-70;
+    }
+
+    &__main {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background-position: center;
+        background-image: url(../img/bg/powers-dots-mobile.svg);
+
+        @include media-up(lg) {
+            height: 24.8vw;
+            padding: 0;
+            background-image: url(../img/bg/powers-dots-desktop.svg);            
+        }
+    }
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url(../img/bg/powers-lines-mobile.svg);
+
+        @include media-up(lg) {
+            background-image: url(../img/bg/powers-lines-desktop.svg);            
+        }
+    }
+
+    .feature {
+        position: absolute;
+        margin: 0;
+        transform: translate(-50%, -50%);
+
+        &:nth-child(1) {
+            left: 33%;
+            top: 16%;
+
+            @include media-up(md) {
+                left: 40%;
+            }
+
+            @include media-up(lg) {
+                left: 20%;
+                top: 72%;
+            }
+        }
+        
+        &:nth-child(2) {
+            left: 71%;
+            top: 33%;
+
+            @include media-up(md) {
+                left: 67%;
+            }
+
+            @include media-up(lg) {
+                left: 31%;
+                top: 26%;
+            }
+        }
+
+        &:nth-child(3) {
+            left: 33%;
+            top: 52%;
+
+            @include media-up(md) {
+                left: 37%;
+            }
+
+            @include media-up(lg) {
+                left: 44%;
+                top: 64%;
+            }
+        }
+
+        &:nth-child(4) {
+            left: 75%;
+            top: 64%;
+
+            @include media-up(md) {
+                left: 64%;
+            }
+
+            @include media-up(lg) {
+                left: 57%;
+                top: 37%;
+            }
+        }
+
+        &:nth-child(5) {
+            left: 43%;
+            top: 86%;
+
+            @include media-up(md) {
+                left: 46%;
+            }
+
+            @include media-up(lg) {
+                left: 69.5%;
+                top: 69%;
+            }
+        }
+
+        &:nth-child(6) {
+            @include media-down(md) {
+                display: none;
+            }
+
+            @include media-up(lg) {
+                left: 80%;
+                top: 24%;
+            }
+        }
+    }
+}

@@ -14,7 +14,13 @@
         margin-right: 40px;
     }
 
-    @include media-up(xl) {
+    @include media-up(lg) {
+        width: 13vw;
+        height: 13vw;
+        margin-right: 5.2vw;
+    }
+
+    @include media-up(xxl) {
         width: 186px;
         height: 186px;
         margin-right: 75px;
@@ -52,7 +58,7 @@
         transform: scale(0.75);
         margin-bottom: 5px;
 
-        @include media-up(md) {
+        @include media-up(xl) {
             transform: none;
             margin-bottom: 10px;
         }
@@ -70,9 +76,17 @@
             padding: 0 25px;
         }
 
+        @include media-up(lg) {
+            font-size: 1.15vw;
+            line-height: 130%;
+        }
+
         @include media-up(xl) {
+            font-size: 1.25vw;
+        }
+
+        @include media-up(xxl) {
             font-size: 18px;
-            line-height: 23px;            
         }
     }
 }
