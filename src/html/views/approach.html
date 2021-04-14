@@ -4,7 +4,40 @@
 }) %>
 
 <main class="site-main">
-    <%=_.template(require('../parts/banner.html'))() %>
+    <%=_.template(require('../parts/banner.html'))({
+        subtitle: "Explore The World Around",
+        title: "In Jinnto box, we’ve collected everything a kid needs",
+        text: "To make every little inventor a big player with huge opportunities."
+    }) %>
+
+    <%=_.template(require('../parts/fact-star.html'))({
+        subtitle: "Our vibe",
+        title: "Childhood is a time to be brave and curious, and Jinnto strives to be with a kid at every step of it. That’s how we see the idea of our company."
+    }) %>
+
+    <section class="advantages">
+        <div class="container">
+           <div class="advantages__titles">
+                <h2 class="advantages__title">
+                    Feel Good About Your Purchase
+                </h2>
+                <p class="advantages__text">
+                    Every box is designed by our development team with love and care for kids.
+                </p>
+           </div>
+           <div class="section-advantages">
+               <div class="section-advantages__advantage section-advantages__advantage--green">
+                   <h4 class="section-advantages__advantage-title">
+                        Safe for children
+                   </h4>
+                   <p class="section-advantages__advantage-title">
+                        All parts are non-toxic and made from environmentally friendly materials.
+                   </p>
+               </div>
+           </div>
+        </div>
+    </section>
+    <!-- /.advantages -->
 </main>
 
 <%=_.template(require('../parts/footer.html'))() %>

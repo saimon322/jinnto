@@ -1,6 +1,11 @@
 .banner {
     position: relative;
-    height: 477px;
+    padding: 50px 0;
+
+    @include media-up(md) {
+        padding: 0;
+        height: 477px;
+    }
 
     &__wrapper {
         display: flex;
