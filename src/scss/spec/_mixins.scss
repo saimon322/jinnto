@@ -1,7 +1,14 @@
-
-@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+@function breakpoint-next(
+    $name,
+    $breakpoints: $grid-breakpoints,
+    $breakpoint-names: map-keys($breakpoints)
+) {
     $n: index($breakpoint-names, $name);
-    @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+    @return if(
+        $n < length($breakpoint-names),
+        nth($breakpoint-names, $n + 1),
+        null
+    );
 }
 
 @function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
@@ -15,7 +22,7 @@
 }
 
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
-    @return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
+    @return if(breakpoint-min($name, $breakpoints) ==null, '', '-#{$name}');
 }
 
 @mixin media-up($name, $breakpoints: $grid-breakpoints) {
@@ -25,9 +32,7 @@
         @media (min-width: $min) {
             @content;
         }
-    }
-
-    @else {
+    } @else {
         @content;
     }
 }
@@ -39,9 +44,7 @@
         @media (max-width: $max) {
             @content;
         }
-    }
-
-    @else {
+    } @else {
         @content;
     }
 }
@@ -63,14 +66,10 @@
         @media (min-width: $min) and (max-width: $max) {
             @content;
         }
-    }
-
-    @else if $max==null {
-        @include media-up($name)
-    }
-
-    @else if $min==null {
-        @include media-down($name)
+    } @else if $max==null {
+        @include media-up($name);
+    } @else if $min==null {
+        @include media-down($name);
     }
 }
 
@@ -100,6 +99,6 @@
 
     @include media-up(xl) {
         font-size: 20px;
-        line-height: 34px;            
+        line-height: 34px;
     }
 }
