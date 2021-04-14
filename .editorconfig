@@ -1,0 +1,35 @@
+root = true
+
+# All files
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# HTML
+[*.html]
+indent_style = space
+indent_size  = 4
+
+# SCSS
+[*.scss]
+indent_style = space
+indent_size  = 4
+quote_type = single
+
+# JAVASCRIPT
+[*.{js,jsx}]
+indent_style = space
+indent_size  = 4
+quote_type = single
+
+# JSON
+[*.json]
+indent_style = space
+indent_size  = 4
+
+# XML
+[*.svg]
+indent_style = space
+indent_size  = 4
