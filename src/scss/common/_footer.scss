@@ -1,5 +1,6 @@
 .footer {
     position: relative;
+    flex: 0 0 auto;
 
     @include media-up(lg) {
         margin-top: 80px;
@@ -135,7 +136,7 @@
         @include media-up(xl) {
             max-width: 1140px;
             margin: 0 auto;
-            padding: 50px 130px;            
+            padding: 50px 130px;
         }
     }
 
@@ -173,7 +174,7 @@
             font-size: 15px;
             line-height: 24px;
         }
-        
+
         &:after {
             content: '';
             position: absolute;
@@ -203,7 +204,7 @@
         position: relative;
         display: flex;
 
-        input[type="text"] {
+        input[type='text'] {
             width: 100%;
             height: 44px;
             border-radius: 50px;
