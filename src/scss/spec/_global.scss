@@ -161,32 +161,42 @@ h4 {
             top: 15px;
         }
     }
-}
 
-p {
+    &--out {
+        text-indent: 0;
     
+        &:before {
+            left: -25px;
+    
+            @include media-up(md) {
+                left: -29px;
+            }
+        }
+    }
 }
 
 ul, ol {
     list-style: none;
 }
 
-input,
-select,
+input[type="text"],
 textarea {
     width: 100%;
-    padding: 16px 20px;
-    font-size: 25px;
+    font-size: 15px;
     line-height: 1.5;
     font-family: inherit;
-    color: #000;
     background-color: #fff;
+    border-radius: 50px;
     border: none;
-    transition: all .2s ease-out;
+    box-shadow: 0 0 0px 1000px #fff inset !important;
 
     &:hover,
     &:focus {
         outline: none;
+    }
+
+    &::placeholder {
+        color: $blue-50;
     }
 }
 

@@ -1,17 +1,22 @@
 .btn {
     position: relative;
     display: inline-block;
+    min-width: 77px;
     max-width: 100%;
     padding: 10px 14px;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
+    text-align: center;
     user-select: none;
     border: 1px solid transparent;
     color: #fff;
     border-radius: 50px;
     cursor: pointer;
     white-space: nowrap;
+    appearance: none;
+    box-shadow: none;
+    outline: none;
     transition: .25s;
 
     @include media-up(md) {
@@ -28,6 +33,17 @@
         &:hover {
             background-color: #fff;
             color: $red;
+        }
+    }
+
+    &--blue {
+        color: #fff;
+        background-color: $blue;
+        border-color: $blue;
+
+        &:hover {
+            background-color: #fff;
+            color: $blue;
         }
     }
 }

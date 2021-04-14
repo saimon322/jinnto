@@ -1,8 +1,27 @@
 .subscribe {
     background: $bg-soft;
 
+    &__content {
+        @include media-up(md) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 70px;
+            padding-top: 18px;
+        }
+    
+        @include media-up(lg) {
+            padding-left: 104px;
+        }
+    }
+
     &__main {
         padding: 54px 30px 38px 37px;
+
+        @include media-up(md) {
+            padding: 30px 0 0;
+            max-width: 372px;
+        }
     }
 
     &__title {
@@ -21,6 +40,10 @@
     &__img {
         text-align: right;
         padding: 0 15px 0 57px;
+
+        @include media-up(md) {
+            padding: 0;
+        }
 
         img {
             max-width: 100%;

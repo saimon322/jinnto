@@ -1,0 +1,53 @@
+.swiper-button {
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    bottom: -58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    background: $bg-soft;
+    transition: .25s;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+
+    @include media-up(lg) {
+        width: 44px;
+        height: 44px;
+        top: 50%;
+        transform: translateY(-50%) !important;
+    }
+
+    &:hover {
+        color: #fff;
+        background: $blue;
+    }
+
+    &-disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.swiper-prev {
+    transform: translateX(-52px);
+
+    svg {
+        transform: rotate(180deg);
+    }
+
+    @include media-up(lg) {
+        left: -72px;
+    }
+}
+
+.swiper-next {
+    transform: translateX(17px);
+
+    @include media-up(lg) {
+        left: auto;
+        right: -72px;
+    }
+}

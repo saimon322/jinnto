@@ -1,3 +1,229 @@
 .footer {
-    display: none;
+    position: relative;
+
+    @include media-up(lg) {
+        margin-top: 80px;
+    }
+
+    &__container {
+        max-width: 1140px;
+    }
+
+    &__content {
+        background: $blue;
+        color: #fff;
+        font-size: 15px;
+        line-height: 18px;
+
+        @include media-up(md) {
+            padding-top: 50px;
+        }
+
+        @include media-up(lg) {
+            padding-top: 145px;
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__main {
+        @include media-up(md) {
+            display: flex;
+            padding-bottom: 54px;
+            border-bottom: 1px solid $white-10;
+        }
+    }
+
+    &__list {
+        padding: 46px 0 37px;
+        border-bottom: 1px solid $white-10;
+
+        @include media-up(md) {
+            flex: 1 1 0;
+            padding: 0;
+            columns: 2;
+            border: 0;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 22px;
+
+                @include media-up(lg) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &:nth-child(1) {
+                @include media-up(md) {
+                    margin-bottom: 21px;
+                }
+            }
+        }
+    }
+
+    &__aside {
+        padding: 30px 0;
+        border-bottom: 1px solid $white-10;
+
+        @include media-up(md) {
+            width: calc(100% / 3);
+            padding: 0;
+            border: 0;
+        }
+    }
+
+    &__emails {
+        white-space: nowrap;
+
+        p {
+            margin-bottom: 22px;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 22px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-right: 27px;
+        }
+    }
+
+    &__copyright {
+        padding: 24px 0 29px;
+
+        @include media-up(lg) {
+            padding: 33px 0 42px;
+        }
+    }
+}
+
+.footer-form {
+    position: relative;
+    z-index: 1;
+    padding: 33px 0 47px;
+    background: $bg-cyan;
+
+    @include media-up(lg) {
+        padding: 0;
+        background: none;
+        margin: -80px 0;
+    }
+
+    &__wrapper {
+        @include media-up(lg) {
+            padding: 50px 70px;
+            background: $bg-cyan;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @include media-up(xl) {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 50px 130px;            
+        }
+    }
+
+    &__content {
+        padding: 0 20px;
+        margin-bottom: 32px;
+        text-align: center;
+
+        @include media-up(lg) {
+            text-align: left;
+            width: 392px;
+            padding: 0;
+            margin-bottom: 0;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+
+        @include media-up(xl) {
+            margin-right: 60px;
+        }
+    }
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        width: fit-content;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 24px;
+        margin: 0 auto 8px;
+
+        @include media-up(lg) {
+            display: inline;
+            margin-right: 30px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: -8px;
+            top: 10px;
+            display: block;
+            width: calc(100% + 16px);
+            height: 10px;
+            background: $yellow;
+            border-radius: 3px;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 24px;
+        color: $blue-80;
+
+        @include media-up(lg) {
+            display: inline;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        position: relative;
+        display: flex;
+
+        input[type="text"] {
+            width: 100%;
+            height: 44px;
+            border-radius: 50px;
+            padding-left: 20px;
+            padding-right: 36%;
+
+            @media (min-width: 350px) {
+                padding-right: 120px;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 116px;
+            max-width: 35%;
+            height: 44px;
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
 }

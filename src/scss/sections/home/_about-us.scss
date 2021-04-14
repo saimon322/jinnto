@@ -80,10 +80,8 @@
         font-size: 18px;
         line-height: 23px;
         color: #fff;
-
-        &:hover {
-            color: #fff;
-        }
+        animation: hint 4s 5s infinite;
+        animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 
         &:before {
             content: '';
@@ -96,6 +94,16 @@
             background: $green;
             border-radius: 3px;
             transform: rotate(-1.18deg);
+            transition: transform .2s;
+        }
+
+        &:hover {
+            color: #fff;
+            animation-play-state: paused;
+
+            &:before {
+                transform: rotate(-1.18deg) scale(1.1);
+            }
         }
 
         &:after {
@@ -107,6 +115,7 @@
             width: 102px;
             height: 37px;
             background: url(../img/icons/video-arrow.svg) center / contain no-repeat;
+            pointer-events: none;
         }
     }
 }

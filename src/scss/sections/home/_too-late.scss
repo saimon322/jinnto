@@ -1,0 +1,68 @@
+.too-late {
+    position: relative;
+    background: $bg-cyan;
+
+    @include media-up(lg) {
+        background: none;
+        margin: -175px 0 -120px;
+    }
+
+    @include media-up(xl) {
+        margin: -252px 0 -145px;
+    }
+
+    &__wrapper {
+        position: relative;
+        padding: 60px 20px 212px;
+
+        @include media-up(lg) {
+            background: $bg-cyan;
+            border-radius: 10px;
+            padding: 64px 70px 68px;
+        }
+
+        @include media-up(xl) {
+            padding: 64px 10.5% 68px;            
+        }
+    }
+
+    &__content {
+        max-width: 450px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @include text-17;
+        color: $blue-70;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        position: absolute;
+        left: 50%;
+        bottom: -108px;
+        transform: translateX(-50%);
+        width: 300px;
+
+        @include media-up(md) {
+            transform: none;
+            left: auto;
+            right: 0;
+            width: 400px;
+        }
+
+        @include media-up(lg) {
+            width: 44.4%;
+            right: 5%;
+            bottom: 0;
+            transform: translateY(15%);
+        }
+
+        @include media-up(xl) {
+            right: 9%;
+        }
+    }
+}

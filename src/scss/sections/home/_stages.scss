@@ -29,7 +29,6 @@
             width: 56%;
             height: 670px;
             max-width: 800px;
-            border-radius: 10px;
         }
 
         @include media-up(xl) {
@@ -221,20 +220,93 @@
     }
 }
 
-// First stage
-.stage:nth-child(1) {
+// Odd stages
+.stage:nth-child(odd) {
     .stage {
         &__box {
-            background: $bg-pink;
-
             @include media-up(lg) {
                 align-items: flex-end;
                 padding: 0 51px 40px 150px;
+                border-radius: 0 10px 10px 0;
             }
 
             @include media-up(xl) {
                 padding-left: 170px;           
             }
+        }
+
+        &__hero {
+            transform: scale(-1, 1);
+
+            @include media-up(lg) {
+                transform: none;
+                right: auto;
+                left: calc((100% - 423px) / 2);
+                transform: translateX(-50%);
+                bottom: 53px;
+            }
+        }
+
+        &__main {
+            @include media-up(xl) {
+                padding-right: 6.1%;
+            }
+        }
+    }
+}
+
+// Even stages
+.stage:nth-child(even) {
+    .stage {
+        &__box {
+            @include media-up(lg) {
+                padding: 0 130px 0 50px;
+                border-radius: 10px 0 0 10px;
+            }
+
+            @include media-up(xl) {
+                padding: 0 150px 0 90px;          
+            }
+        }
+
+        &__text {
+            @include media-up(lg) {
+                max-width: 356px;
+            }
+        }
+
+        &__hero {
+            @include media-up(lg) {
+                transform: none;
+                right: calc((100% - 446px) / 2);
+                transform: translateX(50%);
+                bottom: 153px;
+            }
+        }
+
+        &__main {
+            @include media-up(lg) {
+                order: -1;
+            }
+
+            @include media-up(xl) {
+                padding-left: 6.1%;                
+            }
+        }
+
+        &__img {
+            @include media-up(lg) {
+                transform: scale(-1, 1);                
+            }
+        }
+    }
+}
+
+// First stage
+.stage:nth-child(1) {
+    .stage {
+        &__box {
+            background: $bg-pink;
 
             &:before {
                 background: $pink;
@@ -248,18 +320,6 @@
         &__text {
             @include media-up(lg) {
                 max-width: 372px;
-            }
-        }
-
-        &__hero {
-            transform: scale(-1, 1);
-
-            @include media-up(lg) {
-                transform: none;
-                right: auto;
-                left: calc((100% - 423px) / 2);
-                transform: translateX(-50%);
-                bottom: 53px;
             }
         }
 
@@ -288,12 +348,6 @@
             }
         }
 
-        &__main {
-            @include media-up(xl) {
-                padding-right: 6.1%;
-            }
-        }
-
         &__footer {
             padding: 100px 0 80px;
 
@@ -318,14 +372,6 @@
         &__box {
             background: $bg-green;
 
-            @include media-up(lg) {
-                padding: 0 130px 0 50px;
-            }
-
-            @include media-up(xl) {
-                padding: 0 150px 0 90px;          
-            }
-
             &:before {
                 background: $green;
             }
@@ -333,21 +379,6 @@
 
         &__title {
             color: $green;
-        }
-
-        &__text {
-            @include media-up(lg) {
-                max-width: 356px;
-            }
-        }
-
-        &__hero {
-            @include media-up(lg) {
-                transform: none;
-                right: calc((100% - 446px) / 2);
-                transform: translateX(50%);
-                bottom: 153px;
-            }
         }
 
         &__icon {
@@ -372,22 +403,6 @@
                 background-size: 10px;
                 left: 3%;
                 top: 10%;
-            }
-        }
-
-        &__main {
-            @include media-up(lg) {
-                order: -1;
-            }
-
-            @include media-up(xl) {
-                padding-left: 6.1%;                
-            }
-        }
-
-        &__img {
-            @include media-up(lg) {
-                transform: scale(-1, 1);                
             }
         }
 
@@ -420,15 +435,6 @@
         &__box {
             background: $bg-orange;
 
-            @include media-up(lg) {
-                align-items: flex-end;
-                padding: 0 51px 46px 150px;
-            }
-
-            @include media-up(xl) {
-                padding-left: 170px;           
-            }
-
             &:before {
                 background: $orange;
             }
@@ -441,18 +447,6 @@
         &__text {
             @include media-up(lg) {
                 max-width: 339px;
-            }
-        }
-
-        &__hero {
-            transform: scale(-1, 1);
-
-            @include media-up(lg) {
-                transform: none;
-                right: auto;
-                left: calc((100% - 423px) / 2);
-                transform: translateX(-50%);
-                bottom: 53px;
             }
         }
 
@@ -478,12 +472,6 @@
                 background-size: 44px;
                 right: 3%;
                 bottom: 3%;
-            }
-        }
-
-        &__main {
-            @include media-up(xl) {
-                padding-right: 6.1%;
             }
         }
     }

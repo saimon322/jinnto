@@ -162,20 +162,40 @@ $(function() {
         }, {passive: true})
     }
 
-    // Init slider
-    let slider = new Swiper(('.slider'), {
-        loop: true,
-        slidesPerView: 1,
-        navigation: {
-            nextEl: '.swiper-next',
-            prevEl: '.swiper-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        },
-    })
+    // Init instagram slider
+    const instSlider = $('.instagram__slider');
+    if (instSlider.length) {
+        let slider = new Swiper(('.instagram__slider .swiper-container'), {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            spaceBetween: 10,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    slidesPerColumn: 2,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    slidesPerColumn: 2,
+                    spaceBetween: 20,
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        })
+    }
+
+    // Faq
+    const $faq = $('.faq');
+    if ($faq.length) {
+        $('.faq-item__question').on('click', function(){
+            $(this).parent().toggleClass('faq-item--open');
+            $(this).siblings().slideToggle();
+        })
+    }
 
     // 100 vh fix
     let vh = window.innerHeight * 0.01;
