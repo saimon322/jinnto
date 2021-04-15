@@ -26,6 +26,8 @@
 @import 'common/banner';
 @import 'common/fact-star';
 @import 'common/section-advantages';
+@import 'common/background-img';
+@import 'common/title-with-underline';
 
 /* ==========================================================================
     MODULES
@@ -50,3 +52,8 @@
 @import 'sections/home/instagram';
 @import 'sections/home/founders';
 @import 'sections/home/too-late';
+
+/* ==========================================================================
+    OUR APPROACH
+    ========================================================================== */
+@import 'sections/approach/advantages';

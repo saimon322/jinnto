@@ -10,15 +10,16 @@
         text: "To make every little inventor a big player with huge opportunities."
     }) %>
 
-    <%=_.template(require('../parts/fact-star.html'))({
+    <!-- <%=_.template(require('../parts/fact-star.html'))({
         subtitle: "Our vibe",
         title: "Childhood is a time to be brave and curious, and Jinnto strives to be with a kid at every step of it. That’s how we see the idea of our company."
-    }) %>
+    }) %> -->
 
     <section class="advantages">
+        <img src="img/base/approach-advantages-bg.jpg" alt="background-" class="background-img">
         <div class="container">
            <div class="advantages__titles">
-                <h2 class="advantages__title">
+                <h2 class="advantages__title title-with-underline title-with-underline--cyan">
                     Feel Good About Your Purchase
                 </h2>
                 <p class="advantages__text">
@@ -27,11 +28,47 @@
            </div>
            <div class="section-advantages">
                <div class="section-advantages__advantage section-advantages__advantage--green">
+                    <div class="section-advantages__icon-wrapper">
+                        <img class="section-advantages__icon" src="img/icons/recycling.svg" alt="icon">
+                    </div>
                    <h4 class="section-advantages__advantage-title">
                         Safe for children
                    </h4>
-                   <p class="section-advantages__advantage-title">
+                   <p class="section-advantages__advantage-text">
                         All parts are non-toxic and made from environmentally friendly materials.
+                   </p>
+               </div>
+               <div class="section-advantages__advantage section-advantages__advantage--orange">
+                   <div class="section-advantages__icon-wrapper">
+                       <img class="section-advantages__icon" src="img/icons/gift-box.svg" alt="icon">
+                   </div>
+                   <h4 class="section-advantages__advantage-title">
+                        Topics
+                   </h4>
+                   <p class="section-advantages__advantage-text">
+                        Every month you’ll get the box with a new topic for your child to explore the world and create new skills.
+                   </p>
+               </div>
+               <div class="section-advantages__advantage section-advantages__advantage--pink">
+                    <div class="section-advantages__icon-wrapper">
+                        <img class="section-advantages__icon" src="img/icons/map.svg" alt="icon">
+                    </div>
+                   <h4 class="section-advantages__advantage-title">
+                        Interactive instructions
+                   </h4>
+                   <p class="section-advantages__advantage-text">
+                        Each kit comes with comics and video instruction for assembling the toy.
+                   </p>
+               </div>
+               <div class="section-advantages__advantage section-advantages__advantage--cyan">
+                    <div class="section-advantages__icon-wrapper">
+                        <img class="section-advantages__icon" src="img/icons/cube.svg" alt="icon">
+                    </div>
+                   <h4 class="section-advantages__advantage-title">
+                        Imagination
+                   </h4>
+                   <p class="section-advantages__advantage-text">
+                        Each set contains unlimited space for creativity and expression of a child’s personality.
                    </p>
                </div>
            </div>
