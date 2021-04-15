@@ -1,5 +1,9 @@
 .ask-form {
-    padding: 200px 0;
+    padding: 50px 0 70px;
+
+    @include media-up(md) {
+        padding: 200px 0;
+    }
 
     &__wrapper {
         position: relative;
