@@ -1,0 +1,31 @@
+.our-goal {
+    margin: -100px 0;
+
+    &__content {
+        background-color: $bg-cyan;
+        text-align: center;
+        padding: 50px 20px;
+        border-radius: 15px;
+    }
+
+    &__title {
+        background-color: $green;
+        display: inline-block;
+        color: #fff;
+        padding: 3px 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+
+    &__text {
+        max-width: 800px;
+        margin: 0 auto;
+        font-weight: 500;
+
+        span {
+            font-weight: 800;
+            color: $pink;
+        }
+    }
+}
