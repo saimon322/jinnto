@@ -34,6 +34,10 @@
             bottom: -60px;
         }
 
+        @include media-up(lg) {
+            width: 200px;
+        }
+
         &--left {
             @include media-up(md) {
                 left: 0;
@@ -53,10 +57,17 @@
         margin: 0 auto;
     }
 
-    &__title {
+    &__title-wrapper {
         text-align: center;
-        max-width: 400px;
-        margin: 0 auto 70px;
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        display: inline;
+
+        &::before {
+            left: -20px;
+        }
     }
 
     &__form {
@@ -83,9 +94,10 @@
     }
 
     &__input {
-        border-radius: 22px;
+        position: relative;
+        border-radius: 22px !important;
         background-color: $bg-green;
-        padding: 20px 20px;
+        padding: 15px 20px;
 
         &--name {
             grid-area: a;
@@ -97,6 +109,12 @@
 
         &--message {
             grid-area: c;
+
+            &::placeholder {
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
         }
     }
 

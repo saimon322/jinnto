@@ -8,4 +8,18 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+
+    &--mobile {
+        @include media-up(sm) {
+            display: none;
+        }
+    }
+
+    &--desctop {
+        display: none;
+
+        @include media-up(sm) {
+            display: block;
+        }
+    }
 }
