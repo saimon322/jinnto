@@ -18,4 +18,10 @@
             background-color: $bg-cyan;
         }
     }
+
+    &--yellow {
+        &::after {
+            background-color: $yellow;
+        }
+    }
 }

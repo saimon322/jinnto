@@ -1,11 +1,18 @@
 .our-goal {
-    margin: -100px 0;
+    position: relative;
+    /* margin: -100px 0; */
+    z-index: 20;
 
     &__content {
+        margin: 0 -20px;
         background-color: $bg-cyan;
         text-align: center;
         padding: 50px 20px;
-        border-radius: 15px;
+
+        @include media-up(md) {
+            border-radius: 15px;
+            margin: 0;
+        }
     }
 
     &__title {
@@ -22,6 +29,11 @@
         max-width: 800px;
         margin: 0 auto;
         font-weight: 500;
+        font-size: 15px;
+
+        @include media-up(md) {
+            font-size: 20px;
+        }
 
         span {
             font-weight: 800;
