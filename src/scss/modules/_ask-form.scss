@@ -110,6 +110,7 @@
 
         &--message {
             grid-area: c;
+            resize: none;
 
             &::placeholder {
                 position: absolute;
