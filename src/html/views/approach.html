@@ -10,13 +10,40 @@
         text: "To make every little inventor a big player with huge opportunities."
     }) %>
 
-    <%=_.template(require('../parts/fact-star.html'))({
-        subtitle: "Our vibe",
-        title: "Childhood is a time to be brave and curious, and Jinnto strives to be with a kid at every step of it. That’s how we see the idea of our company."
-    }) %>
-
-
     <section class="strives text-img-block">
+        <section class="fact-star strives__fact-star">
+            <div class="fact-star__content container">
+                <h2 class="fact-star__title title-with-underline title-with-underline--red">
+                    Our vibe
+                </h2>
+                <p class="fact-star__text">
+                    Childhood is a time to be brave and curious, and Jinnto strives to be with a kid at every step of it. That’s how we see the idea of our company.
+                </p>
+            </div>
+            <div class="fact-star__stars" data-aos="fade-in" data-aos-delay="200">
+                <div class="fact-star__star">
+                    <svg><use xlink:href='#star'></use></svg>
+                </div>
+                <div class="fact-star__star">
+                    <svg><use xlink:href='#star'></use></svg>
+                </div>
+                <div class="fact-star__star">
+                    <svg><use xlink:href='#star'></use></svg>
+                </div>
+                <div class="fact-star__star">
+                    <svg><use xlink:href='#star'></use></svg>
+                </div>
+                <div class="fact-star__star">
+                    <svg><use xlink:href='#star'></use></svg>
+                </div>
+                <div class="fact-star__star">
+                    <svg><use xlink:href='#star'></use></svg>
+                </div>
+                <div class="fact-star__star">
+                    <svg><use xlink:href='#star'></use></svg>
+                </div>
+            </div>
+        </section>
         <img src="img/bg/approach-bg-dot.svg" class="strives__bg-dot">
         <div class="container">
             <div class="text-img-block__wrapper">
@@ -178,6 +205,13 @@
         </div>
     </section>
     <!-- /.advantages -->
+
+
+    <%=_.template(require('../parts/fact-star.html'))({
+        subtitle: "What we do",
+        title: "We let kids’ imagination run wild!"
+    }) %>
+    <!-- /.fact-star -->
 
     <%=_.template(require('../parts/ask-form.html'))() %>
     <!-- /.ask-form -->

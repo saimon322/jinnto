@@ -1,5 +1,6 @@
 .title-with-underline {
     position: relative;
+    display: inline-block;
 
     &::after {
         content: '';
@@ -22,6 +23,12 @@
     &--yellow {
         &::after {
             background-color: $yellow;
+        }
+    }
+
+    &--red {
+        &::after {
+            background-color: $red;
         }
     }
 }
