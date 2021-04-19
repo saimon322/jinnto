@@ -1,7 +1,6 @@
 .banner {
     position: relative;
     padding: 50px 0;
-    min-height: 340px;
 
     @include media-up(md) {
         padding: 0;
@@ -66,14 +65,17 @@
     &__title {
         font-size: 22px;
         line-height: 1.5;
+        max-width: 239px;
 
         @include media-up(sm) {
             font-size: 35px;
+            max-width: 360px;
         }
 
         @include media-up(lg) {
             line-height: 54px;
             font-size: 50px;
+            max-width: 100%;
         }
 
         span {
@@ -106,7 +108,16 @@
 
     &__text {
         margin-top: 25px;
+        max-width: 240px;
 
         @include text-15;
+
+        @include media-up(sm) {
+            max-width: 60%;
+        }
+
+        @include media-up(lg) {
+            max-width: 100%;
+        }
     }
 }
