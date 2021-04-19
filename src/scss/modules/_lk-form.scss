@@ -1,0 +1,11 @@
+.lk-form {
+    padding: 40px 0 50px;
+
+    @include media-up(md) {
+        
+    }
+
+    @include media-up(lg) {
+        padding: 120px 0;
+    }
+}
