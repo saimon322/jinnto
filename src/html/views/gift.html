@@ -1,0 +1,94 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "Jinnto",
+    menu: {gift: 'current-menu-item'}
+}) %>
+
+<main class="site-main">
+    <section class="banner">
+        <img src="img/base/gift-banner-bg--mob.jpg" alt="back" class="banner__img banner__img--mobile">
+        <img src="img/base/gift-banner-bg.jpg" alt="back" class="banner__img banner__img--desctop">
+        <div class="container banner__wrapper">
+            <h1 class="banner__title">
+                Give the gift of playtime <br>
+                with Jinnto
+            </h1>
+            <div class="banner__switch-panel">
+                <button type="button" class="banner__switch-button btn banner__switch-button--active">
+                    Gift box
+                </button>
+                <button type="button" class="banner__switch-button btn banner__switch-button--active">
+                    Gift subscriptions
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- /.banner -->
+
+    <section class="gift-how">
+        <img src="img/bg/gift-how-mobile.svg" class="background-img background-img--mobile gift-how__background-img">
+        <img src="img/bg/gift-how-desktop.svg" class="background-img gift-how__background-img background-img--desktop">
+        <div class="container">
+            <div class="gift-how__heading">
+                <h2 class="gift-how__title title-with-underline title-with-underline--yellow">
+                    How it works
+                </h2>
+            </div>
+            <div class="gift-how__content">
+                <div class="gift-how__item">
+                    <div class="gift-how__item-img-wrapper">
+                        <img src="img/base/gift-how-1.png" alt="image" class="gift-how__item-img">
+                    </div>
+                    <h2 class="gift-how__item-title">
+                        Step 1
+                    </h2>
+                    <p class="gift-how__item-text">
+                        Choose a gift box
+                    </p>
+                </div>
+                <div class="gift-how__item">
+                    <div class="gift-how__item-img-wrapper">
+                        <img src="img/base/gift-how-2.png" alt="image" class="gift-how__item-img">
+                    </div>
+                    <h2 class="gift-how__item-title">
+                        Step 2
+                    </h2>
+                    <p class="gift-how__item-text">
+                        Fill in the contact
+                        information
+                    </p>
+                </div>
+                <div class="gift-how__item">
+                    <div class="gift-how__item-img-wrapper">
+                        <img src="img/base/gift-how-3.png" alt="image" class="gift-how__item-img">
+                    </div>
+                    <h2 class="gift-how__item-title">
+                        Step 3
+                    </h2>
+                    <p class="gift-how__item-text">
+                        Get ready to give the gift of
+                        unforgettable emotions!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.gift-how -->
+
+    <section class="gift-choose">
+        <div class="container">
+            <div class="gift-choose__heading">
+                <h2 class="gift-choose__title title-with-underline title-with-underline--cyan">
+                    How it works
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <%=_.template(require('../parts/faq.html'))() %>
+    <!-- /.faq -->
+
+    <%=_.template(require('../parts/ask-form.html'))() %>
+    <!-- /.ask-form -->
+</main>
+
+<%=_.template(require('../parts/footer.html'))() %>

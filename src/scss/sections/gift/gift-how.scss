@@ -1,0 +1,128 @@
+.gift-how {
+    position: relative;
+    padding: 50px 0 70px;
+
+    &__background-img {
+        top: 30px;
+
+        @include media-up(md) {
+            top: -70px;
+            object-fit: contain;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__content {
+        margin-top: 34px;
+
+        @include media-up(sm) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+        }
+
+        @include media-up(lg) {
+            margin-top: 63px;
+            padding: 0 60px;
+        }
+    }
+
+    &__item {
+        text-align: center;
+        color: $blue-80;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(1) {
+            .gift-how__item-img-wrapper {
+                border-color: $pink;
+            }
+
+            .gift-how__item-title {
+                color: $pink;
+            }
+        }
+
+        &:nth-child(2) {
+            .gift-how__item-img-wrapper {
+                border-color: $cyan;
+            }
+
+            .gift-how__item-title {
+                color: $cyan;
+            }
+        }
+
+        &:nth-child(3) {
+            .gift-how__item-img-wrapper {
+                border-color: $green;
+            }
+
+            .gift-how__item-title {
+                color: $green;
+            }
+        }
+    }
+
+    &__item-img-wrapper {
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 30px;
+        border-width: 2px;
+        border-style: solid;
+
+        @include media-up(sm) {
+            width: 120px;
+            height: 120px;
+        }
+
+        @include media-up(md) {
+            width: 170px;
+            height: 170px;
+        }
+
+        @include media-up(lg) {
+            width: 223px;
+            height: 223px;
+        }
+    }
+
+    &__item-img {
+        border-radius: 50%;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__item-title {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 21px;
+
+        @include media-up(md) {
+            font-size: 25px;
+            line-height: 29px;
+            margin-bottom: 15px;
+        }
+
+        @include media-up(lg) {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    &__item-text {
+        max-width: 260px;
+        margin: 0 auto;
+
+        @include text-20;
+    }
+}

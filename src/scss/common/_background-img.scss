@@ -15,7 +15,7 @@
         }
     }
 
-    &--desctop {
+    &--desktop {
         display: none;
 
         @include media-up(sm) {
