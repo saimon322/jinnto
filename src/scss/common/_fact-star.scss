@@ -1,4 +1,4 @@
-.what-inside {
+.fact-star {
     position: relative;
     padding: 41px 26px 46px;
     background: $blue;
@@ -32,7 +32,16 @@
         color: #fff;
     }
 
-    .star {
+    &__text {
+        margin-top: 20px;
+        @include text-20;
+        color: #fff;
+        max-width: 690px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__star {
         &:nth-child(1) {
             left: 8.53%;
             top: 20.7%;

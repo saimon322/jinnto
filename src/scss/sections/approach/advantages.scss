@@ -1,0 +1,22 @@
+.advantages {
+    position: relative;
+    padding: 50px 0 70px;
+
+    @include media-up(md) {
+        padding: 120px 0 200px;
+    }
+
+    &__titles {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto 60px;
+
+        @include media-up(md) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__text {
+        margin-top: 23px;
+    }
+}

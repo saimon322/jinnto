@@ -1,50 +1,65 @@
 /* ==========================================================================
     LIBS
     ========================================================================== */
-@import "~aos/dist/aos.css";
-@import "~swiper/swiper-bundle.css";
+@import '~aos/dist/aos.css';
+@import '~swiper/swiper-bundle.css';
 
 /* ==========================================================================
     SPECIFICATION
     ========================================================================== */
-@import "spec/fonts";
-@import "spec/variables";
-@import "spec/mixins";
-@import "spec/global";
-@import "spec/animations";
-@import "spec/visually-hidden";
+@import 'spec/fonts';
+@import 'spec/variables';
+@import 'spec/mixins';
+@import 'spec/global';
+@import 'spec/animations';
+@import 'spec/visually-hidden';
 
 /* ==========================================================================
     COMMON ELEMENTS
     ========================================================================== */
-@import "common/btn";
-@import "common/header";
-@import "common/hamburger";
-@import "common/socials";
-@import "common/nav";
-@import "common/footer";
+@import 'common/btn';
+@import 'common/header';
+@import 'common/hamburger';
+@import 'common/socials';
+@import 'common/nav';
+@import 'common/footer';
+@import 'common/banner';
+@import 'common/fact-star';
+@import 'common/section-advantages';
+@import 'common/background-img';
+@import 'common/title-with-underline';
 
 /* ==========================================================================
     MODULES
     ========================================================================== */
-@import "modules/video";
-@import "modules/circles";
-@import "modules/stars";
-@import "modules/feature";
-@import "modules/swiper";
-@import "modules/faq";
+@import 'modules/video';
+@import 'modules/circles';
+@import 'modules/stars';
+@import 'modules/feature';
+@import 'modules/swiper';
+@import 'modules/faq';
+@import 'modules/ask-form';
+@import 'modules/text-img-block';
 
 /* ==========================================================================
     MAIN PAGE
     ========================================================================== */
-@import "sections/home/main-offer";
-@import "sections/home/about-us";
-@import "sections/home/what-inside";
-@import "sections/home/box-section";
-@import "sections/home/heroes";
-@import "sections/home/stages";
-@import "sections/home/powers";
-@import "sections/home/subscribe";
-@import "sections/home/instagram";
-@import "sections/home/founders";
-@import "sections/home/too-late";
+@import 'sections/home/main-offer';
+@import 'sections/home/about-us';
+@import 'sections/home/box-section';
+@import 'sections/home/heroes';
+@import 'sections/home/stages';
+@import 'sections/home/powers';
+@import 'sections/home/subscribe';
+@import 'sections/home/instagram';
+@import 'sections/home/founders';
+@import 'sections/home/too-late';
+
+/* ==========================================================================
+    OUR APPROACH
+    ========================================================================== */
+@import 'sections/approach/advantages';
+@import 'sections/approach/our-goal';
+@import 'sections/approach/strives';
+@import 'sections/approach/strives-2';
+@import 'sections/approach/approach-stages';

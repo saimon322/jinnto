@@ -1,0 +1,143 @@
+.approach-stages {
+    padding: 170px 0;
+    overflow-y: hidden;
+
+    &__heading {
+        text-align: center;
+        max-width: 415px;
+        margin: 0 auto 20px;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        position: relative;
+        padding-top: 80px;
+    }
+
+    &__content-background {
+        display: none;
+
+        @include media-up(md) {
+            display: block;
+            pointer-events: none;
+            top: 0;
+            position: absolute;
+            width: 680px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__stage {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: min-content min-content;
+        align-items: center;
+
+        @include media-up(xl) {
+            column-gap: 50px;
+        }
+    }
+
+    &__stage + &__stage {
+        margin-top: 40px;
+
+        @include media-up(md) {
+            margin-top: 80px;
+        }
+    }
+
+    &__stage-img-1 {
+        height: 250px;
+        object-fit: contain;
+        grid-area: b;
+    }
+
+    &__stage-img-2 {
+        margin-left: auto;
+        object-fit: contain;
+        grid-area: c;
+    }
+
+    &__stage-title {
+        margin-bottom: 26px;
+    }
+
+    &__stage-text {
+        position: relative;
+        @include text-17;
+        color: $blue-80;
+        grid-area: a;
+
+        p {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.approach-stages__stages .approach-stages__stage:nth-child(1) {
+    .approach-stages__stage-title {
+        color: $pink;
+    }
+
+    .approach-stages__stage-text::after {
+        position: absolute;
+        bottom: -80px;
+        content: url('../img/icons/red-bottle.svg');
+
+        @include media-up(md) {
+            display: none;
+        }
+    }
+}
+
+.approach-stages__stages .approach-stages__stage:nth-child(1) {
+    grid-template-areas:
+        'a b'
+        'c c';
+
+    @include media-up(md) {
+        grid-template-columns: minmax(100px, 160px) minmax(250px, 360px) minmax(
+                240px,
+                1fr
+            );
+        grid-template-areas: 'b a c';
+    }
+}
+
+.approach-stages__stages .approach-stages__stage:nth-child(2) {
+    grid-template-areas:
+        'a b'
+        'c c';
+
+    @include media-up(md) {
+        grid-template-columns: minmax(240px, 1fr) minmax(250px, 360px) minmax(
+                100px,
+                160px
+            );
+        grid-template-areas: 'c a b';
+    }
+
+    .approach-stages__stage-title {
+        color: $green;
+    }
+
+    .approach-stages__stage-text::after {
+        position: absolute;
+        bottom: -120px;
+        right: -110px;
+        content: url('../img/icons/green-bottle.svg');
+
+        @include media-up(md) {
+            display: none;
+        }
+    }
+}

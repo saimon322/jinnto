@@ -1,0 +1,44 @@
+.strives-2 {
+    position: relative;
+    z-index: 15;
+    padding: 50px 0;
+
+    @include media-up(md) {
+        padding: 100px 0;
+    }
+
+    &__img-wrapper {
+        order: 2;
+
+        @include media-up(md) {
+            order: 2;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: $cyan;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            bottom: -30px;
+            right: -20px;
+            z-index: -1;
+
+            @include media-up(md) {
+                width: 100px;
+                height: 100px;
+                right: auto;
+                left: -30px;
+            }
+        }
+    }
+
+    &__content {
+        order: 1;
+
+        @include media-up(md) {
+            order: 1;
+        }
+    }
+}

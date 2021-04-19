@@ -1,0 +1,72 @@
+.strives {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    z-index: 15;
+
+    @include media-up(xl) {
+        padding-top: 95px;
+        padding-bottom: 110px;
+    }
+
+    &__fact-star {
+        margin-top: 0;
+        margin-bottom: 104px;
+        height: 200px;
+    }
+
+    &__bg-dot {
+        display: none;
+
+        @include media-up(lg) {
+            display: block;
+            position: absolute;
+            top: 185px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+
+    &__img-wrapper {
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            display: block;
+            z-index: -1;
+        }
+
+        &::before {
+            background-color: $green;
+            width: 95px;
+            height: 95px;
+            bottom: -30px;
+            left: -30px;
+
+            @include media-up(md) {
+                top: -40px;
+                left: -60px;
+                width: 146px;
+                height: 146px;
+            }
+        }
+
+        &::after {
+            background-color: $yellow;
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            right: -30px;
+
+            @include media-up(md) {
+                top: auto;
+                bottom: 20px;
+                right: -40px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}

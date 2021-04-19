@@ -59,39 +59,11 @@
         </div>
     </section><!-- /.about-us -->
 
-    <section class="what-inside">
-        <div class="what-inside__content container">
-            <h4 class="what-inside__subtitle">
-                What’s inside?
-            </h4>
-            <h2 class="what-inside__title">
-                Everything to think outside the box
-            </h2>
-        </div>
-        <div class="stars" data-aos="fade-in" data-aos-delay="200">
-            <div class="star">
-                <svg><use xlink:href='#star'></use></svg>
-            </div>
-            <div class="star">
-                <svg><use xlink:href='#star'></use></svg>
-            </div>
-            <div class="star">
-                <svg><use xlink:href='#star'></use></svg>
-            </div>
-            <div class="star">
-                <svg><use xlink:href='#star'></use></svg>
-            </div>
-            <div class="star">
-                <svg><use xlink:href='#star'></use></svg>
-            </div>
-            <div class="star">
-                <svg><use xlink:href='#star'></use></svg>
-            </div>
-            <div class="star">
-                <svg><use xlink:href='#star'></use></svg>
-            </div>
-        </div>
-    </section><!-- /.what-inside -->
+    <%=_.template(require('../parts/fact-star.html'))({
+        subtitle: "What’s inside?",
+        title: "Everything to think outside the box",
+    }) %>
+    <!-- /.fact-star -->
 
     <section class="box-section">
         <h2 class="visually-hidden">Box</h2>
@@ -100,7 +72,7 @@
                 <img src="img/base/box.png" alt="">
             </div>
             <p class="box-section__text">
-                One box — one comprehensive game that activates six innate superpowers of 5-10 year-olds. But how do kids know what to do first? Emma and David will help them! 
+                One box — one comprehensive game that activates six innate superpowers of 5-10 year-olds. But how do kids know what to do first? Emma and David will help them!
             </p>
         </div>
     </section><!-- /.box-section -->
@@ -200,7 +172,7 @@
                 </div>
             </div>
         </div><!-- /.stage -->
-        
+
         <div class="stage">
             <div class="stage__box">
                 <div class="stage__content">
@@ -257,7 +229,7 @@
                 <div class="stage__line stage__line--mobile">
                     <svg width="211" height="464" viewBox="0 0 211 464" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M178.956 1C203.259 12 222.606 69.6137 199.5 118C157 207 -66.7318 215.837 21.1566 463" stroke="#2A3B5E" stroke-opacity="0.5" stroke-dasharray="3 9"/>
-                    </svg>                        
+                    </svg>
                 </div>
                 <div class="stage__line stage__line--desktop">
                     <svg width="806" height="577" viewBox="0 0 806 577" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,7 +239,7 @@
                 </div>
             </div>
         </div><!-- /.stage -->
-        
+
         <div class="stage">
             <div class="stage__box">
                 <div class="stage__content">
@@ -495,7 +467,7 @@
                             </div>
                         </div>
                     </div>
-                
+
                     <!-- Swiper navigation -->
                     <div class="swiper-button swiper-prev">
                         <svg width='12' height='12'>

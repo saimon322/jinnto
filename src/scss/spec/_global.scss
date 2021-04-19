@@ -13,6 +13,8 @@ html ::before {
 
 body {
     position: relative;
+    display: flex;
+    flex-direction: column;
     min-width: 320px;
     margin: 0;
     padding: 0;
@@ -23,6 +25,7 @@ body {
     word-wrap: break-word;
     background-color: #fff;
     overflow-x: hidden;
+    min-height: 100vh;
 
     &.overflow {
         overflow: hidden;
@@ -33,7 +36,7 @@ a {
     color: $blue;
     text-decoration: none;
     cursor: pointer;
-    transition: .25s;
+    transition: 0.25s;
 
     &:hover {
         color: $red;
@@ -111,7 +114,7 @@ h3 {
     @include media-up(lg) {
         font-weight: bold;
         font-size: 24px;
-        line-height: 38px;        
+        line-height: 38px;
     }
 }
 
@@ -139,7 +142,7 @@ h4 {
     }
 
     position: relative;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -164,10 +167,10 @@ h4 {
 
     &--out {
         text-indent: 0;
-    
+
         &:before {
             left: -25px;
-    
+
             @include media-up(md) {
                 left: -29px;
             }
@@ -175,20 +178,19 @@ h4 {
     }
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
-input[type="text"],
+input[type='text'],
 textarea {
     width: 100%;
     font-size: 15px;
     line-height: 1.5;
     font-family: inherit;
-    background-color: #fff;
     border-radius: 50px;
     border: none;
-    box-shadow: 0 0 0px 1000px #fff inset !important;
 
     &:hover,
     &:focus {
@@ -217,4 +219,5 @@ svg {
 
 .site-main {
     position: relative;
+    flex: 1 0 auto;
 }
