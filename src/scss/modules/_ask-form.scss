@@ -1,8 +1,12 @@
 .ask-form {
     padding: 50px 0 70px;
 
+    @include media-up(md) {
+        padding: 100px 0;
+    }
+
     @include media-up(lg) {
-        padding: 70px 0;
+        padding: 220px 0 120px;
     }
 
     &__wrapper {
@@ -13,7 +17,7 @@
     &__images {
         display: none;
 
-        @include media-up(md) {
+        @include media-up(lg) {
             display: block;
             position: absolute;
             top: 0;
@@ -26,7 +30,7 @@
     }
 
     &__img {
-        @include media-up(md) {
+        @include media-up(lg) {
             position: absolute;
             width: 140px;
             height: 310px;
@@ -36,16 +40,20 @@
 
         @include media-up(lg) {
             height: 400px;
+            width: 150px;
+        }
+
+        @include media-up(xl) {
             width: 200px;
         }
 
-        &--left {
+        &:nth-child(1) {
             @include media-up(md) {
                 left: 0;
             }
         }
 
-        &--right {
+        &:nth-child(2) {
             @include media-up(md) {
                 right: 0;
             }
@@ -74,7 +82,7 @@
     &__form {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 160px 1fr;
+        grid-template-rows: 44px 44px 160px 1fr;
         grid-template-areas:
             'a'
             'b'
@@ -85,11 +93,14 @@
         @include media-up(md) {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 130px 1fr;
+            grid-template-rows: 44px 130px 1fr;
             grid-template-areas:
                 'a b'
                 'c c'
                 'd d';
+        }
+
+        @include media-up(lg) {
             gap: 20px;
         }
     }
@@ -98,6 +109,7 @@
         position: relative;
         border-radius: 22px !important;
         background-color: $bg-green;
+        box-shadow: 0 0 0 1000px $bg-green inset;
         padding: 15px 20px;
 
         &--name {
@@ -125,13 +137,18 @@
     }
 
     &__btn {
-        margin: 0 auto;
+        font-size: 15px;
+        margin: 25px auto 0;
         width: 100%;
         display: block;
         padding: 12px 70px;
 
         @include media-up(md) {
             width: auto;
+        }
+
+        @include media-up(lg) {
+            margin-top: 40px;
         }
     }
 }

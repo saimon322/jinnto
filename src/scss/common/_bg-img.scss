@@ -1,4 +1,4 @@
-.background-img {
+.bg-img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -10,7 +10,7 @@
     z-index: -1;
 
     &--mobile {
-        @include media-up(sm) {
+        @include media-up(md) {
             display: none;
         }
     }
@@ -18,7 +18,7 @@
     &--desktop {
         display: none;
 
-        @include media-up(sm) {
+        @include media-up(md) {
             display: block;
         }
     }

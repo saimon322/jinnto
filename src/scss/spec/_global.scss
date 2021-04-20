@@ -183,7 +183,7 @@ ol {
     list-style: none;
 }
 
-input[type='text'],
+input,
 textarea {
     width: 100%;
     font-size: 15px;
@@ -191,6 +191,9 @@ textarea {
     font-family: inherit;
     border-radius: 50px;
     border: none;
+    appearance: none;
+    outline: none;
+    box-shadow: 0 0 0 1000px #fff inset;
 
     &:hover,
     &:focus {

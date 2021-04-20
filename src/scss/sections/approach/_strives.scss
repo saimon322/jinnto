@@ -1,8 +1,11 @@
 .strives {
     position: relative;
-    padding-top: 60px;
     padding-bottom: 80px;
     z-index: 15;
+
+    @include media-up(lg) {
+        padding-top: 60px;
+    }
 
     @include media-up(xl) {
         padding-top: 95px;
@@ -11,8 +14,11 @@
 
     &__fact-star {
         margin-top: 0;
-        margin-bottom: 104px;
-        height: 200px;
+        margin-bottom: 60px;
+
+        @include media-up(md) {
+            margin-bottom: 104px;
+        }
     }
 
     &__bg-dot {
@@ -58,7 +64,7 @@
             width: 60px;
             height: 60px;
             top: -30px;
-            right: -30px;
+            right: -10px;
 
             @include media-up(md) {
                 top: auto;

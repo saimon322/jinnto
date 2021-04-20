@@ -74,6 +74,7 @@
     &__text {
         font-size: 15px;
         line-height: 1.6;
+        color: $blue-80;
 
         @include media-up(md) {
             line-height: 34px;
