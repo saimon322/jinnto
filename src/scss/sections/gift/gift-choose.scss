@@ -30,6 +30,10 @@
 
         &--desktop {
             object-fit: contain;
+
+            @include media-up(md) {
+                display: block;
+            }
         }
     }
 
@@ -46,8 +50,11 @@
         justify-content: start;
         column-gap: 20px;
 
-        @include media-up(lg) {
+        @include media-up(md) {
             grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include media-up(lg) {
             justify-content: center;
             margin-top: 65px;
             column-gap: 40px;
@@ -82,12 +89,20 @@
     }
 
     &__item-img {
-        width: 235px;
+        width: 100%;
         border-radius: 10px;
-        height: 180px;
         object-fit: cover;
         pointer-events: none;
         margin: 0 auto;
+        height: 180px;
+
+        @include media-up(md) {
+            height: 150px;
+        }
+
+        @include media-up(lg) {
+            height: 180px;
+        }
     }
 
     &__item-title {
