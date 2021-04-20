@@ -25,9 +25,9 @@
     <!-- /.banner -->
 
     <section class="gift-how">
-        <img src="img/bg/gift-how-mobile.svg" class="background-img background-img--mobile gift-how__background-img">
-        <img src="img/bg/gift-how-desktop.svg" class="background-img gift-how__background-img background-img--desktop">
-        <div class="container">
+        <img src="img/bg/gift-how-mobile.svg" class="background-img background-img--mobile gift-how__background-img--mobile">
+        <div class="container gift-how__container">
+            <img src="img/bg/gift-how-desktop.svg" class="background-img gift-how__background-img--desktop background-img--desktop">
             <div class="gift-how__heading">
                 <h2 class="gift-how__title title-with-underline title-with-underline--yellow">
                     How it works
@@ -75,11 +75,41 @@
     <!-- /.gift-how -->
 
     <section class="gift-choose">
+        <div class="gift-choose__star-block">
+            <img src="img/bg/stars-bg-mobile.svg" class="background-img background-img--mobile gift-choose__bg-img--mobile">
+            <img src="img/bg/default-stars-desktop.svg" class="background-img background-img--desktop gift-choose__bg-img--desktop">
+        </div>
         <div class="container">
             <div class="gift-choose__heading">
                 <h2 class="gift-choose__title title-with-underline title-with-underline--cyan">
                     How it works
                 </h2>
+            </div>
+            <div class="gift-choose__content">
+                <a href="#" class="gift-choose__item">
+                    <img src="img/base/choose-box-1.jpg" class="gift-choose__item-img">
+                    <h4 class="gift-choose__item-title">
+                        Skydiver Project
+                    </h4>
+                </a>
+                <a href="#" class="gift-choose__item">
+                    <img src="img/base/choose-box-1.jpg" class="gift-choose__item-img">
+                    <h4 class="gift-choose__item-title">
+                        Projector Project
+                    </h4>
+                </a>
+                <a href="#" class="gift-choose__item">
+                    <img src="img/base/choose-box-3.jpg" class="gift-choose__item-img">
+                    <h4 class="gift-choose__item-title">
+                        Gears
+                    </h4>
+                </a>
+                <a href="#" class="gift-choose__item">
+                    <img src="img/base/choose-box-4.jpg" class="gift-choose__item-img">
+                    <h4 class="gift-choose__item-title">
+                        Solar System
+                    </h4>
+                </a>
             </div>
         </div>
     </section>
@@ -87,7 +117,35 @@
     <%=_.template(require('../parts/faq.html'))() %>
     <!-- /.faq -->
 
-    <%=_.template(require('../parts/ask-form.html'))() %>
+    <section class="ask-form gift-ask-form">
+        <div class="container">
+            <div class="ask-form__wrapper">
+                <div class="ask-form__images">
+                    <img src="img/base/hero1.png" alt="image" class="ask-form__img ask-form__img--left">
+                    <img src="img/base/hero2.png" alt="image" class="ask-form__img ask-form__img--right">
+                </div>
+                <div class="ask-form__content">
+                    <div class="ask-form__title-wrapper">
+                        <h2 class="ask-form__title title-dot">
+                            Feel free to ask <br>
+                            any questions you have:)
+                        </h2>
+                    </div>
+                    <form class="ask-form__form">
+                        <input class="ask-form__input ask-form__input--name" type="text" placeholder="Name">
+                        <input class="ask-form__input ask-form__input--contact" type="text" placeholder="Phone or email">
+                        <textarea placeholder="Question" class="ask-form__input ask-form__input--message"></textarea>
+                        <div class="ask-form__btn-wrapper">
+                            <button type="submit" class="ask-form__btn btn btn--red">
+                                Sent
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- /.ask-form -->
 </main>
 

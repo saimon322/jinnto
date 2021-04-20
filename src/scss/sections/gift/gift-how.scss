@@ -2,12 +2,31 @@
     position: relative;
     padding: 50px 0 70px;
 
-    &__background-img {
-        top: 30px;
+    @include media-up(lg) {
+        padding: 100px 0 120px;
+    }
 
-        @include media-up(md) {
-            top: -70px;
-            object-fit: contain;
+    &__container {
+        position: relative;
+    }
+
+    &__background-img {
+        &--mobile {
+            top: 30px;
+        }
+
+        &--desktop {
+            @include media-up(sm) {
+                display: none;
+            }
+
+            @include media-up(md) {
+                display: block;
+                top: 30px;
+                object-fit: contain;
+                left: -30px;
+                height: 420px;
+            }
         }
     }
 
