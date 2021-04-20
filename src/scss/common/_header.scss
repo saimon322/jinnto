@@ -7,6 +7,19 @@
         padding-bottom: 103px;
     }
 
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        transform: translateY(-100%);
+        pointer-events: none;
+    }
+
     &__wrapper {
         position: absolute;
         left: 0;
