@@ -7,6 +7,8 @@
         grid-template-columns: 1fr 1fr;
         row-gap: 70px;
         column-gap: 30px;
+        max-width: 890px;
+        margin: 0 auto;
     }
 
     &__advantage {
@@ -14,25 +16,26 @@
         text-align: center;
         border-radius: 20px;
         color: #fff;
-        padding: 55px 40px;
+        padding: 55px 40px 30px;
 
-        @include media-up(md) {
-            padding: 60px 50px;
+        @include media-up(lg) {
+            min-height: 245px;
+            padding: 60px 50px 10px;
         }
 
-        &--green {
+        &:nth-child(1) {
             background-color: $green;
         }
 
-        &--orange {
+        &:nth-child(2) {
             background-color: $orange;
         }
 
-        &--pink {
+        &:nth-child(3) {
             background-color: $pink;
         }
 
-        &--cyan {
+        &:nth-child(4) {
             background-color: $cyan;
         }
     }

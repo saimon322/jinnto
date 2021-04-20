@@ -1,0 +1,184 @@
+.lk-form {
+    padding: 40px 0 50px;
+    background: $bg-green;
+
+    @include media-up(md) {
+        padding: 90px 0;
+    }
+
+    @include media-up(lg) {
+        padding: 120px 0;
+    }
+
+    &__bg {
+        z-index: 0;
+    }
+
+    &__form {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: #fff;
+        border-radius: 10px;
+
+        @include media-up(md) {
+            padding: 60px 20px;
+            border-radius: 20px;
+        }
+    }
+
+    &__content {
+        max-width: 340px;
+        margin: 0 auto;
+        text-align: center;
+
+        @include media-up(md) {
+            text-align: left;
+        }
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 33px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        color: $blue-80;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__fields {
+        margin-bottom: 33px;
+
+        @include media-up(md) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__field {
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        display: block;
+        text-align: left;
+        font-size: 12px;
+        line-height: 180%;
+        margin-bottom: 4px;
+        cursor: pointer;
+
+        @include media-up(md) {
+            display: inline-block;
+        }
+    }
+
+    &__input {
+        border: 1px solid $blue-10;
+        padding: 10px 20px;
+    }
+
+    &__forgot-password {
+        margin: 0 auto;
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: underline;
+        color: $blue-80;
+    }
+
+    &__submit {
+        width: 100%;
+        font-size: 15px;
+        line-height: 18px;
+        padding: 12px 14px;
+    }
+
+    &__footer {
+        padding-top: 32px;
+
+        @include media-up(md) {
+            position: relative;
+        }
+        
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            border-top: 1px dashed $blue-20;
+        }
+    }
+
+    &__sign-with {
+        position: relative;
+        text-align: center;
+        font-size: 15px;
+        line-height: 18px;
+        color: $blue-80;
+        margin-top: -9px;
+
+        span {
+            padding: 0 7px;
+            background: #fff;
+        }
+    }
+
+    &__socials {
+        margin: 32px 0;
+
+        @include media-up(md) {
+            margin-top: 20px;
+            display: flex;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: $blue;
+        color: $blue;
+        font-size: 15px;
+        line-height: 18px;
+
+        @include media-up(md) {
+            flex: 1 1 0;
+        }
+
+        &:hover {
+            background: $blue;
+            color: #fff;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+
+            @include media-up(md) {
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+        }
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    &__refer {
+        font-size: 14px;
+        line-height: 17px;
+
+        a {
+            color: $red;
+            text-decoration: underline;
+        }
+    }
+}
