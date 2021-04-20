@@ -1,0 +1,53 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "Email sent | Jinnto",
+    menu: {}
+}) %>
+
+<main class="site-main">
+    <div class="lk-form">
+        <img src="img/bg/lk-forms-bg.svg" alt="" class="lk-form__bg bg-img bg-img--desktop">
+        <div class="container">
+            <h1 class="visually-hidden">Jinnto email sent</h1>
+            <form class="lk-form__form">
+                <div class="lk-form__content">
+                    <div class="lk-form__header">
+                        <h2 class="lk-form__title title-underline title-underline--cyan">
+                            Code has been sent
+                        </h2>
+                    </div>
+                    <p class="lk-form__text">
+                        Please check your inbox and click in the received link to reset a password
+                    </p>
+                    <div class="lk-form__fields"></div>
+                    <button type="submit" class="lk-form__submit btn btn--red">
+                        Sign in
+                    </button>
+                    <div class="lk-form__footer">
+                        <div class="lk-form__sign-with">
+                            <span>or Sign in with</span>
+                        </div>
+                        <div class="lk-form__socials">
+                            <a href="#" class="lk-form__social btn">
+                                <svg width='20' height='16'>
+                                    <use xlink:href='#social-facebook'></use>
+                                </svg>
+                                Facebook
+                            </a>
+                            <a href="#" class="lk-form__social btn">
+                                <svg width='20' height='16'>
+                                    <use xlink:href='#social-google'></use>
+                                </svg>
+                                Google
+                            </a>
+                        </div>
+                        <p class="lk-form__refer">
+                            Didn’t receive the link? <a href="#">Resend</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<%=_.template(require('../parts/footer.html'))() %>

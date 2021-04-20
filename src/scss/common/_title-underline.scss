@@ -1,5 +1,6 @@
-.title-with-underline {
+.title-underline {
     position: relative;
+    z-index: 1;
     display: inline-block;
 
     &::after {
