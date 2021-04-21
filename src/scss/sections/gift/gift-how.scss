@@ -10,9 +10,13 @@
         position: relative;
     }
 
-    &__background-img {
+    &__bg-img {
         &--mobile {
             top: 30px;
+
+            @include media-up(sm) {
+                display: none;
+            }
         }
 
         &--desktop {
