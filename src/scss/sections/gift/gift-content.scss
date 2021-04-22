@@ -1,0 +1,24 @@
+.gift-content {
+    &__box-content {
+        display: block;
+    }
+
+    &__sub-content {
+        display: none;
+    }
+
+    &__box-content,
+    &__sub-content {
+        animation: fade 1.5s ease;
+    }
+
+    &--sub-content {
+        .gift-content__box-content {
+            display: none;
+        }
+
+        .gift-content__sub-content {
+            display: block;
+        }
+    }
+}
