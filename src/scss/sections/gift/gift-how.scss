@@ -10,9 +10,13 @@
         position: relative;
     }
 
-    &__background-img {
+    &__bg-img {
         &--mobile {
             top: 30px;
+
+            @include media-up(sm) {
+                display: none;
+            }
         }
 
         &--desktop {
@@ -139,9 +143,13 @@
     }
 
     &__item-text {
-        max-width: 260px;
+        max-width: 200px;
         margin: 0 auto;
 
         @include text-20;
+
+        @include media-up(lg) {
+            max-width: 260px;
+        }
     }
 }
