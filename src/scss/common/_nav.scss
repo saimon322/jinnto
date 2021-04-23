@@ -8,7 +8,6 @@
     height: calc(var(--vh, 1vh) * 100);
     padding-top: 77px;
     background: #fff;
-    transition-property: transform, box-shadow;
     overflow: auto;
     
     @include media-up(md) {
@@ -23,6 +22,7 @@
     }
 
     &.transitioned {
+        transition-property: transform, box-shadow;
         transition-timing-function: cubic-bezier(0.36, 0, 0.66, -0.36);
         transition-duration: .5s;
     }

@@ -2,6 +2,10 @@
     position: relative;
     z-index: 20;
 
+    @include media-up(lg) {
+        margin-top: -100px;
+    }
+
     &__content {
         margin: 0 -20px;
         background-color: $bg-cyan;

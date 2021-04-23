@@ -3,11 +3,11 @@
     background: $bg-green;
 
     @include media-up(md) {
-        padding: 90px 0;
+        padding: 100px 0;
     }
 
     @include media-up(lg) {
-        padding: 120px 0;
+        padding: 120px 0 200px;
     }
 
     &__bg {

@@ -1,5 +1,6 @@
 .ask-form {
     padding: 50px 0 70px;
+    overflow: hidden;
 
     @include media-up(lg) {
         padding: 200px 0;
@@ -7,7 +8,24 @@
 
     &__wrapper {
         position: relative;
-        z-index: 5;
+
+        &:after {
+            @include media-up(lg) {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: -10px;
+                transform: translateY(100%);
+                display: block;
+                width: 182px;
+                height: 122px;
+                background: url(../img/icons/green-plane.svg) center no-repeat;
+            }
+
+            @media (min-width: 1300px) {
+                right: -90px;
+            }
+        }
     }
 
     &__images {
@@ -26,33 +44,22 @@
     }
 
     &__img {
-        @include media-up(lg) {
-            position: absolute;
-            width: 140px;
-            height: 310px;
-            object-fit: contain;
-            bottom: -60px;
-        }
-
-        @include media-up(lg) {
-            height: 400px;
-            width: 150px;
-        }
+        position: absolute;
+        width: 150px;
+        height: 313px;
+        object-fit: contain;
+        bottom: 15px;
 
         @include media-up(xl) {
             width: 200px;
         }
 
-        &:nth-child(1) {
-            @include media-up(md) {
-                left: 0;
-            }
+        &:first-child {
+            left: 0;
         }
 
-        &:nth-child(2) {
-            @include media-up(md) {
-                right: 0;
-            }
+        &:last-child {
+            right: 0;
         }
     }
 

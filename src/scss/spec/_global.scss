@@ -218,6 +218,10 @@ svg {
         margin: 0 auto;
         padding: 0 30px;
     }
+
+    &--sm {
+        max-width: 1140px;
+    }
 }
 
 .site-main {

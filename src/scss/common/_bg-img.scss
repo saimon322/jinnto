@@ -22,4 +22,8 @@
             display: block;
         }
     }
+
+    &--contain {
+        object-fit: contain;
+    }
 }
