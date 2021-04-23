@@ -109,11 +109,8 @@
         justify-content: start;
         column-gap: 20px;
 
-        @include media-up(md) {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
         @include media-up(lg) {
+            grid-template-columns: repeat(4, 1fr);
             overflow-x: inherit;
             justify-content: center;
             margin-top: 65px;
@@ -142,7 +139,7 @@
                 display: block;
                 position: absolute;
                 right: -10px;
-                width: 10px;
+                width: 20px;
                 height: 1px;
             }
         }
