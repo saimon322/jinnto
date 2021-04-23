@@ -1,0 +1,93 @@
+.refer-share {
+    &__title {
+        &::after {
+            height: 10px;
+        }
+    }
+
+    &__wrapper {
+        @include media-up(lg) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__star-block {
+        width: 100%;
+        border-radius: 20px;
+        background-color: $blue;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+        background-image: url(img/bg/refer-stars-mobile.svg);
+
+        &:last-child {
+            margin-bottom: 0;
+            background-size: cover;
+        }
+
+        @include media-up(md) {
+            margin: 0 auto 20px;
+            max-width: 600px;
+            background-image: url(img/bg/refer-stars-desktop.svg);
+        }
+
+        @include media-up(lg) {
+            max-width: 520px;
+            margin: 0;
+            margin-right: 20px;
+            padding: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__text {
+        @include text-20;
+        margin: 8px 0 16px;
+    }
+
+    &__social-list {
+        display: flex;
+    }
+
+    &__social-list-item {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: $red;
+    }
+
+    &__share-row {
+        position: relative;
+    }
+
+    &__share-input {
+        padding: 5px 120px 5px 25px;
+        line-height: 34px;
+        color: $blue-80;
+    }
+
+    &__copy-button {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        bottom: 0;
+    }
+}
