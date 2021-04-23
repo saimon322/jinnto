@@ -1,0 +1,9 @@
+.refer-banner {
+    &__title {
+        max-width: 100%;
+
+        @include media-up(sm) {
+            max-width: 100%;
+        }
+    }
+}
