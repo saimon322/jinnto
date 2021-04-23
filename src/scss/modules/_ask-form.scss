@@ -2,8 +2,12 @@
     padding: 50px 0 70px;
     overflow: hidden;
 
+    @include media-up(md) {
+        padding: 100px 0;
+    }
+
     @include media-up(lg) {
-        padding: 200px 0;
+        padding: 70px 0;
     }
 
     &__wrapper {
