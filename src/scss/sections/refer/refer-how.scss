@@ -1,0 +1,69 @@
+.refer-how {
+    position: relative;
+    padding: 50px 0 60px;
+
+    @include media-up(lg) {
+        background-image: url(img/bg/refer-how-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 120px 0 67px;
+    }
+
+    &__bg {
+        &--desktop {
+            height: 312px;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__content {
+        background-image: url(img/bg/refer-how-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include media-up(sm) {
+            background: none;
+        }
+    }
+
+    &__item {
+        &:nth-child(1) {
+            .refer-how__item-title {
+                color: $green;
+            }
+        }
+
+        &:nth-child(2) {
+            .refer-how__item-title {
+                color: $purple;
+            }
+        }
+
+        &:nth-child(3) {
+            .refer-how__item-title {
+                color: $pink;
+            }
+        }
+    }
+
+    &__item-img-wrapper {
+        width: 100px;
+        height: 100px;
+
+        @include media-up(lg) {
+            width: 135px;
+            height: 135px;
+        }
+    }
+
+    &__item-text {
+        @include media-up(md) {
+            max-width: 100%;
+        }
+    }
+}
