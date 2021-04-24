@@ -7,7 +7,7 @@ if (sharePanels) {
 
         shareButton.addEventListener('click', () => {
             shareInput.select();
-            document.execCommand("copy");
+            document.execCommand('copy');
             shareButton.innerHTML = 'Copied!';
         });
     });
