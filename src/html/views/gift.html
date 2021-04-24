@@ -1,25 +1,27 @@
 <%=_.template(require('../parts/header.html'))({
-    title: "Jinnto",
+    title: "Make a gift | Jinnto",
     menu: {gift: 'current-menu-item'}
 }) %>
 
 <main class="site-main">
     <section class="banner">
-        <img src="img/base/gift-banner-bg--mob.jpg" alt="back" class="banner__img banner__img--mobile">
-        <img src="img/base/gift-banner-bg.jpg" alt="back" class="banner__img banner__img--desktop">
+        <div class="banner__images" data-aos="fade-in">
+            <img src="img/base/gift-banner-bg--mob.jpg" alt="back" class="banner__img banner__img--mobile">
+            <img src="img/base/gift-banner-bg.jpg" alt="back" class="banner__img banner__img--desktop">
+        </div>
         <div class="container banner__wrapper">
-            <h1 class="banner__title">
+            <h1 class="banner__title" data-aos="fade-up" data-aos-delay="100">
                 Give the gift of playtime <br>
                 with Jinnto
             </h1>
-            <button type="button" class="banner__switch-panel">
+            <div class="banner__switch-panel" data-aos="fade-up" data-aos-delay="200">
                 <div class="banner__switch-panel-text">
                     Gift box
                 </div>
                 <div class="banner__switch-panel-text">
                     Gift subscriptions
                 </div>
-            </button>
+            </div>
         </div>
     </section>
     <!-- /.banner -->
@@ -37,7 +39,7 @@
                         </h2>
                     </div>
                     <div class="gift-how__content">
-                        <div class="gift-how__item">
+                        <div class="gift-how__item" data-aos="fade-up" data-aos-delay="100">
                             <div class="gift-how__item-img-wrapper">
                                 <img src="img/base/gift-how-1.png" alt="image" class="gift-how__item-img">
                             </div>
@@ -48,7 +50,7 @@
                                 Choose a gift box
                             </p>
                         </div>
-                        <div class="gift-how__item">
+                        <div class="gift-how__item" data-aos="fade-up" data-aos-delay="200">
                             <div class="gift-how__item-img-wrapper">
                                 <img src="img/base/gift-how-2.png" alt="image" class="gift-how__item-img">
                             </div>
@@ -60,7 +62,7 @@
                                 information
                             </p>
                         </div>
-                        <div class="gift-how__item">
+                        <div class="gift-how__item" data-aos="fade-up" data-aos-delay="300">
                             <div class="gift-how__item-img-wrapper">
                                 <img src="img/base/gift-how-3.png" alt="image" class="gift-how__item-img">
                             </div>
@@ -75,12 +77,13 @@
                     </div>
                 </div>
             </section>
+
             <section class="gift-choose">
                 <div class="gift-choose__star-block">
                     <img src="img/bg/stars-bg-mobile.svg" class="bg-img bg-img--mobile gift-choose__bg-img--mobile">
                     <img src="img/bg/default-stars-desktop.svg" class="bg-img bg-img--desktop gift-choose__bg-img--desktop">
                 </div>
-                <div class="container">
+                <div class="container" data-aos="fade-up">
                     <div class="gift-choose__heading">
                         <h2 class="gift-choose__title title-underline title-underline--cyan">
                             Choose the perfect box
