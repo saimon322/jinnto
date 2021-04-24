@@ -54,28 +54,6 @@
         margin: 8px 0 16px;
     }
 
-    &__social-list {
-        display: flex;
-    }
-
-    &__social-list-item {
-        margin-right: 16px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
-    &__social-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background-color: $red;
-    }
-
     &__share-row {
         position: relative;
     }

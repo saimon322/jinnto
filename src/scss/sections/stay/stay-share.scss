@@ -1,0 +1,57 @@
+.stay-share {
+    padding: 70px 0;
+
+    @include media-up(md) {
+        padding: 120px 0 100px;
+    }
+
+    &__wrapper {
+        border-radius: 20px;
+        background-color: $blue;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 24px;
+        color: #fff;
+        background-image: url(img/bg/stay-share-mobile.svg);
+
+        @include media-up(md) {
+            background-image: url(img/bg/stay-share-desktop.svg);
+            text-align: center;
+        }
+
+        @include media-up(lg) {
+            padding: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 12px;
+
+        &::after {
+            height: 10px;
+        }
+    }
+
+    &__social-list {
+        margin-top: 20px;
+        justify-content: flex-end;
+
+        @include media-up(md) {
+            justify-content: center;
+        }
+    }
+
+    &__text {
+        @include text-20;
+
+        @include media-up(md) {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+}
