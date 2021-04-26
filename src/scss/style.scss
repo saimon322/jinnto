@@ -28,6 +28,7 @@
 @import 'common/section-advantages';
 @import 'common/bg-img';
 @import 'common/title-underline';
+@import 'common/circles';
 
 /* ==========================================================================
     MODULES
@@ -72,3 +73,10 @@
 @import 'sections/gift/gift-choose';
 @import 'sections/gift/gift-ask-form';
 @import 'sections/gift/gift-content';
+
+/* ==========================================================================
+    REFER
+    ========================================================================== */
+@import 'sections/refer/refer-banner';
+@import 'sections/refer/refer-how';
+@import 'sections/refer/refer-share';
