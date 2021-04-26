@@ -17,9 +17,9 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 7. [New password](https://jinnto.com/new-password.html) – 1 h.
 8. [Make a gift Box](http://jinnto.com/gift.html) – 6 h.
 9. [Make a gift Subs](http://jinnto.com/gift.html) – 5 h.
-10. Refer a friend – 4 h.
+10. [Refer a friend](http://jinnto.com/refer.html) – 4 h.
 11. Product page – 9 h.
-12. Subscription –  4 h.
+12. [Subscription](http://jinnto.com/subscription.html) –  4 h.
 13. Blog – 13 h.
 14. Article – 8 h.
 15. Author – 5 h.
@@ -41,6 +41,7 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 31. Promo page template – 3 h.
 32. Checkout – 8 h.
 33. 404 – 1 h.
+34. [Stay with](http://jinnto.com/stay.html) - 4h.
 
 ---
 ## Requirements
