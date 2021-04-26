@@ -138,7 +138,6 @@
     }
 
     &__switch-panel {
-        cursor: pointer;
         position: relative;
         display: flex;
         background-color: #fff;
@@ -148,7 +147,6 @@
         margin-top: 40px;
         width: 100%;
         max-width: 430px;
-        outline: none;
 
         @include media-up(lg) {
             margin-top: 55px;
