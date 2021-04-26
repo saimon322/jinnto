@@ -90,7 +90,7 @@
         &--desktop {
             object-fit: contain;
 
-            @include media-up(md) {
+            @include media-up(lg) {
                 display: block;
             }
         }
