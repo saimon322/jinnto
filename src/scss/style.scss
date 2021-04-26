@@ -29,6 +29,7 @@
 @import 'common/bg-img';
 @import 'common/title-underline';
 @import 'common/circles';
+@import 'common/social-list';
 
 /* ==========================================================================
     MODULES
@@ -80,3 +81,9 @@
 @import 'sections/refer/refer-banner';
 @import 'sections/refer/refer-how';
 @import 'sections/refer/refer-share';
+
+/* ==========================================================================
+    STAY
+    ========================================================================== */
+@import 'sections/stay/stay-share';
+@import 'sections/stay/stay-how';
