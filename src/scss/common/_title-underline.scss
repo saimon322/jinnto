@@ -29,6 +29,12 @@
         }
     }
 
+    &--blue {
+        &::after {
+            background-color: $cyan;
+        }
+    }
+
     &--yellow {
         &::after {
             background-color: $yellow;
