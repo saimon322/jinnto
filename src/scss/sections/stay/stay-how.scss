@@ -21,9 +21,6 @@
         background-size: contain;
 
         @include media-up(sm) {
-        }
-
-        @include media-up(sm) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             background: none;
