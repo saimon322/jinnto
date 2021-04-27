@@ -1,0 +1,33 @@
+.subscribe-now {
+    display: none;
+    transform: translateY(-50%);
+
+    @include media-up(lg) {
+        display: block;
+    }
+
+    &__wrapper {
+        background-color: $bg-cyan;
+        padding: 50px 0;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    &__content {
+        max-width: 600px;
+        margin: 20px auto 30px;
+        line-height: 34px;
+
+        @include text-20;
+
+        strong {
+            font-weight: 700;
+            color: $green;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        text-align: center;
+    }
+}
