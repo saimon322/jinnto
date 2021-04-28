@@ -26,10 +26,10 @@
 
             @include media-up(md) {
                 display: block;
-                top: 30px;
                 object-fit: contain;
-                left: -30px;
                 height: 420px;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
     }
