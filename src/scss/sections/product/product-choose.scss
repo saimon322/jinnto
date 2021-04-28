@@ -1,0 +1,25 @@
+.product-choose {
+    &__content {
+        grid-template-columns: repeat(3, minmax(230px, 1fr));
+
+        @include media-up(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media-up(xl) {
+            grid-template-columns: repeat(3, 320px);
+        }
+    }
+
+    &__img {
+        height: 180px;
+
+        @include media-up(lg) {
+            height: 200px;
+        }
+
+        @include media-up(xl) {
+            height: 250px;
+        }
+    }
+}
