@@ -1,4 +1,6 @@
 .product-stars {
+    padding-bottom: 60px;
+
     @include media-up(md) {
         padding: 50px 0;
     }
