@@ -1,0 +1,26 @@
+.product-box {
+    position: relative;
+    z-index: 5;
+
+    @include media-up(lg) {
+        transform: translateY(-50%);
+    }
+
+    &__wrapper {
+        background-color: $bg-cyan;
+        text-align: center;
+        padding: 50px 20px;
+        margin: 0 -20px;
+
+        @include media-up(md) {
+            border-radius: 15px;
+        }
+        @include media-up(lg) {
+            margin: 0;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+    }
+}
