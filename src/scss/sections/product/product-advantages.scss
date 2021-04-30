@@ -1,0 +1,17 @@
+.product-advantages__advantage {
+    &:nth-child(1) {
+        background-color: $cyan;
+    }
+
+    &:nth-child(2) {
+        background-color: $orange;
+    }
+
+    &:nth-child(3) {
+        background-color: $pink;
+    }
+
+    &:nth-child(4) {
+        background-color: $green;
+    }
+}

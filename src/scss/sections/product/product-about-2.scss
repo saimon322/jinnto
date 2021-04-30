@@ -35,13 +35,11 @@
     @include media-up(lg) {
         display: grid;
         flex-wrap: inherit;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 300px);
-        gap: -30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, max-content);
         grid-template-areas:
-            'b a a f'
-            'c a a e'
-            '. d d .';
+            'b a f'
+            'c d e';
     }
 
     &__item {
@@ -54,6 +52,8 @@
 
             @include media-up(lg) {
                 grid-area: a;
+                align-self: end;
+                margin-bottom: 0;
             }
         }
 
@@ -64,12 +64,15 @@
             @include media-up(lg) {
                 margin-bottom: 0;
                 width: 200px;
-                margin-top: 50px;
             }
 
             .product-about-information__item-text {
                 max-width: 170px;
                 margin: 20px auto 0;
+
+                @include media-up(lg) {
+                    max-width: 200px;
+                }
             }
         }
 
@@ -116,7 +119,7 @@
         &:nth-child(4) {
             @include media-up(lg) {
                 grid-area: d;
-                margin: 0 auto;
+                margin: 80px auto 0;
             }
 
             .product-about-information__item-img {
