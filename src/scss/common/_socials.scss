@@ -1,6 +1,12 @@
 .socials {
     display: flex;
 
+    &__item {
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+
     &__link {
         display: flex;
         justify-content: center;
@@ -8,11 +14,13 @@
         width: 36px;
         height: 36px;
         border-radius: 50%;
+        border: 1px solid $red;
         background: $red;
         color: #fff;
 
-        &:not(:last-child) {
-            margin-right: 16px;
+        &:hover {
+            background: #fff;
+            color: $red;
         }
     }
 }

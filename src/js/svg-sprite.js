@@ -3,6 +3,8 @@ import '../img/svg-sprite/social-facebook.svg';
 import '../img/svg-sprite/social-instagram.svg';
 import '../img/svg-sprite/social-youtube.svg';
 import '../img/svg-sprite/social-google.svg';
+import '../img/svg-sprite/social-telegram.svg';
+import '../img/svg-sprite/social-whatsapp.svg';
 import '../img/svg-sprite/play-btn.svg';
 import '../img/svg-sprite/star.svg';
 import '../img/svg-sprite/slider-arrow.svg';
