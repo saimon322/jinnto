@@ -1,0 +1,27 @@
+.product-about-3 {
+    text-align: center;
+    padding: 60px 0 50px;
+
+    @include media-up(lg) {
+        padding: 120px 0 180px;
+    }
+
+    &__title {
+        max-width: 270px;
+
+        @include media-up(md) {
+            max-width: 500px;
+        }
+    }
+
+    &__text {
+        @include text-20;
+        color: $blue-80;
+        margin: 20px 0;
+
+        @include media-up(lg) {
+            margin: 35px auto 20px;
+            max-width: 825px;
+        }
+    }
+}

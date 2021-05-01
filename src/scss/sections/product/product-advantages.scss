@@ -1,17 +1,25 @@
-.product-advantages__advantage {
-    &:nth-child(1) {
-        background-color: $cyan;
+.product-advantages {
+    padding: 180px 0 70px;
+
+    @include media-up(lg) {
+        padding: 306px 0 378px;
     }
 
-    &:nth-child(2) {
-        background-color: $orange;
-    }
+    &__advantage {
+        &:nth-child(1) {
+            background-color: $cyan;
+        }
 
-    &:nth-child(3) {
-        background-color: $pink;
-    }
+        &:nth-child(2) {
+            background-color: $orange;
+        }
 
-    &:nth-child(4) {
-        background-color: $green;
+        &:nth-child(3) {
+            background-color: $pink;
+        }
+
+        &:nth-child(4) {
+            background-color: $green;
+        }
     }
 }
