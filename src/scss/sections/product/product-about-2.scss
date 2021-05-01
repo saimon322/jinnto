@@ -1,0 +1,194 @@
+.product-about-2 {
+    padding: 50px 0 70px;
+    text-align: center;
+
+    &__title {
+        max-width: 270px;
+
+        &:after {
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @include media-up(md) {
+            max-width: 500px;
+        }
+    }
+
+    &__text {
+        @include text-20;
+        color: $blue-80;
+        margin: 20px 0;
+
+        @include media-up(lg) {
+            margin: 35px auto 20px;
+            max-width: 800px;
+        }
+    }
+}
+
+.product-about-information {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-up(lg) {
+        display: grid;
+        flex-wrap: inherit;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, max-content);
+        grid-template-areas:
+            'b a f'
+            'c d e';
+    }
+
+    &__item {
+        position: relative;
+        text-align: center;
+
+        &:nth-child(1) {
+            margin-bottom: 27px;
+            flex-basis: 100%;
+
+            @include media-up(lg) {
+                grid-area: a;
+                align-self: end;
+                margin-bottom: 0;
+            }
+        }
+
+        &:not(:nth-child(1)) {
+            margin-bottom: -30px;
+            flex-basis: 60%;
+
+            @include media-up(lg) {
+                margin-bottom: 0;
+                width: 200px;
+            }
+
+            .product-about-information__item-text {
+                max-width: 170px;
+                margin: 20px auto 0;
+
+                @include media-up(lg) {
+                    max-width: 200px;
+                }
+            }
+        }
+
+        &:last-child {
+            margin: 40px auto 0;
+
+            @include media-up(lg) {
+                margin: 0;
+            }
+        }
+
+        &:nth-child(odd) {
+            &:not(:nth-child(1)) {
+                margin-left: auto;
+
+                @include media-up(lg) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            @include media-up(lg) {
+                align-self: end;
+                grid-area: b;
+            }
+
+            .product-about-information__item-img {
+                background-color: $green;
+            }
+        }
+
+        &:nth-child(3) {
+            @include media-up(lg) {
+                grid-area: c;
+                margin-left: auto !important;
+            }
+
+            .product-about-information__item-img {
+                background-color: $pink;
+            }
+        }
+
+        &:nth-child(4) {
+            @include media-up(lg) {
+                grid-area: d;
+                margin: 80px auto 0;
+            }
+
+            .product-about-information__item-img {
+                background-color: $cyan;
+            }
+        }
+
+        &:nth-child(5) {
+            @include media-up(lg) {
+                grid-area: e;
+            }
+
+            .product-about-information__item-img {
+                background-color: $purple;
+            }
+        }
+
+        &:nth-child(6) {
+            @include media-up(lg) {
+                grid-area: f;
+                align-self: end;
+                margin-left: auto;
+            }
+
+            .product-about-information__item-img {
+                background-color: $yellow;
+            }
+        }
+    }
+
+    &__item-img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding: 15px;
+        object-fit: contain;
+
+        &--message-box {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 335px;
+            height: 409px;
+            object-fit: contain;
+
+            @include media-up(lg) {
+                width: 371.8px;
+                height: 455px;
+            }
+        }
+    }
+
+    &__item-text {
+        font-weight: 600;
+        @include text-20;
+        margin-top: 10px;
+
+        &--message-box {
+            position: absolute;
+            width: 200px;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 500;
+        }
+
+        @include media-up(md) {
+            font-weight: 400;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.product-about {
+    position: relative;
+
+    &__bg {
+        top: -25px;
+        object-fit: contain;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    &__first {
+        padding-bottom: 40px;
+
+        @include media-up(lg) {
+            padding-bottom: 100px;
+        }
+    }
+
+    &__first .text-img-block__wrapper {
+        @include media-up(md) {
+            grid-template-areas: 'img content';
+        }
+    }
+
+    &__first &__img-wrapper {
+        &::before {
+            background-color: $pink;
+            height: 100px;
+            width: 100px;
+            bottom: -32px;
+            left: -17px;
+
+            @include media-up(lg) {
+                width: 150px;
+                height: 150px;
+                top: -33px;
+                left: -50px;
+                bottom: auto;
+            }
+        }
+
+        &::after {
+            background-color: $purple;
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            right: -13px;
+
+            @include media-up(lg) {
+                top: auto;
+                width: 120px;
+                height: 120px;
+                right: -42px;
+                bottom: 20px;
+            }
+        }
+    }
+
+    &__second {
+        background-color: $bg-green;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(img/bg/product-about-2-mobile.svg);
+        background-position: 20px 0;
+        padding: 50px 0;
+
+        @include media-up(lg) {
+            padding: 100px 0 200px;
+            background-image: url(img/bg/product-about-2-desktop.svg);
+            background-position: center;
+        }
+    }
+
+    &__second &__img-wrapper {
+        &::before {
+            background-color: $cyan;
+            width: 90px;
+            height: 90px;
+            bottom: -21px;
+            right: -18px;
+
+            @include media-up(lg) {
+                width: 100px;
+                height: 100px;
+                bottom: -27px;
+                right: auto;
+                left: -43px;
+            }
+        }
+    }
+
+    &__second .text-img-block__wrapper {
+        @include media-up(md) {
+            grid-template-areas: 'content img';
+        }
+    }
+
+    &__content {
+        @include media-up(md) {
+            grid-area: content;
+        }
+    }
+
+    &__img-wrapper {
+        position: relative;
+        z-index: 5;
+
+        @include media-up(md) {
+            grid-area: img;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            display: block;
+            z-index: -1;
+        }
+    }
+}

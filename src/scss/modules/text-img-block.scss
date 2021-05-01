@@ -23,13 +23,14 @@
 
     &__img-wrapper {
         position: relative;
-        height: 250px;
         max-width: 380px;
         order: 2;
         margin: 0 auto;
+        height: 230px;
 
         @include media-up(md) {
             order: 1;
+            height: 250px;
         }
 
         @include media-up(lg) {
