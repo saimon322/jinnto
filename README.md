@@ -20,7 +20,7 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 10. [Refer a friend](http://jinnto.com/refer.html) – 4 h.
 11. [Subscription](http://jinnto.com/subscription.html) –  4 h.
 12. [Stay with Jinnto](http://jinnto.com/stay.html) - 4 h.
-13. Product page – 9 h.
+13. [Product page](https://jinnto.com/product.html) – 9 h.
 14. Blog – 13 h.
 15. Article – 8 h.
 16. Author – 5 h.

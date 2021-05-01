@@ -78,17 +78,32 @@
         @include media-up(lg) {
             line-height: 80px;
             position: relative;
-            
-            &:before {
-                content: '';
-                position: absolute;
-                left: -18px;
-                top: 40px;
-                display: block;
-                width: 6px;
-                height: 6px;
-                background: $red;
-                border-radius: 50%;
+        }
+
+        span {
+            position: relative;
+        }
+
+        span::before {
+            position: absolute;
+            content: '';
+            height: 12px;
+            width: 12px;
+            background-color: $red;
+            border-radius: 50%;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+
+            @include media-up(sm) {
+                width: 15px;
+                height: 15px;
+            }
+
+            @include media-up(lg) {
+                width: 20px;
+                height: 22px;
             }
         }
     }
