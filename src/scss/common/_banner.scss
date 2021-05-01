@@ -67,6 +67,10 @@
             background-color: $pink;
         }
 
+        &--green {
+            background-color: $green;
+        }
+
         @include media-up(md) {
             font-size: 16px;
             padding: 5px 20px;
