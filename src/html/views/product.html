@@ -4,21 +4,14 @@
 }) %>
 
 <main class="site-main">
-    <section class="banner">
-        <div class="banner__images" data-aos="fade-in">
-            <img src="img/bg/product-banner-desktop.svg" alt="back" class="banner__img banner__img--desktop">
-            <img src="img/bg/product-banner-mobile.svg" alt="back" class="banner__img banner__img--mobile">
-        </div>
-        <div class="container banner__wrapper">
-            <h2 class="banner__subtitle banner__subtitle--green" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                STEAm box
-            </h2>
-            <h1 class="banner__title" data-aos="fade-up" data-aos-delay="200">
-                Solar System STEAM Box <br>
-                For Kids
-            </h1>
-        </div>
-    </section>
+    <%=_.template(require('../parts/banner.html'))({
+        bg_desktop: "product-banner-desktop.svg",
+        bg_mobile: "product-banner-mobile.svg",
+        subtitle: "Steam box",
+        subtitle_color: "green",
+        title: "Solar System STEAM Box<br> For Kids",
+        text: ""
+    }) %>
 
     <section class="product-stars">
         <div class="container">
@@ -220,8 +213,8 @@
     </section>
 
     <section class="advantages product-advantages">
-        <img src="img/base/approach-advantages-bg--mob.jpg" alt="background-" class="bg-img bg-img--mobile">
-        <img src="img/base/approach-advantages-bg.jpg" alt="background-" class="bg-img bg-img--desktop">
+        <img src="img/bg/advantages-mobile.svg" alt="" class="bg-img bg-img--mobile">
+        <img src="img/bg/advantages-desktop.svg" alt="" class="bg-img bg-img--desktop">
         <div class="container">
            <div class="advantages__titles">
                 <h2 class="title-underline title-underline--yellow">
@@ -282,8 +275,8 @@
 
     <section class="gift-choose product-choose">
         <div class="gift-choose__star-block">
-            <img src="img/bg/stars-bg-mobile.svg" class="bg-img bg-img--mobile gift-choose__bg-img--mobile">
-            <img src="img/bg/default-stars-desktop.svg" class="bg-img bg-img--desktop gift-choose__bg-img--desktop">
+            <img src="img/bg/stars-bg-mobile.svg" alt="" class="bg-img bg-img--mobile gift-choose__bg-img--mobile">
+            <img src="img/bg/default-stars-desktop.svg" alt="" class="bg-img bg-img--desktop gift-choose__bg-img--desktop">
         </div>
         <div class="container">
             <div class="gift-choose__heading">

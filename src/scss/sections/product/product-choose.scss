@@ -1,4 +1,11 @@
 .product-choose {
+    padding-top: 50px;
+
+    @include media-up(lg) {
+        padding-top: 0;
+        margin-top: -250px;        
+    }
+
     &__content {
         grid-template-columns: repeat(3, minmax(230px, 1fr));
 

@@ -193,7 +193,7 @@ $(function() {
     if ($faq.length) {
         $('.faq-item__question').on('click', function(){
             $(this).parent().toggleClass('faq-item--open');
-            $(this).siblings().slideToggle();
+            $(this).siblings().stop().slideToggle();
         })
     }
 

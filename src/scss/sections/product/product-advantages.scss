@@ -1,5 +1,6 @@
 .product-advantages {
     padding: 180px 0 70px;
+    background: $bg-green;
 
     @include media-up(lg) {
         padding: 306px 0 378px;

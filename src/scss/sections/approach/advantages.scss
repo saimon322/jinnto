@@ -1,6 +1,7 @@
 .advantages {
     position: relative;
     padding: 50px 0 70px;
+    background: $bg-soft;
 
     @include media-up(lg) {
         padding: 120px 0 200px;
