@@ -4,19 +4,95 @@
 }) %>
 
 <main class="site-main">
-    <section class="banner">
-        <div class="banner__images" data-aos="fade-in">
-            <img src="img/base/approach-banner-bg.jpg" alt="back" class="banner__img banner__img--desktop">
-            <img src="img/base/approach-banner-bg--mob.jpg" alt="back" class="banner__img banner__img--mobile">
+    <%=_.template(require('../parts/banner.html'))({
+        bg_desktop: "affilate-banner-desktop.jpg",
+        bg_mobile: "affilate-banner-mobile.jpg",
+        subtitle: "affiliate program",
+        subtitle_color: "orange",
+        title: "Join the Jinnto <br> affiliate program",
+        text: ""
+    }) %>
+
+    <section class="affilate-info text-img-block">
+        <div class="container">
+            <div class="text-img-block__wrapper affilate-info__wrapper">
+                <div class="affilate-info__img-wrapper text-img-block__img-wrapper" data-aos="fade-up">
+                    <img src="img/base/affilate-info.jpg" alt="image" class="text-img-block__img">
+                </div>
+                <div class="text-img-block__content affilate-info__content">
+                    <h3 class="title-dot text-img-block__title" data-aos="fade-up" data-aos-delay="100">
+                        About our affiliate program
+                    </h3>
+                    <p class="text-img-block__text" data-aos="fade-up" data-aos-delay="200">
+                        This is an easy and straightforward way to have passive income by telling people about beneficial things! Just post your unique link on your social media page, website, or blog.
+                    </p>
+                    <p class="text-img-block__text" data-aos="fade-up" data-aos-delay="200">
+                        We offer a CPA-based payment model with no earnings caps. You earn on every sale, and we automatically transfer your profits to your preferred online account.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="container banner__wrapper">
-            <h2 class="banner__subtitle banner__subtitle--pink" data-aos="fade-up" data-aos-delay="100">
-                Affiliate program
-            </h2>
-            <h1 class="banner__title" data-aos="fade-up" data-aos-delay="200">
-                Join the Jinnto
-                affiliate program
-            </h1>
+    </section>
+
+    <section class="affilate-offer circles">
+        <div class="container">
+            <div class="affilate-offer__heading">
+                <h2 class="affilate-offer__title title-underline title-underline--yellow">
+                    What do we offer
+                </h2>
+            </div>
+            <div class="circles__content">
+                <div class="circles__item affilate-offer__item">
+                    <div class="circles__item-img-wrapper affilate-offer__item-img-wrapper">
+                        <img src="img/base/stay-how-1.svg" alt="image" class="circles__item-img affilate-offer__item-img">
+                    </div>
+                    <h2 class="circles__item-title affilate-offer__item-title">
+                        10% Commission
+                    </h2>
+                    <p class="circles__item-text">
+                        Earn 10% commission <br>
+                        for orders
+                    </p>
+                </div>
+                <div class="circles__item affilate-offer__item">
+                    <div class="circles__item-img-wrapper affilate-offer__item-img-wrapper">
+                        <img src="img/base/stay-how-2.svg" alt="image" class="circles__item-img affilate-offer__item-img">
+                    </div>
+                    <h2 class="circles__item-title affilate-offer__item-title">
+                        Bonus
+                    </h2>
+                    <p class="circles__item-text">
+                        Potential to earn a monthly bonus by hitting subscription targets
+                    </p>
+                </div>
+                <div class="circles__item affilate-offer__item">
+                    <div class="circles__item-img-wrapper affilate-offer__item-img-wrapper">
+                        <img src="img/base/stay-how-3.svg" alt="image" class="circles__item-img affilate-offer__item-img">
+                    </div>
+                    <h2 class="circles__item-title affilate-offer__item-title">
+                        Special coupons
+                    </h2>
+                    <p class="circles__item-text">
+                        Seasonal promotional opportunities sent by mail
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="affilate-stars">
+        <div class="container">
+            <div class="affilate-stars__wrapper">
+                <h2 class="affilate-stars__title title-underline title-underline--green">
+                    For influencers
+                </h2>
+                <p class="affilate-stars__text">
+                    We are aiming to form partnerships with public speakers, influencers, YouTube channels, bloggers who may spread our product, event managers, and coupon websites publishing offers to subscriptions.
+                </p>
+                <button class="btn btn--red affilate-stars__btn">
+                    Get in contact!
+                </button>
+            </div>
         </div>
     </section>
 </main>

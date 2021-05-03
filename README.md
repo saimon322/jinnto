@@ -18,30 +18,30 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 8. [Make a gift Box](http://jinnto.com/gift.html) – 6 h.
 9. [Make a gift Subs](http://jinnto.com/gift.html) – 5 h.
 10. [Refer a friend](http://jinnto.com/refer.html) – 4 h.
-11. Product page – 9 h.
-12. [Subscription](http://jinnto.com/subscription.html) –  4 h.
-13. Blog – 13 h.
-14. Article – 8 h.
-15. Author – 5 h.
-16. Affiliate – 5 h.
-17. Privacy Policy – 30 min.
-18. Terms & Conditions – 30 min.
-19. FAQ – 4 h.
-20. Contact Us – 4 h.
-21. Account – 8 h.
-22. Account login editing – 2 h.
-23. Account payment editing – 4 h.
-24. Account Subscriptions editing – 3 h.
-25. Account email editing – 3 h.
-26. Orders – 2 h.
-27. My promocode – 2 h.
-28. Video instructions – 4 h.
-29. Video instruction – 4 h.
-30. Discounts – 3 h.
-31. Promo page template – 3 h.
-32. Checkout – 8 h.
-33. 404 – 1 h.
-34. [Stay with](http://jinnto.com/stay.html) - 4h.
+11. [Subscription](http://jinnto.com/subscription.html) –  4 h.
+12. [Stay with Jinnto](http://jinnto.com/stay.html) - 4 h.
+13. [Product page](https://jinnto.com/product.html) – 9 h.
+14. Blog – 13 h.
+15. Article – 8 h.
+16. Author – 5 h.
+17. Affiliate – 5 h.
+18. Privacy Policy – 30 min.
+19. Terms & Conditions – 30 min.
+20. FAQ – 4 h.
+21. Contact Us – 4 h.
+22. Account – 8 h.
+23. Account login editing – 2 h.
+24. Account payment editing – 4 h.
+25. Account Subscriptions editing – 3 h.
+26. Account email editing – 3 h.
+27. Orders – 2 h.
+28. My promocode – 2 h.
+29. Video instructions – 4 h.
+30. Video instruction – 4 h.
+31. Discounts – 3 h.
+32. Promo page template – 3 h.
+33. Checkout – 8 h.
+34. 404 – 1 h.
 
 ---
 ## Requirements
