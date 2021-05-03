@@ -4,7 +4,21 @@
 }) %>
 
 <main class="site-main">
-
+    <section class="banner">
+        <div class="banner__images" data-aos="fade-in">
+            <img src="img/base/approach-banner-bg.jpg" alt="back" class="banner__img banner__img--desktop">
+            <img src="img/base/approach-banner-bg--mob.jpg" alt="back" class="banner__img banner__img--mobile">
+        </div>
+        <div class="container banner__wrapper">
+            <h2 class="banner__subtitle banner__subtitle--pink" data-aos="fade-up" data-aos-delay="100">
+                Affiliate program
+            </h2>
+            <h1 class="banner__title" data-aos="fade-up" data-aos-delay="200">
+                Join the Jinnto
+                affiliate program
+            </h1>
+        </div>
+    </section>
 </main>
 
 <%=_.template(require('../parts/footer.html'))() %>

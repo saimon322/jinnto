@@ -1,4 +1,6 @@
 .refer-share {
+    overflow: hidden;
+    
     &__title {
         font-weight: 700;
 
@@ -52,6 +54,14 @@
     &__text {
         @include text-20;
         margin: 8px 0 16px;
+    }
+
+    &__socials {
+        justify-content: flex-end;
+    
+        @include media-up(md) {
+            justify-content: flex-start;
+        }
     }
 
     &__share-row {

@@ -1,20 +1,20 @@
 <%=_.template(require('../parts/header.html'))({
-    title: "Jinnto",
+    title: "Make a gift | Jinnto",
     menu: {gift: 'current-menu-item'}
 }) %>
 
 <main class="site-main">
     <section class="banner">
-        <div class="banner__images">
+        <div class="banner__images" data-aos="fade-in">
             <img src="img/base/gift-banner-bg--mob.jpg" alt="back" class="banner__img banner__img--mobile">
             <img src="img/base/gift-banner-bg.jpg" alt="back" class="banner__img banner__img--desktop">
         </div>
         <div class="container banner__wrapper">
-            <h1 class="banner__title">
+            <h1 class="banner__title" data-aos="fade-up" data-aos-delay="100">
                 Give the gift of playtime <br>
                 with Jinnto
             </h1>
-            <button type="button" class="banner__switch-panel">
+            <button type="button" class="banner__switch-panel" data-aos="fade-up" data-aos-delay="200">
                 <span class="banner__switch-panel-text">
                     Gift box
                 </span>
@@ -77,12 +77,13 @@
                     </div>
                 </div>
             </section>
+
             <section class="gift-choose">
                 <div class="gift-choose__star-block">
                     <img src="img/bg/stars-bg-mobile.svg" class="bg-img bg-img--mobile gift-choose__bg-img--mobile">
                     <img src="img/bg/default-stars-desktop.svg" class="bg-img bg-img--desktop gift-choose__bg-img--desktop">
                 </div>
-                <div class="container">
+                <div class="container" data-aos="fade-up">
                     <div class="gift-choose__heading">
                         <h2 class="gift-choose__title title-underline title-underline--cyan">
                             Choose the perfect box
@@ -173,7 +174,7 @@
                     <img src="img/bg/gift-sub-stars-bg.svg" class="bg-img bg-img--mobile gift-choose__sub-bg-img">
                     <img src="img/bg/default-stars-desktop.svg" class="bg-img bg-img--desktop gift-choose__bg-img--desktop">
                 </div>
-                <div class="container">
+                <div class="container" data-aos="fade-up">
                     <div class="gift-choose__heading">
                         <h2 class="gift-choose__title--sub title-underline">
                             Choose the perfect subscription
