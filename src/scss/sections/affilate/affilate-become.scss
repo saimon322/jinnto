@@ -1,0 +1,107 @@
+.affilate-become {
+    margin-top: 70px;
+
+    @include media-up(lg) {
+        margin-top: 100px;
+    }
+
+    &__wrapper {
+        background-color: #fff;
+        padding: 70px 20px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        margin: 0 -20px;
+
+        @include media-up(lg) {
+            max-width: 1142px;
+            margin: 0 auto;
+            padding: 100px 0 86px;
+        }
+    }
+
+    &__content {
+        margin-top: 60px;
+        max-width: 780px;
+
+        @include media-up(lg) {
+            margin-top: 100px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+
+        &::after {
+            max-width: 184px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__item {
+        &:nth-child(even) .affilate-become__item-wrapper {
+            flex-direction: row-reverse;
+            margin-left: auto;
+        }
+
+        &:nth-child(1) .affilate-become__item-title {
+            color: $pink;
+        }
+
+        &:nth-child(2) .affilate-become__item-title {
+            color: $green;
+        }
+
+        &:nth-child(3) .affilate-become__item-title {
+            color: $orange;
+        }
+    }
+
+    &__item + &__item {
+        margin-top: 40px;
+
+        @include media-up(lg) {
+            margin-top: 50px;
+        }
+    }
+
+    &__item-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        @include media-up(sm) {
+            gap: 100px;
+        }
+    }
+
+    &__item-content {
+        width: 200px;
+
+        @include media-up(sm) {
+            width: 360px;
+        }
+    }
+
+    &__item-text {
+        @include text-20;
+        margin-top: 20px;
+    }
+
+    &__item-img {
+        width: 141px;
+        height: 162px;
+        object-fit: contain;
+
+        @include media-up(md) {
+            width: 240px;
+            height: 275px;
+        }
+    }
+}
