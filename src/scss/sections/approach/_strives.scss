@@ -19,6 +19,12 @@
         @include media-up(md) {
             margin-bottom: 104px;
         }
+
+        @include media-up(xl) {
+            margin: 0 auto;
+            max-width: 1142px;
+            margin-bottom: 104px;
+        }
     }
 
     &__bg-dot {

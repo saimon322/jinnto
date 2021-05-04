@@ -18,7 +18,6 @@
         background-image: url(img/bg/product-stars-mobile.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
 
         @include media-up(md) {
             border-radius: 15px;
@@ -26,6 +25,8 @@
         }
 
         @include media-up(lg) {
+            margin: 0 auto;
+            max-width: 1142px;
             padding: 50px 0;
             background-image: url(img/bg/product-stars-desktop.svg);
         }

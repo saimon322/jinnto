@@ -2,9 +2,17 @@
     position: relative;
     z-index: 15;
     padding: 50px 0;
+    background-color: $bg-green;
+    background-repeat: no-repeat;
+    background-position: 50% 20px;
+    background-image: url(img/bg/strives-2-bg-mobile.svg);
 
     @include media-up(md) {
         padding: 100px 0 208px;
+    }
+
+    @include media-up(lg) {
+        background-image: url(img/bg/strives-2-bg-desktop.svg);
     }
 
     &__img-wrapper {
