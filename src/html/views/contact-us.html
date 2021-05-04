@@ -1,0 +1,61 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "Contact us",
+    menu: {}
+}) %>
+
+<main class="site-main">
+    <section class="banner">
+        <div class="banner__images" data-aos="fade-in">
+            <img src="img/bg/contact-banner-mobile.svg" alt="back" class="banner__img banner__img--mobile">
+            <img src="img/bg/contact-banner-desktop.svg" alt="back" class="banner__img banner__img--desktop">
+        </div>
+        <div class="container banner__wrapper">
+            <h1 class="banner__title" data-aos="fade-up" data-aos-delay="200">
+                Contact us
+            </h1>
+            <p class="banner__text" data-aos="fade-up" data-aos-delay="300">
+                Please help us process your request faster by providing additional details of your request.
+                Emails are monitored M-F 8am-5pm EST
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-stars">
+        <div class="container">
+            <div class="contact-stars__wrapper">
+                <h4 class="product-stars__subtitle">
+                    Customer care department
+                </h4>
+                <p class="product-stars__text">
+                    customercare@jinnto.com
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <div class="contact-form__heading">
+                <h2 class="contact-form__title title-underline title-underline--yellow">
+                    We value feedback from our customers
+                </h2>
+                <p class="contact-form__text">
+                    Leave your comment on products, proposals for cooperation, and wishes.
+                    We will carefully analyze your request and contact you as soon as possible.
+                </p>
+            </div>
+            <form class="contact-form__form">
+                <input class="contact-form__input contact-form__input--name" type="text" placeholder="Name">
+                <input class="contact-form__input contact-form__input--contact" type="text" placeholder="Phone or email">
+                <textarea placeholder="Question" class="contact-form__input contact-form__input--message"></textarea>
+                <div class="contact-form__btn-wrapper">
+                    <button type="submit" class="contact-form__btn btn btn--red">
+                        Sent
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+<%=_.template(require('../parts/footer.html'))() %>

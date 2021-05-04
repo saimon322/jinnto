@@ -1,0 +1,56 @@
+.contact-stars {
+    transform: translateY(-30%);
+
+    @include media-up(md) {
+        transform: translateY(-50%);
+    }
+
+    &__wrapper {
+        background-color: $blue;
+        text-align: center;
+        color: #fff;
+        padding: 35px 0;
+        background-image: url(img/bg/product-stars-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+
+        @include media-up(md) {
+            margin: 0;
+        }
+
+        @include media-up(lg) {
+            margin: 0 auto;
+            max-width: 1142px;
+            padding: 50px 0;
+            background-image: url(img/bg/product-stars-desktop.svg);
+        }
+    }
+
+    &__subtitle {
+        color: $red;
+        margin: 0 auto;
+        max-width: 220px;
+
+        @include media-up(md) {
+            max-width: 80%;
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+        max-width: 280px;
+        margin: 8px auto 0;
+
+        @include media-up(md) {
+            max-width: 70%;
+        }
+
+        @include media-up(lg) {
+            font-size: 24px;
+            line-height: 38px;
+        }
+    }
+}

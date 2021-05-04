@@ -13,7 +13,7 @@
     &__wrapper {
         position: relative;
 
-        &:after {
+        &::after {
             @include media-up(lg) {
                 content: '';
                 position: absolute;

@@ -1,0 +1,149 @@
+.contact-form {
+    padding: 50px 0 60px;
+
+    @include media-up(lg) {
+        padding: 30px 0 200px;
+    }
+
+    &__title {
+        width: 288px;
+
+        @include media-up(sm) {
+            width: inherit;
+        }
+
+        &::after {
+            width: 166px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include media-up(sm) {
+                width: 100%;
+                left: auto;
+                transform: inherit;
+            }
+
+            @include media-up(md) {
+                width: 166px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @include media-up(lg) {
+                width: 100%;
+                left: auto;
+                transform: inherit;
+            }
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        margin: 0 auto;
+
+        @include media-up(md) {
+            max-width: 720px;
+            width: 80%;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        @include text-20;
+    }
+
+    &__form {
+        position: relative;
+        margin: 30px auto 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 44px 44px 160px 1fr;
+        grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd';
+        gap: 10px;
+
+        @include media-up(md) {
+            width: 80%;
+            margin-top: 40px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 44px 130px 1fr;
+            grid-template-areas:
+                'a b'
+                'c c'
+                'd d';
+            max-width: 720px;
+        }
+
+        @include media-up(lg) {
+            gap: 20px;
+        }
+
+        &::after {
+            @include media-up(lg) {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: -10px;
+                transform: translateY(100%);
+                display: block;
+                width: 182px;
+                height: 122px;
+                background: url(../img/icons/green-plane.svg) center no-repeat;
+            }
+
+            @media (min-width: 1300px) {
+                right: -90px;
+            }
+        }
+    }
+
+    &__input {
+        position: relative;
+        border-radius: 22px !important;
+        background-color: $bg-green;
+        box-shadow: 0 0 0 1000px $bg-green inset;
+        padding: 15px 20px;
+
+        &--name {
+            grid-area: a;
+        }
+
+        &--contact {
+            grid-area: b;
+        }
+
+        &--message {
+            grid-area: c;
+            resize: none;
+
+            &::placeholder {
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+        }
+    }
+
+    &__btn-wrapper {
+        grid-area: d;
+    }
+
+    &__btn {
+        font-size: 15px;
+        margin: 25px auto 0;
+        width: 100%;
+        display: block;
+        padding: 12px 70px;
+
+        @include media-up(md) {
+            width: auto;
+        }
+
+        @include media-up(lg) {
+            margin-top: 40px;
+        }
+    }
+}
