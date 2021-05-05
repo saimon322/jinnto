@@ -24,9 +24,14 @@
     &__content {
         margin-top: 60px;
         max-width: 780px;
+        background-repeat: no-repeat;
+        background-image: url(img/bg/affilate-become-mobile.svg);
+        background-position: center;
+        background-size: contain;
 
         @include media-up(lg) {
             margin-top: 100px;
+            background-image: url(img/bg/affilate-become-desktop.svg);
         }
     }
 
