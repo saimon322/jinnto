@@ -1,0 +1,64 @@
+.affilate-stars {
+    @include media-up(lg) {
+        transform: translateY(-50%);
+        margin-bottom: -120px;
+    }
+
+    &__wrapper {
+        background-color: $blue;
+        text-align: center;
+        color: #fff;
+        padding: 35px 20px;
+        margin: 0 -20px;
+        background-image: url(img/bg/affilate-stars-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include media-up(md) {
+            border-radius: 15px;
+            margin: 0;
+        }
+
+        @include media-up(lg) {
+            padding: 50px 0;
+            background-image: url(img/bg/affilate-stars-desktop.svg);
+        }
+    }
+
+    &__title {
+        &::after {
+            width: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__text {
+        @include text-20;
+        max-width: 280px;
+        margin: 8px auto 0;
+
+        @include media-up(sm) {
+            max-width: 70%;
+        }
+
+        @include media-up(lg) {
+            margin-top: 20px;
+            max-width: 775px;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+        width: 100%;
+
+        @include media-up(sm) {
+            max-width: 70%;
+        }
+
+        @include media-up(md) {
+            width: auto;
+        }
+    }
+}

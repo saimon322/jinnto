@@ -46,4 +46,10 @@
             background-color: $red;
         }
     }
+
+    &--green {
+        &::after {
+            background-color: $green;
+        }
+    }
 }

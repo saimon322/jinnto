@@ -1,0 +1,55 @@
+.affilate-info {
+    padding: 50px 0;
+
+    @include media-up(lg) {
+        padding: 120px 0 150px;
+    }
+
+    &__content {
+        order: 1;
+    }
+
+    &__img-wrapper {
+        order: 2;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            display: block;
+            z-index: -1;
+        }
+
+        &::before {
+            background-color: $green;
+            width: 95px;
+            height: 95px;
+            bottom: -30px;
+            left: -17px;
+
+            @include media-up(md) {
+                bottom: -30px;
+                left: -60px;
+                width: 155px;
+                height: 155px;
+            }
+        }
+
+        &::after {
+            background-color: $yellow;
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            right: -10px;
+
+            @include media-up(md) {
+                top: auto;
+                top: 0;
+                right: -46px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}
