@@ -24,7 +24,7 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 14. Blog – 13 h.
 15. Article – 8 h.
 16. Author – 5 h.
-17. Affiliate – 5 h.
+17. [Affiliate page](https://jinnto.com/affilate.html) – 5 h.
 18. Privacy Policy – 30 min.
 19. Terms & Conditions – 30 min.
 20. FAQ – 4 h.

@@ -184,6 +184,11 @@
             left: 50%;
             transform: translateX(-50%);
             font-weight: 500;
+
+            @include media-up(lg) {
+                top: 85px;
+                transform: translateX(-53%);
+            }
         }
 
         @include media-up(md) {
