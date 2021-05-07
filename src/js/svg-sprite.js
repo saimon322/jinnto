@@ -8,3 +8,5 @@ import '../img/svg-sprite/social-whatsapp.svg';
 import '../img/svg-sprite/play-btn.svg';
 import '../img/svg-sprite/star.svg';
 import '../img/svg-sprite/slider-arrow.svg';
+import '../img/svg-sprite/arrow-left.svg';
+import '../img/svg-sprite/arrow-right.svg';
