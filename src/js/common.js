@@ -69,7 +69,8 @@ $(function() {
 
     // Init AOS
     AOS.init({
-        duration: 500
+        duration: 500,
+        // once: true,
     });
 
     // Parallax init
