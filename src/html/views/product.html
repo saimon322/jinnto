@@ -178,104 +178,135 @@
         </div>
     </section>
 
-    <section class="product-about-3">
-        <div class="container">
-            <div class="product-about-3__heading">
-                <h2 class="product-about-3__title title-underline title-underline--yellow">
+    <section class="powers">
+        <div class="powers__header" data-aos="fade-up">
+            <div class="container">
+                <h2 class="powers__title title-underline title-underline--yellow">
                     What you get
-                </h3>
-                <p class="product-about-3__text">
+                </h2>
+                <p class="powers__text">
                     Every superpower of a kid is a start for their future personality. You never know which skill will influence your child the most and will evolve into noticeable achievements in the future.
                 </p>
             </div>
-            <div class="product-about-skills product-about-3__skills">
-                <div class="product-about-skills__item">
-                    <div class="product-about-skills__item-content">
-                        <img src="img/icons/teamwork.svg" alt="icon" class="product-about-skills__item-icon">
-                        <p class="product-about-skills__item-text">
+        </div>
+        <div class="powers__main">
+            <!-- For PHP: 
+                every feature has rating (R) from 1 to 100
+                feature__rating circle styles is "stroke-dasharray: [1.6*R] 160"
+                feature__rating text is "<span>[R] /</span> 100"
+            -->
+            <div class="powers__list powers__list--ratings" data-aos="zoom-in" data-aos-delay="300" data-aos-id="powers-ratings">
+                <div class="powers__item feature feature--cyan">
+                    <div class="feature__content">
+                        <div class="feature__icon">
+                            <img src="img/icons/feature-hands.svg" alt="">
+                        </div>
+                        <div class="feature__text">
                             Brain & hands flawless teamwork
-                        </p>
+                        </div>
                     </div>
-                    <div class="product-about-skills__rating">
-                        <span>
-                            10
-                        </span>
-                        / 100
+                    <div class="feature__rating">
+                        <svg width="100" height="100" viewBox = "0 0 100 100" class="feature__rating-icon">
+                            <circle r="25" cx="50" cy="50" style="stroke-dasharray: 16 160"/>
+                        </svg>
+                        <div class="feature__rating-text">
+                            <span>10 /</span> 100
+                        </div>
                     </div>
                 </div>
-                <div class="product-about-skills__item">
-                    <div class="product-about-skills__item-content">
-                        <img src="img/icons/tech.svg" alt="icon" class="product-about-skills__item-icon">
-                        <p class="product-about-skills__item-text">
+                <div class="powers__item feature feature--pink">
+                    <div class="feature__content">
+                        <div class="feature__icon">
+                            <img src="img/icons/feature-robot.svg" alt="">
+                        </div>
+                        <div class="feature__text">
                             Superb engineering skills
-                        </p>
+                        </div>
                     </div>
-                    <div class="product-about-skills__rating">
-                        <span>
-                            5
-                        </span>
-                        / 100
+                    <div class="feature__rating">
+                        <svg width="100" height="100" viewBox = "0 0 100 100" class="feature__rating-icon">
+                            <circle r="25" cx="50" cy="50" style="stroke-dasharray: 8 160"/>
+                        </svg>
+                        <div class="feature__rating-text">
+                            <span>5 /</span> 100
+                        </div>
                     </div>
                 </div>
-                <div class="product-about-skills__item">
-                    <div class="product-about-skills__item-content">
-                        <img src="img/icons/unlimited.svg" alt="icon" class="product-about-skills__item-icon">
-                        <p class="product-about-skills__item-text">
+                <div class="powers__item feature feature--green">
+                    <div class="feature__content">
+                        <div class="feature__icon">
+                            <img src="img/icons/feature-infinity.svg" alt="">
+                        </div>
+                        <div class="feature__text">
                             Unlimited creativity
-                        </p>
+                        </div>
                     </div>
-                    <div class="product-about-skills__rating">
-                        <span>
-                            10
-                        </span>
-                        / 100
-                    </div>
-                </div>
-                <div class="product-about-skills__item">
-                    <div class="product-about-skills__item-content">
-                        <img src="img/icons/science.svg" alt="icon" class="product-about-skills__item-icon">
-                        <p class="product-about-skills__item-text">
-                            Powerful science skills
-                        </p>
-                    </div>
-                    <div class="product-about-skills__rating">
-                        <span>
-                            10
-                        </span>
-                        / 100
+                    <div class="feature__rating">
+                        <svg width="100" height="100" viewBox = "0 0 100 100" class="feature__rating-icon">
+                            <circle r="25" cx="50" cy="50" style="stroke-dasharray: 48 160"/>
+                        </svg>
+                        <div class="feature__rating-text">
+                            <span>30 /</span> 100
+                        </div>
                     </div>
                 </div>
-                <div class="product-about-skills__item">
-                    <div class="product-about-skills__item-content">
-                        <img src="img/icons/imagination.svg" alt="icon" class="product-about-skills__item-icon">
-                        <p class="product-about-skills__item-text">
-                            Imagination
-                        </p>
-                    </div>
-                    <div class="product-about-skills__rating">
-                        <span>
-                            10
-                        </span>
-                        / 100
-                    </div>
-                </div>
-                <div class="product-about-skills__item">
-                    <div class="product-about-skills__item-content">
-                        <img src="img/icons/logic.svg" alt="icon" class="product-about-skills__item-icon">
-                        <p class="product-about-skills__item-text">
+                <div class="powers__item feature feature--red">
+                    <div class="feature__content">
+                        <div class="feature__icon">
+                            <img src="img/icons/feature-logic.svg" alt="">
+                        </div>
+                        <div class="feature__text">
                             Logic
-                        </p>
+                        </div>
                     </div>
-                    <div class="product-about-skills__rating">
-                        <span>
-                            0
-                        </span>
-                        / 100
+                    <div class="feature__rating">
+                        <svg width="100" height="100" viewBox = "0 0 100 100" class="feature__rating-icon">
+                            <circle r="25" cx="50" cy="50" style="stroke-dasharray: 16 160"/>
+                        </svg>
+                        <div class="feature__rating-text">
+                            <span>10 /</span> 100
+                        </div>
+                    </div>
+                </div>
+                <div class="powers__item feature feature--purple">
+                    <div class="feature__content">
+                        <div class="feature__icon">
+                            <img src="img/icons/feature-imagine.svg" alt="">
+                        </div>
+                        <div class="feature__text">
+                            Imagination
+                        </div>
+                    </div>
+                    <div class="feature__rating">
+                        <svg width="100" height="100" viewBox = "0 0 100 100" class="feature__rating-icon">
+                            <circle r="25" cx="50" cy="50" style="stroke-dasharray: 144 160"/>
+                        </svg>
+                        <div class="feature__rating-text">
+                            <span>90 /</span> 100
+                        </div>
+                    </div>
+                </div>
+                <div class="powers__item feature feature--orange">
+                    <div class="feature__content">
+                        <div class="feature__icon">
+                            <img src="img/icons/feature-science.svg" alt="">
+                        </div>
+                        <div class="feature__text">
+                            Powerful science skills
+                        </div>
+                    </div>
+                    <div class="feature__rating">
+                        <svg width="100" height="100" viewBox = "0 0 100 100" class="feature__rating-icon">
+                            <circle r="25" cx="50" cy="50" style="stroke-dasharray: 1 160"/>
+                        </svg>
+                        <div class="feature__rating-text">
+                            <span>1 /</span> 100
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section><!-- /.powers -->
 
     <section class="product-box-2">
         <div class="container">
@@ -380,7 +411,7 @@
                     </h4>
                 </a>
                 <a href="#" class="gift-choose__box-item">
-                    <img src="img/base/choose-box-2.jpg" class="gift-choose__box-item-img product-choose__img">
+                    <img src="img/base/choose-box-2.png" class="gift-choose__box-item-img product-choose__img">
                     <h4 class="gift-choose__box-item-title">
                         Projector Project
                     </h4>

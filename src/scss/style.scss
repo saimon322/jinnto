@@ -25,7 +25,6 @@
 @import 'common/footer';
 @import 'common/banner';
 @import 'common/fact-star';
-@import 'common/section-advantages';
 @import 'common/bg-img';
 @import 'common/title-underline';
 @import 'common/circles';
@@ -43,16 +42,17 @@
 @import 'modules/text-img-block';
 @import 'modules/lk-form';
 @import 'modules/policy-block';
+@import 'modules/powers';
+@import 'modules/section-advantages';
 
 /* ==========================================================================
-    MAIN PAGE
+    HOME PAGE
     ========================================================================== */
 @import 'sections/home/main-offer';
 @import 'sections/home/about-us';
 @import 'sections/home/box-section';
 @import 'sections/home/heroes';
 @import 'sections/home/stages';
-@import 'sections/home/powers';
 @import 'sections/home/subscribe';
 @import 'sections/home/instagram';
 @import 'sections/home/founders';
@@ -103,7 +103,6 @@
 @import 'sections/product/product-about';
 @import 'sections/product/product-box';
 @import 'sections/product/product-about-2';
-@import 'sections/product/product-about-3';
 @import 'sections/product/product-stages';
 @import 'sections/product/product-advantages';
 @import 'sections/product/product-box-2';
