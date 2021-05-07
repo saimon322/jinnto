@@ -207,16 +207,29 @@
         &:last-child {
             color: $red;
         }
+    }
 
-        /* &--active {
-            color: #fff;
-            background-color: $red;
-            border-color: $red;
+    &__search-wrapper {
+        position: relative;
+        margin-top: 40px;
+        max-width: 420px;
+        width: 100%;
 
-            &:hover {
-                background-color: #fff;
-                color: $red;
-            }
-        } */
+        &::before {
+            content: '';
+            background-image: url(img/icons/search.svg);
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            display: block;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__search-input {
+        border-radius: 50px;
+        padding: 8px 10px 8px 50px;
     }
 }

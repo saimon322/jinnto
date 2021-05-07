@@ -1,0 +1,24 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "FAQ",
+    menu: {}
+}) %>
+
+<main class="site-main">
+    <section class="banner faq-banner">
+        <div class="banner__images" data-aos="fade-in">
+            <img src="img/bg/faq-banner-mobile.svg" alt="back" class="banner__img banner__img--mobile faq-banner__img--mobile">
+            <img src="img/bg/faq-banner-desktop.svg" alt="back" class="banner__img banner__img--desktop">
+        </div>
+        <div class="container banner__wrapper">
+            <h1 class="banner__title" data-aos="fade-up" data-aos-delay="200">
+                Freqently asked qestion
+            </h1>
+            <div class="banner__search-wrapper">
+                <input type="search" placeholder="Search" class="banner__search-input">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<%=_.template(require('../parts/footer.html'))() %>
