@@ -5,7 +5,7 @@
 
     @include media-up(md) {
         padding: 0;
-        height: 477px;
+        padding: 112px 0;
     }
 
     &__wrapper {
@@ -75,6 +75,10 @@
             background-color: $orange;
         }
 
+        &--cyan {
+            background-color: $cyan;
+        }
+
         @include media-up(md) {
             font-size: 16px;
             padding: 5px 20px;
@@ -91,6 +95,7 @@
         font-size: 22px;
         line-height: 1.5;
         max-width: 239px;
+        margin-bottom: 0;
 
         @include media-up(sm) {
             font-size: 35px;

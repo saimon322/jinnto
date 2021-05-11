@@ -21,14 +21,14 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 11. [Subscription](http://jinnto.com/subscription.html) –  4 h.
 12. [Stay with Jinnto](http://jinnto.com/stay.html) - 4 h.
 13. [Product page](https://jinnto.com/product.html) – 9 h.
-14. Blog – 13 h.
+14. [Blog](https://jinnto.com/blog.html) – 13 h.
 15. Article – 8 h.
 16. Author – 5 h.
 17. [Affiliate page](https://jinnto.com/affilate.html) – 5 h.
-18. Privacy Policy – 30 min.
-19. Terms & Conditions – 30 min.
+18. [Privacy Policy](https://jinnto.com/policy.html) – 30 min.
+19. [Terms & Conditions](https://jinnto.com/terms.html) – 30 min.
 20. FAQ – 4 h.
-21. Contact Us – 4 h.
+21. [Contact Us](https://jinnto.com/contact-us.html) – 4 h.
 22. Account – 8 h.
 23. Account login editing – 2 h.
 24. Account payment editing – 4 h.
