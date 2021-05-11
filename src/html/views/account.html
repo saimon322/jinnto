@@ -1,0 +1,240 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "Account",
+    menu: {}
+}) %>
+
+<main class="site-main account-main">
+    <div class="container">
+        <div class="account-main__wrapper">
+            <section class="account-menu">
+                <div class="account-menu__wrapper">
+                    <div class="account-menu__greetings">
+                        Welcome,
+                        <span class="account-menu__name title-underline title-underline--yellow">
+                            Oleksii!
+                        </span>
+                    </div>
+                    <nav class="account-menu__nav">
+                        <button class="account-menu__nav-button current">
+                            <svg width="20" height="20">
+                                <use xlink:href='#cart'></use>
+                            </svg>
+                            Account & Subscription
+                        </button>
+                        <button class="account-menu__nav-button">
+                            <svg width="20" height="20">
+                                <use xlink:href='#cart'></use>
+                            </svg>
+                            Orders
+                        </button>
+                        <button class="account-menu__nav-button">
+                            <svg width="20" height="20">
+                                <use xlink:href='#gift-box'></use>
+                            </svg>
+                            My promocode
+                        </button>
+                        <button class="account-menu__nav-button">
+                            <svg width="20" height="20">
+                                <use xlink:href='#play'></use>
+                            </svg>
+                            Video product
+                        </button>
+                    </nav>
+                </div>
+            </section>
+            <section class="account-content">
+                <div class="account-info">
+                    <div class="account-info__head">
+                        <h3 class="account-info__title">
+                            Login information
+                        </h3>
+                        <button class="edit-btn" title="Edit information"></button>
+                    </div>
+                    <ul class="account-info__infos">
+                        <li class="account-info__info">
+                            <span class="account-info__info-def">
+                                Name:
+                            </span>
+                            <span class="account-info__info-value">
+                                Oleksii Voronkevych
+                            </span>
+                        </li>
+                        <li class="account-info__info">
+                            <span class="account-info__info-def">
+                                Email:
+                            </span>
+                            <span class="account-info__info-value">
+                                level97@gmail.com
+                            </span>
+                        </li>
+                        <li class="account-info__info">
+                            <span class="account-info__info-def">
+                                Password:
+                            </span>
+                            <span class="account-info__info-value">
+                                *********
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="account-info">
+                    <div class="account-info__head">
+                        <h3 class="account-info__title">
+                            Payment details
+                        </h3>
+                        <button class="add-btn" title="Add information"></button>
+                        <button class="edit-btn" title="Edit information"></button>
+                    </div>
+                    <div class="account-info__card">
+                        <img src="img/base/mastercard.jpg" alt="card icon" class="account-info__card-icon">
+                        <span class="account-info__card-name">
+                            MasterCard ending in 4835
+                        </span>
+                    </div>
+                </div>
+                <div class="account-info">
+                    <div class="account-info__head">
+                        <h3 class="account-info__title">
+                            Subscriptions
+                        </h3>
+                        <button class="add-btn" title="Add information"></button>
+                    </div>
+                    <div class="subscription-info">
+                        <div class="subscription-info__head">
+                            <div class="subscription-info__head-wrapper">
+                                <span class="subscription-info__name">
+                                    Anna Mariia Voronkevich
+                                </span>
+                                <span class="subscription-info__plan">
+                                    12 Month Subscription Auto Renew
+                                </span>
+                            </div>
+                            <button class="edit-btn" title="Edit information"></button>
+                        </div>
+                        <div class="subscription-info__bill">
+                            Billing date: April 2, 2021
+                        </div>
+                        <ul class="skills-info">
+                            <li class="skills-info__skill">
+                                <span class="skills-info__skill-name">
+                                    Brain & hands flawless teamwork
+                                </span>
+                                <div class="skills-info__skill-points">
+                                    <div class="skills-info__line"></div>
+                                    <div class="skills-info__points">
+                                        <span class="skills-info__current-point">
+                                            60
+                                        </span>
+                                        /
+                                        <span class="skills-info__max-point">
+                                            100
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skills-info__skill">
+                                <span class="skills-info__skill-name">
+                                    Superb engineering skills
+                                </span>
+                                <div class="skills-info__skill-points">
+                                    <div class="skills-info__line"></div>
+                                    <div class="skills-info__points">
+                                        <span class="skills-info__current-point">
+                                            10
+                                        </span>
+                                        /
+                                        <span class="skills-info__max-point">
+                                            100
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skills-info__skill">
+                                <span class="skills-info__skill-name">
+                                    Unlimited creativity
+                                </span>
+                                <div class="skills-info__skill-points">
+                                    <div class="skills-info__line"></div>
+                                    <div class="skills-info__points">
+                                        <span class="skills-info__current-point">
+                                            60
+                                        </span>
+                                        /
+                                        <span class="skills-info__max-point">
+                                            100
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skills-info__skill">
+                                <span class="skills-info__skill-name">
+                                    Powerful science skills
+                                </span>
+                                <div class="skills-info__skill-points">
+                                    <div class="skills-info__line"></div>
+                                    <div class="skills-info__points">
+                                        <span class="skills-info__current-point">
+                                            50
+                                        </span>
+                                        /
+                                        <span class="skills-info__max-point">
+                                            100
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skills-info__skill">
+                                <span class="skills-info__skill-name">
+                                    Lightning-fast reaction
+                                </span>
+                                <div class="skills-info__skill-points">
+                                    <div class="skills-info__line"></div>
+                                    <div class="skills-info__points">
+                                        <span class="skills-info__current-point">
+                                            80
+                                        </span>
+                                        /
+                                        <span class="skills-info__max-point">
+                                            100
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skills-info__skill">
+                                <span class="skills-info__skill-name">
+                                    Logic
+                                </span>
+                                <div class="skills-info__skill-points">
+                                    <div class="skills-info__line"></div>
+                                    <div class="skills-info__points">
+                                        <span class="skills-info__current-point">
+                                            20
+                                        </span>
+                                        /
+                                        <span class="skills-info__max-point">
+                                            100
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account-info">
+                    <div class="account-info__head">
+                        <h3 class="account-info__title">
+                            Email
+                        </h3>
+                    </div>
+                    <div class="account-info__preferences">
+                        <button class="account-info__preferences-btn">
+                            Manage preferences
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<%=_.template(require('../parts/footer.html'))() %>

@@ -1,0 +1,68 @@
+.account-menu {
+    padding-top: 50px;
+
+    &__wrapper {
+        position: sticky;
+        top: 80px;
+    }
+
+    &__greetings {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.4;
+        margin-bottom: 50px;
+    }
+
+    &__name {
+        &::after {
+            width: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__nav-button {
+        color: $blue-80;
+        font-size: 15px;
+        line-height: 18px;
+        display: grid;
+        grid-template-columns: 20px max-content;
+        gap: 16px;
+        align-items: end;
+        border-radius: 10px;
+        border: none;
+        background: none;
+        transition: color 0.2s;
+        padding: 10px;
+        width: 100%;
+
+        &:hover {
+            color: $red;
+        }
+
+        &:nth-child(1).current {
+            background-color: $green;
+        }
+
+        &:nth-child(2).current {
+            background-color: $pink;
+        }
+
+        &:nth-child(3).current {
+            background-color: $cyan;
+        }
+
+        &:nth-child(4).current {
+            background-color: $orange;
+        }
+    }
+
+    &__nav-button.current {
+        font-weight: 500;
+        color: #fff;
+    }
+
+    &__nav-button + &__nav-button {
+        margin-top: 30px;
+    }
+}
