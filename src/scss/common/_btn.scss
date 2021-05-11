@@ -47,3 +47,29 @@
         }
     }
 }
+
+.edit-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: none;
+    background-image: url(img/icons/edit.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.add-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: none;
+    background-image: url(img/icons/add.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.add-btn + .edit-btn {
+    margin-left: 20px;
+}

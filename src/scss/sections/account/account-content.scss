@@ -1,0 +1,207 @@
+.account-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 50px 60px;
+}
+
+.account-info {
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-right: 13px;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    &__infos {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info + &__info {
+        margin-top: 17px;
+    }
+
+    &__info-value {
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+    &__card {
+        padding: 25px 30px;
+        background-color: $bg-green;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__card-icon {
+        margin-right: 12px;
+    }
+
+    &__card-name {
+        font-weight: 600;
+    }
+
+    &__preferences {
+        padding: 30px;
+        background-color: $bg-green;
+        border-radius: 15px;
+    }
+
+    &__preferences-btn {
+        color: $blue-80;
+        background: none;
+        border: none;
+        font-size: 14px;
+        line-height: 17px;
+        border-bottom: 1px solid $blue-80;
+    }
+}
+
+.account-info + .account-info {
+    margin-top: 50px;
+}
+
+.subscription-info {
+    padding: 30px;
+    background-color: $bg-green;
+
+    &__head {
+        justify-content: space-between;
+    }
+
+    &__head,
+    &__head-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__name {
+        font-weight: 600;
+        color: $blue-80;
+        margin-right: 6px;
+    }
+
+    &__plan {
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 9px;
+            width: 1px;
+            background-color: $blue-70;
+            margin-right: 6px;
+        }
+    }
+
+    &__bill {
+        margin-top: 10px;
+    }
+
+    &__plan,
+    &__bill {
+        color: $blue-50;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.skills-info {
+    padding-top: 20px;
+
+    &__skill {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:nth-child(1) {
+            .skills-info__line {
+                &::before {
+                    background-color: $green;
+                }
+            }
+        }
+        &:nth-child(2) {
+            .skills-info__line {
+                &::before {
+                    background-color: $pink;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .skills-info__line {
+                &::before {
+                    background-color: $cyan;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            .skills-info__line {
+                &::before {
+                    background-color: $orange;
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            .skills-info__line {
+                &::before {
+                    background-color: $purple;
+                }
+            }
+        }
+
+        &:nth-child(6) {
+            .skills-info__line {
+                &::before {
+                    background-color: $yellow;
+                }
+            }
+        }
+    }
+
+    &__skill + &__skill {
+        margin-top: 20px;
+    }
+
+    &__line {
+        position: relative;
+        width: 250px;
+        border-radius: 2px;
+        background-color: $bg-soft;
+        height: 4px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-radius: 3px;
+            width: 60%;
+            height: 100%;
+        }
+    }
+
+    &__skill-name,
+    &__current-point {
+        font-weight: 600;
+    }
+
+    &__skill-points {
+        display: grid;
+        grid-template-columns: 250px max-content;
+        align-items: center;
+        gap: 10px;
+    }
+}
