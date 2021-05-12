@@ -109,7 +109,7 @@
                                     12 Month Subscription Auto Renew
                                 </span>
                             </div>
-                            <button class="edit-btn" title="Edit information"></button>
+                            <button class="edit-btn subscription-info__edit-btn" title="Edit information"></button>
                         </div>
                         <div class="subscription-info__bill">
                             Billing date: April 2, 2021
@@ -235,6 +235,8 @@
             </section>
         </div>
     </div>
+    <button role="button" data-custom-open="modal-1">open</button>
 </main>
+<%=_.template(require('../parts/modal.html'))() %>
 
 <%=_.template(require('../parts/footer.html'))() %>

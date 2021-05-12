@@ -1,5 +1,10 @@
 .account-menu {
     padding-top: 50px;
+    display: none;
+
+    @include media-up(lg) {
+        display: block;
+    }
 
     &__wrapper {
         position: sticky;
