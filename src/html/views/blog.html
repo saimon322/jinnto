@@ -1,0 +1,17 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "Blog | Jinnto",
+    menu: {}
+}) %>
+
+<main class="site-main">
+    <%=_.template(require('../parts/banner.html'))({
+        bg_desktop: "blog-banner-desktop.jpg",
+        bg_mobile: "blog-banner-mobile.jpg",
+        subtitle: "Explore The World",
+        subtitle_color: "cyan",
+        title: "Jinnto blog",
+        text: ""
+    }) %>
+</div>
+
+<%=_.template(require("../parts/footer.html"))() %>
