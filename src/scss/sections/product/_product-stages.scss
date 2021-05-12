@@ -5,6 +5,11 @@
     @include media-up(lg) {
         padding: 120px 0 100px;
     }
+
+    &__content-background {
+        width: auto;
+        top: 0;
+    }
 }
 
 .product-stages__stages .product-stages__stage {
