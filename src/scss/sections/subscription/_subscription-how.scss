@@ -6,7 +6,7 @@
     background-position: center;
 
     @include media-up(md) {
-        background-size: contain;
+        background-size: cover;
         background-image: url(img/bg/subscription-how-desktop.svg);
     }
 

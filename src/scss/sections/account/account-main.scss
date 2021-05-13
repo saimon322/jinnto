@@ -4,6 +4,11 @@
     padding-top: 50px;
 
     &__wrapper {
+        margin: 0 -30px;
+
+        @include media-up(md) {
+            margin: 0;
+        }
 
         @include media-up(lg) {
             position: relative;

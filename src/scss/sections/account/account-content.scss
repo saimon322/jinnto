@@ -1,11 +1,14 @@
 .account-content {
     background: #fff;
     border-radius: 15px;
-    padding: 50px 60px;
+    padding: 20px 30px;
+
+    @include media-up(lg) {
+        padding: 50px 60px;
+    }
 }
 
 .account-info {
-
     &__head {
         display: flex;
         align-items: center;
@@ -76,17 +79,34 @@
 }
 
 .subscription-info {
-    padding: 30px;
+    padding: 30px 15px;
     background-color: $bg-green;
+    position: relative;
 
     &__head {
         justify-content: space-between;
+        display: grid;
+
+        @include media-up(md) {
+            display: flex;
+            align-items: center;
+        }
     }
 
-    &__head,
     &__head-wrapper {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+
+        @include media-up(md) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__edit-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
     &__name {
@@ -96,35 +116,48 @@
     }
 
     &__plan {
-        &::before {
-            content: '';
-            display: inline-block;
-            height: 9px;
-            width: 1px;
-            background-color: $blue-70;
-            margin-right: 6px;
+        margin-top: 17px;
+        color: $blue-90;
+
+        @include media-up(md) {
+            margin-top: 0;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                height: 9px;
+                width: 1px;
+                background-color: $blue-70;
+                margin-right: 6px;
+            }
         }
     }
 
     &__bill {
         margin-top: 10px;
+        color: $blue-50;
     }
 
     &__plan,
     &__bill {
-        color: $blue-50;
         font-size: 14px;
         line-height: 17px;
     }
 }
 
 .skills-info {
-    padding-top: 20px;
+    padding-top: 33px;
+
+    @include media-up(md) {
+        padding-top: 20px;
+    }
 
     &__skill {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include media-up(md) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
         &:nth-child(1) {
             .skills-info__line {
@@ -179,7 +212,7 @@
 
     &__line {
         position: relative;
-        width: 250px;
+        width: 100%;
         border-radius: 2px;
         background-color: $bg-soft;
         height: 4px;
@@ -193,15 +226,33 @@
         }
     }
 
-    &__skill-name,
+    &__skill-name {
+        @include media-up(md) {
+            font-weight: 600;
+            width: 260px;
+        }
+    }
+
     &__current-point {
-        font-weight: 600;
+        font-weight: 500;
+
+        @include media-up(md) {
+            font-weight: 600;
+        }
     }
 
     &__skill-points {
+        font-size: 15px;
+        margin-top: 10px;
         display: grid;
-        grid-template-columns: 250px max-content;
         align-items: center;
+        justify-content: space-between;
+        grid-template-columns: minmax(100px, 1fr) max-content;
         gap: 10px;
+
+        @include media-up(md) {
+            margin-top: 0;
+            grid-template-columns: minmax(200px, 250px) max-content;
+        }
     }
 }

@@ -48,7 +48,7 @@
                         <h3 class="account-info__title">
                             Login information
                         </h3>
-                        <button class="edit-btn" title="Edit information"></button>
+                        <button type="button" class="edit-btn" title="Edit information" data-micromodal-trigger="modal-edit-login-info"></button>
                     </div>
                     <ul class="account-info__infos">
                         <li class="account-info__info">
@@ -83,7 +83,7 @@
                             Payment details
                         </h3>
                         <button class="add-btn" title="Add information"></button>
-                        <button class="edit-btn" title="Edit information"></button>
+                        <button class="edit-btn" title="Edit information" data-micromodal-trigger="modal-edit-payment-info"></button>
                     </div>
                     <div class="account-info__card">
                         <img src="img/base/mastercard.jpg" alt="card icon" class="account-info__card-icon">
@@ -109,7 +109,7 @@
                                     12 Month Subscription Auto Renew
                                 </span>
                             </div>
-                            <button class="edit-btn" title="Edit information"></button>
+                            <button class="edit-btn subscription-info__edit-btn" title="Edit information"></button>
                         </div>
                         <div class="subscription-info__bill">
                             Billing date: April 2, 2021
@@ -236,5 +236,7 @@
         </div>
     </div>
 </main>
+<%=_.template(require('../parts/modal-edit-login-info.html'))() %>
+<%=_.template(require('../parts/modal-edit-payment-info.html'))() %>
 
 <%=_.template(require('../parts/footer.html'))() %>

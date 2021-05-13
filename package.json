@@ -68,6 +68,7 @@
         "focus-visible": "^5.1.0",
         "isotope-layout": "^3.0.6",
         "jquery": "^3.5.1",
+        "micromodal": "^0.4.6",
         "normalize.css": "^8.0.1",
         "parallax-js": "^3.1.0",
         "rellax": "^1.12.1",
