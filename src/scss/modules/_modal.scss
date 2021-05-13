@@ -315,3 +315,11 @@
         }
     }
 }
+
+.modal[aria-hidden='false'] .modal__overlay {
+    animation: opacityUp 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden='false'] .modal__wrapper {
+    animation: lideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
