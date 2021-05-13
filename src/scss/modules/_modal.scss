@@ -184,4 +184,134 @@
         display: flex;
         gap: 10px;
     }
+
+    &__content-title {
+        text-align: center;
+        font-weight: 700;
+        width: 210px;
+        margin: 0 auto 15px;
+
+        @include media-up(lg) {
+            width: 300px;
+        }
+    }
+
+    &__content-text {
+        text-align: center;
+        width: 280px;
+        margin: 0 auto 15px;
+
+        @include media-up(lg) {
+            width: 75%;
+        }
+    }
+
+    &__email-img {
+        margin: 30px auto 0;
+        width: 175px;
+        height: 105px;
+        object-fit: contain;
+
+        @include media-up(md) {
+            width: 220px;
+            height: 130px;
+        }
+    }
+
+    &__inputs {
+        margin-top: 30px;
+
+        @include media-up(md) {
+            margin-top: 60px;
+        }
+    }
+
+    &__checkbox-wrapper {
+        padding-left: 35px;
+        display: block;
+        position: relative;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(1) {
+            .modal__checkbox-offer-name {
+                color: $pink;
+            }
+
+            .modal__checkbox--custom {
+                color: $pink;
+            }
+        }
+
+        &:nth-child(2) {
+            .modal__checkbox-offer-name {
+                color: $green;
+            }
+
+            .modal__checkbox--custom {
+                color: $green;
+            }
+        }
+
+        &:nth-child(3) {
+            .modal__checkbox-offer-name {
+                color: $orange;
+            }
+
+            .modal__checkbox--custom {
+                color: $orange;
+            }
+        }
+
+        &:nth-child(4) {
+            .modal__checkbox-offer-name {
+                color: $cyan;
+            }
+
+            .modal__checkbox--custom {
+                color: $cyan;
+            }
+        }
+    }
+
+    &__checkbox--custom {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $blue-80;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        top: calc(50% - 12px);
+    }
+
+    &__checkbox--custom svg {
+        opacity: 0;
+    }
+
+    &__checkbox:checked + &__checkbox--custom svg {
+        opacity: 1;
+    }
+
+    &__line {
+        position: relative;
+        margin: 30px 0;
+        border: 1px dashed $blue-20;
+
+        &::after {
+            content: 'or';
+            position: absolute;
+            background: #fff;
+            width: 40px;
+            height: 18px;
+            top: calc(50% - 12px);
+            left: calc(50% - 20px);
+            text-align: center;
+        }
+    }
 }

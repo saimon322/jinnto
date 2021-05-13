@@ -14,3 +14,4 @@ import '../img/svg-sprite/human.svg';
 import '../img/svg-sprite/cart.svg';
 import '../img/svg-sprite/gift-box.svg';
 import '../img/svg-sprite/play.svg';
+import '../img/icons/check.svg';
