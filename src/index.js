@@ -5,5 +5,6 @@ import './js/validate.js';
 import './js/share-panel';
 import './js/powers';
 import './js/modal';
+import './js/check-all';
 
 import './scss/style.scss';
