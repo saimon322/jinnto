@@ -130,18 +130,7 @@
             }
         }
 
-        &:after {
-            width: calc(100% + 8px);
-            height: calc(100% + 8px);
-            border: 10px solid #fff;
-
-            @include media-up(md) {
-                width: calc(100% + 12px);
-                height: calc(100% + 12px);
-            }
-        }
-
-        &-icon {
+        &-svg {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -153,16 +142,16 @@
                 width: calc(100% + 34px);
                 height: calc(100% + 34px);                
             }
+        }
 
-            circle {
-                fill: none;
-                stroke: $red;
-                stroke-width: 50px;
-                transition: stroke-dasharray 2s .5s;
+        &-line {
+            fill: none;
+            stroke: $red;
+            stroke-width: 50px;
+            transition: stroke-dasharray 2s .5s;
 
-                .powers__list--ratings & {
-                    stroke-dasharray: 0 160 !important;
-                }
+            .powers__list--ratings & {
+                stroke-dasharray: 0 160 !important;
             }
         }
 
