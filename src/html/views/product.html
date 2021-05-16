@@ -13,18 +13,13 @@
         text: ""
     }) %>
 
-    <section class="product-stars">
-        <div class="container">
-            <div class="product-stars__wrapper">
-                <h4 class="product-stars__subtitle">
-                    Have your kids asked questions about the Universe?
-                </h4>
-                <p class="product-stars__text">
-                    We’ll tell them everything they are curious to know with the STEM box exploring our Solar System!
-                </p>
-            </div>
-        </div>
-    </section>
+    <%=_.template(require('../parts/fact-stars.html'))({
+        section_class: "product-stars fact-stars--big-text",
+        subtitle: "Have your kids asked questions about the Universe?",
+        title: "",
+        title_class: "",
+        text: "We’ll tell them everything they are curious to know with the STEM box exploring our Solar System!"
+    }) %>
 
     <section class="product-about text-img-block">
         <div class="product-about__bgs">

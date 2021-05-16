@@ -16,7 +16,7 @@
                 Science games. Monthly delivered
             </div>
             <div class="main-offer__footer" data-aos="fade-up" data-aos-delay="800">
-                <a href="#" class="main-offer__btn btn btn--red">
+                <a href="subscription.html" class="main-offer__btn btn btn--red">
                     Start the fun
                 </a>
             </div>
@@ -59,9 +59,12 @@
         </div>
     </section><!-- /.about-us -->
 
-    <%=_.template(require('../parts/fact-star.html'))({
+    <%=_.template(require('../parts/fact-stars.html'))({
+        section_class: "fact-stars--middle",
         subtitle: "What’s inside?",
         title: "Everything to think outside the box",
+        title_class: "",
+        text: ""
     }) %>
     <!-- /.fact-star -->
 

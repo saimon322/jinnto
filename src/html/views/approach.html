@@ -14,39 +14,14 @@
     }) %>
 
     <section class="strives text-img-block">
-        <section class="fact-star strives__fact-star" data-aos="fade-up">
-            <div class="fact-star__content container">
-                <h2 class="fact-star__title title-underline title-underline--red">
-                    Our vibe
-                </h2>
-                <p class="fact-star__text">
-                    Childhood is a time to be brave and curious, and Jinnto strives to be with a kid at every step of it. That’s how we see the idea of our company.
-                </p>
-            </div>
-            <div class="fact-star__stars" data-aos="fade-in" data-aos-delay="200">
-                <div class="fact-star__star">
-                    <svg><use xlink:href='#star'></use></svg>
-                </div>
-                <div class="fact-star__star">
-                    <svg><use xlink:href='#star'></use></svg>
-                </div>
-                <div class="fact-star__star">
-                    <svg><use xlink:href='#star'></use></svg>
-                </div>
-                <div class="fact-star__star">
-                    <svg><use xlink:href='#star'></use></svg>
-                </div>
-                <div class="fact-star__star">
-                    <svg><use xlink:href='#star'></use></svg>
-                </div>
-                <div class="fact-star__star">
-                    <svg><use xlink:href='#star'></use></svg>
-                </div>
-                <div class="fact-star__star">
-                    <svg><use xlink:href='#star'></use></svg>
-                </div>
-            </div>
-        </section>
+        <%=_.template(require('../parts/fact-stars.html'))({
+            section_class: "strives__fact-star",
+            subtitle: "",
+            title: "Our vibe",
+            title_class: "title-underline title-underline--red",
+            text: "Childhood is a time to be brave and curious, and Jinnto strives to be with a kid at every step of it. That’s how we see the idea of our company.",
+        }) %>
+        <!-- /.fact-star -->
 
         <img src="img/bg/approach-bg-dot.svg" class="strives__bg-dot">
 
@@ -117,7 +92,7 @@
                 <div class="approach-stages__stages">
                     <div class="approach-stages__stage">
                         <img src="img/base/hero1.png" alt="human" class="approach-stages__stage-img-1">
-                        <div class="approach-stage__stage-content">
+                        <div class="approach-stages__stage-content">
                             <h2 class="approach-stages__stage-title">
                                 Stage 1. The child creates the toy
                             </h2>
@@ -131,7 +106,7 @@
                     </div>
                     <div class="approach-stages__stage">
                         <img src="img/base/hero2.png" alt="human" class="approach-stages__stage-img-1">
-                        <div class="approach-stage__stage-content">
+                        <div class="approach-stages__stage-content">
                             <h2 class="approach-stages__stage-title stage__title">
                                 Stage 2. The child plays with the toy
                             </h2>
@@ -211,9 +186,12 @@
     <!-- /.advantages -->
 
 
-    <%=_.template(require('../parts/fact-star.html'))({
+    <%=_.template(require('../parts/fact-stars.html'))({
+        section_class: "fact-stars--middle",
         subtitle: "What we do",
-        title: "We let kids’ imagination run wild!"
+        title: "We let kids’ imagination run wild!",
+        title_class: "",
+        text: ""
     }) %>
     <!-- /.fact-star -->
 

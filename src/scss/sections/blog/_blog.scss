@@ -1,0 +1,8 @@
+.blog {
+    background: $bg-green;
+    padding: 100px 0 173px;
+
+    &__content {
+        display: grid;
+    }
+}

@@ -1,16 +1,29 @@
-.fact-star {
-    position: relative;
-    padding: 41px 26px 46px;
-    background: $blue;
-    text-align: center;
-    overflow: hidden;
+.fact-stars {
+    &--middle {
+        @include media-up(lg) {
+            margin: -90px auto;
+        }
+    }
 
-    @include media-up(lg) {
-        width: 90vw;
-        max-width: 1270px;
-        margin: -70px auto;
-        padding: 38px 0;
-        border-radius: 10px;
+    &__container {
+        @include media-down(md) {
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        padding: 41px 26px 46px;
+        background: $blue;
+        text-align: center;
+        overflow: hidden;
+
+        @include media-up(lg) {
+            padding: 50px 0;
+            border-radius: 15px;
+        }
     }
 
     &__content {
@@ -21,10 +34,6 @@
     &__subtitle {
         margin-bottom: 10px;
         color: $red;
-
-        @include media-up(md) {
-            margin-bottom: 0;
-        }
     }
 
     &__title {
@@ -38,6 +47,15 @@
         max-width: 690px;
         text-align: center;
         margin: 0 auto;
+    }
+
+    &--big-text &__text {
+        font-weight: 700;        
+
+        @include media-up(lg) {
+            font-size: 24px;
+            line-height: 38px;
+        }
     }
 
     &__stars {
@@ -74,7 +92,7 @@
         }
 
         &:nth-child(1) {
-            left: 8.53%;
+            left: 5%;
             top: 20.7%;
 
             @include media-up(lg) {
@@ -85,7 +103,7 @@
 
         &:nth-child(2) {
             left: 16.2%;
-            bottom: 26.4%;
+            bottom: 20%;
 
             @include media-up(lg) {
                 left: 26.6%;
@@ -118,8 +136,8 @@
             top: 8.6%;
 
             @include media-up(lg) {
-                top: 27.1%;
-                right: 28%;
+                top: 17%;
+                right: 24%;
             }
         }
 

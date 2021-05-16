@@ -60,12 +60,16 @@
     }
 
     &__stage-img-1 {
+        position: relative;
+        z-index: -1;
         height: 250px;
         object-fit: contain;
         grid-area: b;
     }
 
     &__stage-img-2 {
+        position: relative;
+        z-index: -1;
         margin-left: auto;
         object-fit: contain;
         grid-area: c;
@@ -73,6 +77,14 @@
 
     &__stage-title {
         margin-bottom: 26px;
+    }
+
+    &__stage-content {
+        margin-bottom: 30px;
+
+        @include media-up(md) {
+            margin-bottom: 0;
+        }
     }
 
     &__stage-text {
@@ -86,6 +98,12 @@
 
             &:last-child {
                 margin-bottom: 0;
+            }
+        }
+
+        &::after {
+            @include media-down(sm) {
+                transform: scale(0.7);
             }
         }
     }

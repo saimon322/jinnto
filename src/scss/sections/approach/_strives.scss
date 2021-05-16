@@ -13,16 +13,9 @@
     }
 
     &__fact-star {
-        margin-top: 0;
         margin-bottom: 60px;
 
         @include media-up(md) {
-            margin-bottom: 104px;
-        }
-
-        @include media-up(xl) {
-            margin: 0 auto;
-            max-width: 1142px;
             margin-bottom: 104px;
         }
     }

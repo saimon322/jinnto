@@ -24,7 +24,7 @@
 @import 'common/nav';
 @import 'common/footer';
 @import 'common/banner';
-@import 'common/fact-star';
+@import 'common/fact-stars';
 @import 'common/bg-img';
 @import 'common/title-underline';
 @import 'common/circles';
@@ -134,3 +134,8 @@
 @import 'sections/account/account-main';
 @import 'sections/account/account-menu';
 @import 'sections/account/account-content';
+
+/* ==========================================================================
+    BLOG
+    ========================================================================== */
+@import 'sections/blog/blog';
