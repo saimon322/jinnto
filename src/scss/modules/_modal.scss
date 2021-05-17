@@ -26,13 +26,15 @@
         background-color: #fff;
         height: 100%;
         padding-bottom: 30px;
+        overflow-y: auto;
 
         @include media-up(md) {
             width: 600px;
             min-height: 500px;
             border-radius: 15px;
-            height: auto;
             padding-bottom: 60px;
+            height: auto;
+            max-height: 85vh;
         }
     }
 
@@ -41,6 +43,10 @@
 
         @include media-up(md) {
             padding: 40px 50px 60px;
+        }
+
+        h4 {
+            margin: 35px 0 25px;
         }
     }
 
@@ -84,6 +90,7 @@
     }
 
     &__field {
+        width: 100%;
         position: relative;
         margin-bottom: 20px;
 
@@ -158,6 +165,10 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
+        }
+
+        &--select {
+            appearance: none;
         }
     }
 
@@ -312,6 +323,39 @@
             top: calc(50% - 12px);
             left: calc(50% - 20px);
             text-align: center;
+        }
+    }
+
+    &__delete-btn {
+        background: none;
+        color: $red;
+        border: none;
+        padding: 0 3px;
+        border-bottom: 1px solid $red;
+        margin-right: auto;
+        transition: color 0.2s, border-color 0.2s;
+
+        &:hover {
+            color: $blue;
+            border-color: $blue;
+        }
+    }
+
+    &__select-wrapper {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            position: absolute;
+            right: 23px;
+            top: calc(50% - 4px);
+            content: '';
+            width: 14px;
+            height: 7px;
+            display: block;
+            background-image: url(img/icons/arrow-down.svg);
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 }

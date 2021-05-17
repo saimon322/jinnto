@@ -4,7 +4,7 @@
     padding: 20px 30px;
 
     @include media-up(lg) {
-        padding: 50px 60px;
+        padding: 50px 60px 60px;
     }
 }
 
@@ -161,21 +161,21 @@
 
         &:nth-child(1) {
             .skills-info__line {
-                &::before {
+                span {
                     background-color: $green;
                 }
             }
         }
         &:nth-child(2) {
             .skills-info__line {
-                &::before {
+                span {
                     background-color: $pink;
                 }
             }
         }
         &:nth-child(3) {
             .skills-info__line {
-                &::before {
+                span {
                     background-color: $cyan;
                 }
             }
@@ -183,7 +183,7 @@
 
         &:nth-child(4) {
             .skills-info__line {
-                &::before {
+                span {
                     background-color: $orange;
                 }
             }
@@ -191,7 +191,7 @@
 
         &:nth-child(5) {
             .skills-info__line {
-                &::before {
+                span {
                     background-color: $purple;
                 }
             }
@@ -199,7 +199,7 @@
 
         &:nth-child(6) {
             .skills-info__line {
-                &::before {
+                span {
                     background-color: $yellow;
                 }
             }
@@ -217,11 +217,10 @@
         background-color: $bg-soft;
         height: 4px;
 
-        &::before {
-            content: '';
+        span {
             position: absolute;
+            display: block;
             border-radius: 3px;
-            width: 60%;
             height: 100%;
         }
     }

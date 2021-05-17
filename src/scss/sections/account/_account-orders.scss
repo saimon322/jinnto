@@ -1,0 +1,98 @@
+.account-orders {
+    &__order {
+        display: grid;
+        background-color: $bg-green;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        grid-template-areas:
+            'head head'
+            'prices status';
+
+        gap: 10px;
+
+        @include media-up(md) {
+            grid-template-areas:
+                'head status'
+                'prices status';
+        }
+
+        @include media-up(lg) {
+            padding: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__order-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-area: head;
+
+        @include media-up(sm) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__order-title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    &__order-date {
+        font-size: 14px;
+        line-height: 18px;
+        color: $blue-50;
+
+        @include media-up(sm) {
+            margin-left: 8px;
+        }
+    }
+
+    &__order-status {
+        font-size: 14px;
+        line-height: 17px;
+        grid-area: status;
+        align-self: center;
+        justify-self: end;
+
+        @include media-up(md) {
+            justify-self: center;
+        }
+
+        &--successfull {
+            color: $green;
+        }
+
+        &--processing {
+            color: $purple;
+        }
+
+        &--canceled {
+            color: $orange;
+        }
+    }
+
+    &__order-prices {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        grid-area: prices;
+    }
+
+    &__order-price {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+
+        &--full {
+            color: $blue-50;
+            font-weight: 400;
+            text-decoration: line-through;
+        }
+    }
+}

@@ -42,202 +42,293 @@
                     </nav>
                 </div>
             </section>
-            <section class="account-content">
-                <div class="account-info">
-                    <div class="account-info__head">
-                        <h3 class="account-info__title">
-                            Login information
-                        </h3>
-                        <button type="button" class="edit-btn" title="Edit information" data-micromodal-trigger="modal-edit-login-info"></button>
-                    </div>
-                    <ul class="account-info__infos">
-                        <li class="account-info__info">
-                            <span class="account-info__info-def">
-                                Name:
-                            </span>
-                            <span class="account-info__info-value">
-                                Oleksii Voronkevych
-                            </span>
-                        </li>
-                        <li class="account-info__info">
-                            <span class="account-info__info-def">
-                                Email:
-                            </span>
-                            <span class="account-info__info-value">
-                                level97@gmail.com
-                            </span>
-                        </li>
-                        <li class="account-info__info">
-                            <span class="account-info__info-def">
-                                Password:
-                            </span>
-                            <span class="account-info__info-value">
-                                *********
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="account-info">
-                    <div class="account-info__head">
-                        <h3 class="account-info__title">
-                            Payment details
-                        </h3>
-                        <button class="add-btn" title="Add information"></button>
-                        <button class="edit-btn" title="Edit information" data-micromodal-trigger="modal-edit-payment-info"></button>
-                    </div>
-                    <div class="account-info__card">
-                        <img src="img/base/mastercard.jpg" alt="card icon" class="account-info__card-icon">
-                        <span class="account-info__card-name">
-                            MasterCard ending in 4835
-                        </span>
-                    </div>
-                </div>
-                <div class="account-info">
-                    <div class="account-info__head">
-                        <h3 class="account-info__title">
-                            Subscriptions
-                        </h3>
-                        <button class="add-btn" title="Add information"></button>
-                    </div>
-                    <div class="subscription-info">
-                        <div class="subscription-info__head">
-                            <div class="subscription-info__head-wrapper">
-                                <span class="subscription-info__name">
-                                    Anna Mariia Voronkevich
-                                </span>
-                                <span class="subscription-info__plan">
-                                    12 Month Subscription Auto Renew
-                                </span>
-                            </div>
-                            <button class="edit-btn subscription-info__edit-btn" title="Edit information"></button>
+            <div class="account-main__content account-content" data-account-content>
+                <section class="account-settings" data-account-content="settings" style="display: none;">
+                    <div class="account-info">
+                        <div class="account-info__head">
+                            <h3 class="account-info__title">
+                                Login information
+                            </h3>
+                            <button type="button" class="edit-btn" title="Edit information" data-micromodal-trigger="modal-edit-login-info"></button>
                         </div>
-                        <div class="subscription-info__bill">
-                            Billing date: April 2, 2021
-                        </div>
-                        <ul class="skills-info">
-                            <li class="skills-info__skill">
-                                <span class="skills-info__skill-name">
-                                    Brain & hands flawless teamwork
+                        <ul class="account-info__infos">
+                            <li class="account-info__info">
+                                <span class="account-info__info-def">
+                                    Name:
                                 </span>
-                                <div class="skills-info__skill-points">
-                                    <div class="skills-info__line"></div>
-                                    <div class="skills-info__points">
-                                        <span class="skills-info__current-point">
-                                            60
-                                        </span>
-                                        /
-                                        <span class="skills-info__max-point">
-                                            100
-                                        </span>
-                                    </div>
-                                </div>
+                                <span class="account-info__info-value">
+                                    Oleksii Voronkevych
+                                </span>
                             </li>
-                            <li class="skills-info__skill">
-                                <span class="skills-info__skill-name">
-                                    Superb engineering skills
+                            <li class="account-info__info">
+                                <span class="account-info__info-def">
+                                    Email:
                                 </span>
-                                <div class="skills-info__skill-points">
-                                    <div class="skills-info__line"></div>
-                                    <div class="skills-info__points">
-                                        <span class="skills-info__current-point">
-                                            10
-                                        </span>
-                                        /
-                                        <span class="skills-info__max-point">
-                                            100
-                                        </span>
-                                    </div>
-                                </div>
+                                <span class="account-info__info-value">
+                                    level97@gmail.com
+                                </span>
                             </li>
-                            <li class="skills-info__skill">
-                                <span class="skills-info__skill-name">
-                                    Unlimited creativity
+                            <li class="account-info__info">
+                                <span class="account-info__info-def">
+                                    Password:
                                 </span>
-                                <div class="skills-info__skill-points">
-                                    <div class="skills-info__line"></div>
-                                    <div class="skills-info__points">
-                                        <span class="skills-info__current-point">
-                                            60
-                                        </span>
-                                        /
-                                        <span class="skills-info__max-point">
-                                            100
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skills-info__skill">
-                                <span class="skills-info__skill-name">
-                                    Powerful science skills
+                                <span class="account-info__info-value">
+                                    *********
                                 </span>
-                                <div class="skills-info__skill-points">
-                                    <div class="skills-info__line"></div>
-                                    <div class="skills-info__points">
-                                        <span class="skills-info__current-point">
-                                            50
-                                        </span>
-                                        /
-                                        <span class="skills-info__max-point">
-                                            100
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skills-info__skill">
-                                <span class="skills-info__skill-name">
-                                    Lightning-fast reaction
-                                </span>
-                                <div class="skills-info__skill-points">
-                                    <div class="skills-info__line"></div>
-                                    <div class="skills-info__points">
-                                        <span class="skills-info__current-point">
-                                            80
-                                        </span>
-                                        /
-                                        <span class="skills-info__max-point">
-                                            100
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skills-info__skill">
-                                <span class="skills-info__skill-name">
-                                    Logic
-                                </span>
-                                <div class="skills-info__skill-points">
-                                    <div class="skills-info__line"></div>
-                                    <div class="skills-info__points">
-                                        <span class="skills-info__current-point">
-                                            20
-                                        </span>
-                                        /
-                                        <span class="skills-info__max-point">
-                                            100
-                                        </span>
-                                    </div>
-                                </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="account-info">
-                    <div class="account-info__head">
+                    <div class="account-info">
+                        <div class="account-info__head">
+                            <h3 class="account-info__title">
+                                Payment details
+                            </h3>
+                            <button class="add-btn" title="Add information" data-micromodal-trigger="modal-edit-payment-info-empty"></button>
+                            <button class="edit-btn" title="Edit information" data-micromodal-trigger="modal-edit-payment-info"></button>
+                        </div>
+                        <div class="account-info__card">
+                            <img src="img/base/mastercard.jpg" alt="card icon" class="account-info__card-icon">
+                            <span class="account-info__card-name">
+                                MasterCard ending in 4835
+                            </span>
+                        </div>
+                    </div>
+                    <div class="account-info">
+                        <div class="account-info__head">
+                            <h3 class="account-info__title">
+                                Subscriptions
+                            </h3>
+                            <button type="button" class="add-btn" title="Add information" data-micromodal-trigger="modal-edit-subsctiption"></button>
+                        </div>
+                        <div class="subscription-info">
+                            <div class="subscription-info__head">
+                                <div class="subscription-info__head-wrapper">
+                                    <span class="subscription-info__name">
+                                        Anna Mariia Voronkevich
+                                    </span>
+                                    <span class="subscription-info__plan">
+                                        12 Month Subscription Auto Renew
+                                    </span>
+                                </div>
+                                <button class="edit-btn subscription-info__edit-btn" title="Edit information" data-micromodal-trigger="modal-edit-subsctiption"></button>
+                            </div>
+                            <div class="subscription-info__bill">
+                                Billing date: April 2, 2021
+                            </div>
+                            <ul class="skills-info">
+                                <li class="skills-info__skill">
+                                    <span class="skills-info__skill-name">
+                                        Brain & hands flawless teamwork
+                                    </span>
+                                    <div class="skills-info__skill-points">
+                                        <div class="skills-info__line">
+                                            <!-- For PHP
+                                                Put number of skill points inside skills-info__current-point
+                                                and into value of width property of span
+                                            -->
+                                            <span style="width:60%"></span>
+                                        </div>
+                                        <div class="skills-info__points">
+                                            <span class="skills-info__current-point">
+                                                60
+                                            </span>
+                                            /
+                                            <span class="skills-info__max-point">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skills-info__skill">
+                                    <span class="skills-info__skill-name">
+                                        Superb engineering skills
+                                    </span>
+                                    <div class="skills-info__skill-points">
+                                        <div class="skills-info__line">
+                                            <span style="width:10%"></span>
+                                        </div>
+                                        <div class="skills-info__points">
+                                            <span class="skills-info__current-point">
+                                                10
+                                            </span>
+                                            /
+                                            <span class="skills-info__max-point">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skills-info__skill">
+                                    <span class="skills-info__skill-name">
+                                        Unlimited creativity
+                                    </span>
+                                    <div class="skills-info__skill-points">
+                                        <div class="skills-info__line">
+                                            <span style="width:60%"></span>
+                                        </div>
+                                        <div class="skills-info__points">
+                                            <span class="skills-info__current-point">
+                                                60
+                                            </span>
+                                            /
+                                            <span class="skills-info__max-point">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skills-info__skill">
+                                    <span class="skills-info__skill-name">
+                                        Powerful science skills
+                                    </span>
+                                    <div class="skills-info__skill-points">
+                                        <div class="skills-info__line">
+                                            <span style="width:50%"></span>
+                                        </div>
+                                        <div class="skills-info__points">
+                                            <span class="skills-info__current-point">
+                                                50
+                                            </span>
+                                            /
+                                            <span class="skills-info__max-point">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skills-info__skill">
+                                    <span class="skills-info__skill-name">
+                                        Lightning-fast reaction
+                                    </span>
+                                    <div class="skills-info__skill-points">
+                                        <div class="skills-info__line">
+                                            <span style="width:80%"></span>
+                                        </div>
+                                        <div class="skills-info__points">
+                                            <span class="skills-info__current-point">
+                                                80
+                                            </span>
+                                            /
+                                            <span class="skills-info__max-point">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skills-info__skill">
+                                    <span class="skills-info__skill-name">
+                                        Logic
+                                    </span>
+                                    <div class="skills-info__skill-points">
+                                        <div class="skills-info__line">
+                                            <span style="width:20%"></span>
+                                        </div>
+                                        <div class="skills-info__points">
+                                            <span class="skills-info__current-point">
+                                                20
+                                            </span>
+                                            /
+                                            <span class="skills-info__max-point">
+                                                100
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="account-info">
+                        <div class="account-info__head">
+                            <h3 class="account-info__title">
+                                Email
+                            </h3>
+                        </div>
+                        <div class="account-info__preferences">
+                            <button type="button" class="account-info__preferences-btn" data-micromodal-trigger="modal-edit-mail">
+                                Manage preferences
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="account-orders">
+                    <div class="account-info">
                         <h3 class="account-info__title">
-                            Email
+                            Orders
                         </h3>
+                        <div class="account-orders__order">
+                            <div class="account-orders__order-head">
+                                <h4 class="account-odrders__order-title">
+                                    12 Month Subscription
+                                </h4>
+                                <span class="account-orders__order-date">
+                                    15.03.2020
+                                </span>
+                            </div>
+                            <div class="account-orders__order-prices">
+                                <div class="account-orders__order-price account-orders__order-price--full">
+                                    $135
+                                </div>
+                                <div class="account-orders__order-price">
+                                    $125
+                                </div>
+                            </div>
+                            <div class="account-orders__order-status account-orders__order-status--successfull">
+                                Successfull
+                            </div>
+                        </div>
+                        <div class="account-orders__order">
+                            <div class="account-orders__order-head">
+                                <h4 class="account-odrders__order-title">
+                                    1 Month Subscription
+                                </h4>
+                                <span class="account-orders__order-date">
+                                    15.03.2020
+                                </span>
+                            </div>
+                            <div class="account-orders__order-prices">
+                                <div class="account-orders__order-price">
+                                    $125
+                                </div>
+                            </div>
+                            <div class="account-orders__order-status account-orders__order-status--processing">
+                                In processing
+                            </div>
+                        </div>
+                        <div class="account-orders__order">
+                            <div class="account-orders__order-head">
+                                <h4 class="account-odrders__order-title">
+                                    9 Month Subscription
+                                </h4>
+                                <span class="account-orders__order-date">
+                                    15.03.2020
+                                </span>
+                            </div>
+                            <div class="account-orders__order-prices">
+                                <div class="account-orders__order-price account-orders__order-price--full">
+                                    $135
+                                </div>
+                                <div class="account-orders__order-price">
+                                    $125
+                                </div>
+                            </div>
+                            <div class="account-orders__order-status account-orders__order-status--canceled">
+                                Canceled
+                            </div>
+                        </div>
                     </div>
-                    <div class="account-info__preferences">
-                        <button type="button" class="account-info__preferences-btn" data-micromodal-trigger="modal-edit-mail">
-                            Manage preferences
-                        </button>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
 </main>
 <%=_.template(require('../parts/modal-email-editing.html'))() %>
+<%=_.template(require('../parts/modal-susbscription-editing.html'))() %>
 <%=_.template(require('../parts/modal-edit-login-info.html'))() %>
 <%=_.template(require('../parts/modal-edit-payment-info.html'))() %>
+
+<!-- Empty modals
+    need to delete it after finishing the layout
+-->
+<%=_.template(require('../parts/modal-edit-payment-info-empty.html'))() %>
 
 <%=_.template(require('../parts/footer.html'))() %>
