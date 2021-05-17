@@ -1,8 +1,32 @@
 .blog {
     background: $bg-green;
-    padding: 100px 0 173px;
+    padding: 32px 0 24px;
 
-    &__content {
-        display: grid;
+    @include media-up(md) {
+        padding: 80px 0;
+    }
+
+    @include media-up(lg) {
+        padding: 100px 0 173px;
+    }
+
+    &__wrapper {
+        @include media-up(md) {
+            position: relative;
+            display: grid;
+            grid-template-columns: 262px 1fr;
+            gap: 30px;
+        }
+    }
+
+    &-aside {
+        &__wrapper {
+            position: sticky;
+            top: 80px;
+        }
+    }
+
+    &-content {
+        
     }
 }
