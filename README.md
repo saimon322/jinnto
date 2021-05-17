@@ -27,13 +27,13 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 17. [Affiliate page](https://jinnto.com/affilate.html) – 5 h.
 18. [Privacy Policy](https://jinnto.com/policy.html) – 30 min.
 19. [Terms & Conditions](https://jinnto.com/terms.html) – 30 min.
-20. FAQ – 4 h.
+20. [FAQ](https://jinnto.com/faq.html) – 4 h.
 21. [Contact Us](https://jinnto.com/contact-us.html) – 4 h.
-22. Account – 8 h.
-23. Account login editing – 2 h.
-24. Account payment editing – 4 h.
-25. Account Subscriptions editing – 3 h.
-26. Account email editing – 3 h.
+22. [Account](https://jinnto.com/contact-us.html) – 8 h.
+23. [Account login editing](https://jinnto.com/contact-us.html) (modal) – 2 h.
+24. [Account payment editing](https://jinnto.com/contact-us.html) (modal) – 4 h.
+25. [Account Subscriptions editing](https://jinnto.com/contact-us.html) (modal) – 3 h.
+26. [Account email editing](https://jinnto.com/contact-us.html) (modal) – 3 h.
 27. Orders – 2 h.
 28. My promocode – 2 h.
 29. Video instructions – 4 h.
