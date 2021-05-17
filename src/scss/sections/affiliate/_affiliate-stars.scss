@@ -1,4 +1,4 @@
-.affilate-stars {
+.affiliate-stars {
     @include media-up(lg) {
         transform: translateY(-50%);
         margin-bottom: -120px;
@@ -10,7 +10,7 @@
         color: #fff;
         padding: 35px 20px;
         margin: 0 -20px;
-        background-image: url(img/bg/affilate-stars-mobile.svg);
+        background-image: url(img/bg/affiliate-stars-mobile.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -22,7 +22,7 @@
 
         @include media-up(lg) {
             padding: 50px 0;
-            background-image: url(img/bg/affilate-stars-desktop.svg);
+            background-image: url(img/bg/affiliate-stars-desktop.svg);
         }
     }
 

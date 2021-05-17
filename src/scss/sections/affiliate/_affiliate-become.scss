@@ -1,4 +1,4 @@
-.affilate-become {
+.affiliate-become {
     margin-top: 70px;
 
     @include media-up(lg) {
@@ -25,13 +25,13 @@
         margin-top: 60px;
         max-width: 780px;
         background-repeat: no-repeat;
-        background-image: url(img/bg/affilate-become-mobile.svg);
+        background-image: url(img/bg/affiliate-become-mobile.svg);
         background-position: center;
         background-size: contain;
 
         @include media-up(lg) {
             margin-top: 100px;
-            background-image: url(img/bg/affilate-become-desktop.svg);
+            background-image: url(img/bg/affiliate-become-desktop.svg);
         }
     }
 
@@ -46,20 +46,20 @@
     }
 
     &__item {
-        &:nth-child(even) .affilate-become__item-wrapper {
+        &:nth-child(even) .affiliate-become__item-wrapper {
             flex-direction: row-reverse;
             margin-left: auto;
         }
 
-        &:nth-child(1) .affilate-become__item-title {
+        &:nth-child(1) .affiliate-become__item-title {
             color: $pink;
         }
 
-        &:nth-child(2) .affilate-become__item-title {
+        &:nth-child(2) .affiliate-become__item-title {
             color: $green;
         }
 
-        &:nth-child(3) .affilate-become__item-title {
+        &:nth-child(3) .affiliate-become__item-title {
             color: $orange;
         }
     }
