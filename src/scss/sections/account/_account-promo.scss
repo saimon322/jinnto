@@ -1,0 +1,105 @@
+.account-promo {
+    &__promo-wrapper {
+        position: relative;
+        max-width: 420px;
+    }
+
+    &__input {
+        border: 1px solid $blue-10;
+        padding: 10px 20px;
+
+        @include media-up(md) {
+            padding: 12px 20px;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__text {
+        margin: 15px 0 25px;
+
+        @include media-up(md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__recent {
+        @include media-up(md) {
+            padding-top: 85px;
+        }
+    }
+
+    &__promo {
+        display: grid;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        grid-template-areas:
+            'head head'
+            'prices status';
+
+        gap: 10px;
+        border-bottom: 1px solid $blue-20;
+
+        &:last-child {
+            border: none;
+        }
+
+        @include media-up(md) {
+            grid-template-areas:
+                'head status'
+                'promoname status';
+        }
+
+        @include media-up(lg) {
+            padding: 30px;
+        }
+    }
+
+    &__promo-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-area: head;
+
+        @include media-up(sm) {
+            gap: 5px;
+            justify-content: flex-start;
+        }
+    }
+
+    &__promocode {
+    }
+
+    &__promo-date {
+    }
+
+    &__promo-name {
+        grid-area: promoname;
+    }
+
+    &__promo-status {
+        font-size: 14px;
+        line-height: 17px;
+        grid-area: status;
+        justify-self: end;
+
+        @include media-up(md) {
+            justify-self: center;
+        }
+
+        &--active {
+            color: $green;
+        }
+
+        &--used {
+            color: $orange;
+        }
+    }
+}
