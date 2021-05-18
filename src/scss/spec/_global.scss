@@ -233,3 +233,8 @@ svg {
     position: relative;
     flex: 1 0 auto;
 }
+
+label,
+select {
+    cursor: pointer;
+}
