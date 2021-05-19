@@ -2,11 +2,16 @@ import AOS from 'aos';
 import Swiper from 'swiper/swiper-bundle.min.js';
 import Parallax from 'parallax-js';
 import './svg-sprite';
+// WAI-ARIA Authoring Practices 1.1 / Listbox
+// https://www.w3.org/TR/wai-aria-practices-1.1
+// utils.js + listbox.js + listbox-scrollable.js = listbox.js
+import './listbox';
 
 $(function() {
     'use strict';
 
     const $window = $(window);
+    const $page = $('html');
     const $body = $('body');
     const $nav = $('.nav');
     const $header = $('.header');
@@ -45,7 +50,7 @@ $(function() {
             closeMenu();
         }
     }, { passive: true })
-    
+
     function navTransition() {
         $nav.toggleClass('transitioned', window.matchMedia('(max-width: 767px)').matches);
     }
@@ -110,7 +115,7 @@ $(function() {
             stage.box = stage.item.find('.stage__box');
             stage.boxTop = stage.top;
             stage.boxBot = stage.boxTop + stage.box.outerHeight();
-            
+
             // Stage line and dot
             let line = stage.item.find('.stage__line--desktop');
             if (line.length) {
@@ -128,29 +133,29 @@ $(function() {
             let winHeight = $window.height();
             let stagesTop = stages.offset().top;
             let windowMid = Math.max(-50, (winTop - stagesTop + winHeight / 2));
-    
+
             stagesArr.forEach(function(stage) {
                 let $stage = stage.item;
                 let $box = stage.box;
                 let $dot = stage.dot;
                 if (windowMid - 50 < stage.boxTop) {
-                    // View over stage 
+                    // View over stage
                     $box.removeClass('cursor-in cursor-out');
-                } 
+                }
                 else if (windowMid + 50 > stage.boxBot) {
-                    // View under stage 
+                    // View under stage
                     $box.removeClass('cursor-in').addClass('cursor-out');
                     $stage.addClass('visible-dot');
 
                     if (windowMid - 50 > stage.bot)
                         $stage.removeClass('visible-dot');
-                } 
+                }
                 else {
                     // View inside stage
                     $box.removeClass('cursor-out').addClass('cursor-in');
                     $stage.removeClass('visible-dot');
                 }
-                
+
                 // Move dot with the scroll
                 if ($dot)
                     $dot.move(( windowMid - stage.lineTop) / stage.lineHeight);
@@ -206,4 +211,88 @@ $(function() {
         document.documentElement.style.setProperty('--vh', vh + 'px');
     });
 
+    // START IOS SCROLLING BUG FIX
+    ////////////////////////////////////////////////////////////////////////////
+    // 1. Фиксация <body>
+    function bodyFixPosition() {
+
+        setTimeout( function() {
+            /* Ставим необходимую задержку, чтобы не было «конфликта» в случае, если функция фиксации вызывается сразу после расфиксации (расфиксация отменяет действия расфиксации из-за одновременного действия) */
+
+            if ( !document.body.hasAttribute('data-body-scroll-fix') ) {
+
+                // Получаем позицию прокрутки
+                let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Ставим нужные стили
+                document.body.setAttribute('data-body-scroll-fix', scrollPosition); // Cтавим атрибут со значением прокрутки
+                document.body.style.overflow = 'hidden';
+                document.body.style.position = 'fixed';
+                document.body.style.top = '-' + scrollPosition + 'px';
+                document.body.style.left = '0';
+                document.body.style.width = '100%';
+
+            }
+
+        }, 15 ); /* Можно задержку ещё меньше, но у меня работало хорошо именно с этим значением на всех устройствах и браузерах */
+
+    }
+
+    // 2. Расфиксация <body>
+    function bodyUnfixPosition() {
+
+        if ( document.body.hasAttribute('data-body-scroll-fix') ) {
+
+            // Получаем позицию прокрутки из атрибута
+            let scrollPosition = document.body.getAttribute('data-body-scroll-fix');
+
+            // Удаляем атрибут
+            document.body.removeAttribute('data-body-scroll-fix');
+
+            // Удаляем ненужные стили
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.left = '';
+            document.body.style.width = '';
+
+            // Прокручиваем страницу на полученное из атрибута значение
+            window.scroll(0, scrollPosition);
+
+        }
+
+    }
+    // END IOS SCROLLING BUG FIX
+    ////////////////////////////////////////////////////////////////////////////
+
+    // START FILTER
+    ////////////////////////////////////////////////////////////////////////////
+    // reserve a place for a filter
+    const $filter = $('.filter');
+    if ($filter.length) {
+        $body.css({'paddingBottom': `${43 + $filter.height()}px`});
+    }
+
+    // show/hide filter dropdown
+    $('.filter__button').on('click', function () {
+        let $filterDropdown = $(this).closest('.filter__item').find('.filter-dropdown');
+        let $filterDropdownHead = $filterDropdown.find('.filter-dropdown__head');
+
+        $filterDropdown.addClass('filter-dropdown--show');
+        bodyFixPosition();
+        fixFilterHeight($filterDropdownHead);
+    });
+
+    function fixFilterHeight($filterDropdownHead) {
+        let $filterDropdownHeadHeight = $filterDropdownHead.height();
+        $page[0].style.setProperty('--filter-dropdown-head-height', `${$filterDropdownHeadHeight}px`);
+    }
+
+    $('.filter-dropdown__close').on('click', function () {
+        let $filterDropdown = $(this).closest('.filter__item').find('.filter-dropdown');
+        $filterDropdown.removeClass('filter-dropdown--show');
+        bodyUnfixPosition();
+    });
+    // END FILTER
+    ////////////////////////////////////////////////////////////////////////////
 }); // end ready

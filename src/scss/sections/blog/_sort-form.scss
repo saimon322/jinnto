@@ -1,0 +1,26 @@
+.sort-form {
+    display: flex;
+    align-items: baseline;
+
+    &__label {
+        display: block;
+        margin-right: 6px;
+        font-size: 18px;
+    }
+
+
+
+    &__field {
+        padding-right: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        appearance: none;
+        background: url("img/icons/select.svg") no-repeat right 7px;
+        background-size: 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

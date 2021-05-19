@@ -1,0 +1,46 @@
+.post-item-2 {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba($blue, .2);
+
+    .posts-list-2__item:first-child & {
+        padding-top: 0;
+    }
+
+    .posts-list-2__item:last-child & {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    &__subtitle {
+        margin-bottom: 6px;
+        font-size: 12px;
+        color: rgba($blue, .5);
+
+        @include media-up(md) {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 6px;
+        font-weight: 400;
+        line-height: 1.6;
+
+        @include media-up(md) {
+            margin-bottom: 12px;
+            font-size: 18px;
+            line-height: 1.33;
+        }
+    }
+
+    &__date {
+        font-size: 12px;
+        color: rgba($blue, .5);
+
+        @include media-up(md) {
+            font-size: 15px;
+        }
+    }
+}

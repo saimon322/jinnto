@@ -1,0 +1,25 @@
+.blog-aside {
+    grid-area: blog-aside;
+
+    &__wrapper {
+        & > *:first-child {
+            margin-top: 0;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__widget {
+        margin-bottom: 60px;
+    }
+
+    .widget-cats {
+        display: none;
+
+        @include media-up(md) {
+            display: block;
+        }
+    }
+}

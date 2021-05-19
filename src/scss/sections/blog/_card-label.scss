@@ -1,0 +1,28 @@
+.card-label {
+    position: absolute;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 8px 0 0;
+        border-color: $green--dark transparent transparent transparent;
+    }
+
+    &__txt {
+        position: relative;
+        z-index: 2;
+        display: block;
+        padding: 7.5px 23px;
+        font-size: 15px;
+        color: #fff;
+        background-color: $green;
+        border-radius: 27px 4px 4px 27px;
+    }
+}

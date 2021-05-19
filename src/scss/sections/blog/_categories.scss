@@ -1,0 +1,20 @@
+.categories {
+    &__item {
+
+    }
+
+    &__link {
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        line-height: 1.33;
+
+        .categories__item:first-child & {
+            padding-top: 0;
+        }
+
+        .categories__item:last-child & {
+            padding-bottom: 0;
+        }
+    }
+}

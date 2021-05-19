@@ -1,0 +1,36 @@
+.filter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 101;
+
+    @include media-up(sm) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        width: 50%;
+    }
+
+    &__button {
+        width: 100%;
+        padding: 17px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #fff;
+        background-color: $blue;
+        border: none;
+        border-right: 1px solid rgba(255, 255, 255, .1);
+
+        .filter__item:last-child & {
+            border-right: none;
+        }
+    }
+}
