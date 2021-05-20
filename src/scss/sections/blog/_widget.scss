@@ -1,0 +1,13 @@
+.widget {
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 17px;
+
+        @include media-up(md) {
+            margin-bottom: 27px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+}

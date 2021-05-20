@@ -1,6 +1,9 @@
 .blog {
-    background: $bg-green;
     padding: 32px 0 24px;
+
+    @include media-up(sm) {
+        background-color: $bg-green;
+    }
 
     @include media-up(md) {
         padding: 80px 0;
@@ -10,13 +13,36 @@
         padding: 100px 0 173px;
     }
 
+    &__sort-form {
+        width: fit-content;
+        margin-left: auto;
+        margin-bottom: 35px;
+        
+        .blog & {
+            display: none;
+
+            @include media-up(sm) {
+                display: flex;
+            }
+        }
+    }
+
     &__wrapper {
         @include media-up(md) {
             position: relative;
             display: grid;
             grid-template-columns: 262px 1fr;
+            grid-template-areas: 'blog-aside blog-content';
             gap: 30px;
         }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__aside {
+
     }
 
     &-aside {
@@ -26,7 +52,11 @@
         }
     }
 
+    &__content  {
+        margin-bottom: 60px;
+    }
+
     &-content {
-        
+
     }
 }

@@ -4,28 +4,29 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 150
 $font: "Inter", sans-serif;
 
 // Colors
-$blue:       #2A3B5E;
-$blue-10:    #2A3B5E1A;
-$blue-20:    #2A3B5E33;
-$blue-50:    #2A3B5E80;
-$blue-70:    #2A3B5EB3;
-$blue-80:    #2A3B5ECC;
-$blue-90:    #2A3B5EE6;
-$cyan:       #009DAF;
-$green:      #009564;
-$gray:       #C6C6C6;
-$orange:     #FF7D5F;
-$pink:       #FF719C;
-$purple:     #4150A3;
-$red:        #FF6860;
-$red-10:     #FF68601A;
-$yellow:     #F1E66B;
-$white-10:   #FFFFFF1A;
+$blue:        #2A3B5E;
+$blue-10:     #2A3B5E1A;
+$blue-20:     #2A3B5E33;
+$blue-50:     #2A3B5E80;
+$blue-70:     #2A3B5EB3;
+$blue-80:     #2A3B5ECC;
+$blue-90:     #2A3B5EE6;
+$cyan:        #009DAF;
+$green:       #009564;
+$green--dark: #00462F;
+$gray:        #C6C6C6;
+$orange:      #FF7D5F;
+$pink:        #FF719C;
+$purple:      #4150A3;
+$red:         #FF6860;
+$red-10:      #FF68601A;
+$yellow:      #F1E66B;
+$white-10:    #FFFFFF1A;
 
-$bg-pink:    #FFFCFD;
-$bg-green:   #F7FCFA;
-$bg-orange:  #FFF9F7;
-$bg-cyan:    #D4F2FF;
-$bg-soft:    #F8F7F6;
+$bg-pink:     #FFFCFD;
+$bg-green:    #F7FCFA;
+$bg-orange:   #FFF9F7;
+$bg-cyan:     #D4F2FF;
+$bg-soft:     #F8F7F6;
 
-$border:     #EAECEF;
+$border:      #EAECEF;

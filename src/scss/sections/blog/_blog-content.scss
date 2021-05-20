@@ -1,0 +1,19 @@
+.blog-content {
+    grid-area: blog-content;
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+
+    &__posts-list {
+        margin: 0 0 32px;
+
+        @include media-up(md) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .breadcrumbs {
+        margin: 0 auto;
+    }
+}

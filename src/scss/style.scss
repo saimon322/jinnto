@@ -45,6 +45,7 @@
 @import 'modules/powers';
 @import 'modules/section-advantages';
 @import 'modules/modal';
+@import 'modules/breadcrumbs';
 
 /* ==========================================================================
     HOME PAGE
@@ -142,3 +143,20 @@
     BLOG
     ========================================================================== */
 @import 'sections/blog/blog';
+@import 'sections/blog/sort-form';
+@import 'sections/blog/blog-content';
+@import 'sections/blog/posts-list';
+@import 'sections/blog/post-item-hero';
+@import 'sections/blog/card-label';
+@import 'sections/blog/post-item';
+@import 'sections/blog/blog-aside';
+@import 'sections/blog/widget';
+@import 'sections/blog/widget-posts';
+@import 'sections/blog/posts-list-2';
+@import 'sections/blog/post-item-2';
+@import 'sections/blog/widget-cats';
+@import 'sections/blog/categories';
+@import 'sections/blog/filter';
+@import 'sections/blog/filter-dropdown';
+@import 'sections/blog/listbox';
+
