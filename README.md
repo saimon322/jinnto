@@ -31,7 +31,7 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 19. [Terms & Conditions](https://jinnto.com/terms.html) – 30 min.
 20. [FAQ](https://jinnto.com/faq.html) – 4 h.
 21. [Contact Us](https://jinnto.com/contact-us.html) – 4 h.
-22. [Account](https://jinnto.com/account.html) – 8 h.
+22. [Account](https://jinnto.com/account-subscription.html) – 8 h.
 23. [Account login editing](https://jinnto.com/account.html) (modal) – 2 h.
 24. [Account payment editing](https://jinnto.com/account.html) (modal) – 4 h.
 25. [Account Subscriptions editing](https://jinnto.com/account.html) (modal) – 3 h.

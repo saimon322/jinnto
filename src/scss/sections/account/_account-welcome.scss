@@ -1,0 +1,34 @@
+.account-welcome {
+    &__menu {
+        display: block;
+    }
+
+    &__greetings {
+        margin-bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__nav-link {
+        position: relative;
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: calc(50% - 5px);
+            right: 23px;
+            width: 10px;
+            height: 10px;
+            background-image: url(img/icons/arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}

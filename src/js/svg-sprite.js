@@ -16,3 +16,4 @@ import '../img/svg-sprite/gift-box.svg';
 import '../img/svg-sprite/play.svg';
 import '../img/icons/check.svg';
 import '../img/svg-sprite/icon-close.svg';
+import '../img/icons/full-arrow-left.svg';

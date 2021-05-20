@@ -5,6 +5,12 @@
 
 <main class="site-main account-main">
     <div class="container">
+        <a href="account-welcome.html" class="account-main__back-link">
+            <svg width="21" height="16">
+                <use href="#full-arrow-left"></use>
+            </svg>
+            Video product
+        </a>
         <div class="account-main__wrapper account-video">
             <%=_.template(require("../parts/account-menu.html"))({
                 menu: {videos: 'current'}

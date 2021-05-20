@@ -5,10 +5,55 @@
 
     @include media-up(lg) {
         padding: 50px 60px 60px;
+        max-width: 800px;
     }
 
     & + & {
         margin-top: 30px;
+    }
+
+    &__list {
+        margin: 20px 0;
+    }
+
+    &__list-item {
+        position: relative;
+        padding-left: 15px;
+        font-size: 17px;
+        line-height: 1.6;
+        margin-bottom: 7px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include media-up(md) {
+            font-size: 18px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $red;
+            left: 0;
+            top: calc(50% - 2.5px);
+        }
+    }
+
+    &__link-back {
+        display: none;
+
+        @include media-up(lg) {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: min-content 1fr;
+            margin-bottom: 10px;
+            align-items: center;
+            color: $blue-20;
+        }
     }
 }
 

@@ -5,6 +5,12 @@
 
 <main class="site-main account-main">
     <div class="container">
+        <a href="account-welcome.html" class="account-main__back-link">
+            <svg width="21" height="16">
+                <use href="#full-arrow-left"></use>
+            </svg>
+            Orders
+        </a>
         <div class="account-main__wrapper">
             <%=_.template(require("../parts/account-menu.html"))({
                 menu: {orders: 'current'}

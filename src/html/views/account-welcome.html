@@ -1,0 +1,42 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "My promocode | Jinnto",
+    menu: {}
+}) %>
+
+<main class="site-main account-main account-welcome">
+    <div class="container">
+        <div class="account-menu account-welcome__menu">
+            <div class="account-menu__greetings account-welcome__greetings title-underline title-underline--yellow">
+                Welcome, Oleksii!
+            </div>
+            <nav class="account-menu__nav">
+                <a href="account-subscription.html" class="account-menu__nav-link account-welcome__nav-link">
+                    <svg width="20" height="20">
+                        <use xlink:href='#person'></use>
+                    </svg>
+                    Account & Subscription
+                </a>
+                <a href="account-orders.html" class="account-menu__nav-link account-welcome__nav-link">
+                    <svg width="20" height="20">
+                        <use xlink:href='#cart'></use>
+                    </svg>
+                    Orders
+                </a>
+                <a href="account-promo.html" class="account-menu__nav-link account-welcome__nav-link">
+                    <svg width="20" height="20">
+                        <use xlink:href='#gift-box'></use>
+                    </svg>
+                    My promocode
+                </a>
+                <a href="account-videos.html" class="account-menu__nav-link account-welcome__nav-link">
+                    <svg width="20" height="20">
+                        <use xlink:href='#play'></use>
+                    </svg>
+                    Video product
+                </a>
+            </nav>
+        </div>
+    </div>
+</main>
+
+<%=_.template(require('../parts/footer.html'))() %>

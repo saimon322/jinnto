@@ -5,13 +5,97 @@
 
 <main class="site-main account-main">
     <div class="container">
-        <div class="account-main__wrapper account-video">
+        <a href="account-videos.html" class="account-main__back-link">
+            <svg width="21" height="16">
+                <use href="#full-arrow-left"></use>
+            </svg>
+            Back to all kits
+        </a>
+        <div class="account-main__wrapper">
             <%=_.template(require("../parts/account-menu.html"))({
                 menu: {videos: 'current'}
             }) %>
 
-            <div class="account-main__content">
-                
+            <div class="account-content account-main__content account-tutorial">
+                <a href="account-videos.html" class="account-content__link-back">
+                    <svg width="21" height="16">
+                        <use href="#full-arrow-left"></use>
+                    </svg>
+                    Back to all kits
+                </a>
+                <h2 class="account-tutorial__title">
+                    Projector Project
+                </h2>
+                <!--
+                    Needed to change href of data-fancy-trigger
+                 -->
+                <a id="video-tutorial" data-fancy-trigger href="https://www.youtube.com/watch?v=LXb3EKWsInQ&t=22s" class="account-tutorial__video-trigger">
+                    <div class="account-tutorial__img-wrapper">
+                        <img src="img/base/video-instuction-1.jpg" alt="alt" class="account-tutorial__img">
+                    </div>
+                </a>
+                <strong class="account-tutorial__class-description">Duis eu amet adipisicing occaecat esse cillum culpa ad.</strong>
+                <p>
+                    Nostrud esse veniam exercitation voluptate. Culpa elit officia Lorem magna fugiat. Occaecat tempor proident esse qui dolore fugiat aliqua sunt. Lorem in laboris nisi laborum. <strong>Minim Lorem</strong> irure proident nulla commodo ullamco nostrud deserunt sunt. Esse occaecat et et aliquip magna elit.
+                </p>
+                <p>
+                    Occaecat commodo quis incididunt culpa. Occaecat aliquip dolore cillum dolore minim excepteur. Enim et laboris consectetur consequat aliqua adipisicing anim quis qui aute esse officia. Sit ex excepteur Lorem ad cupidatat nostrud. Ea sunt ipsum quis in elit deserunt aute quis incididunt adipisicing ipsum aliquip tempor elit.
+                </p>
+                <div class="account-tutorial__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="account-tutorial__slide swiper-slide">
+                                <img src="img/base/video-instuction-2.jpg" alt="alt" class="account-tutorial__img">
+                            </div>
+                            <div class="account-tutorial__slide swiper-slide">
+                                <img src="img/base/video-instuction-1.jpg" alt="alt" class="account-tutorial__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-tutorial__slider-bottom">
+                        <!-- Swiper navigation -->
+                        <div class="account-tutorial__slider-controls">
+                            <button type="button" class="account-tutorial__slider-btn account-tutorial__slider-btn--prev">
+                                <svg width='20' height='20'>
+                                    <use xlink:href='#slider-arrow'></use>
+                                </svg>
+                            </button>
+                            <button type="button" class="account-tutorial__slider-btn account-tutorial__slider-btn--next">
+                                <svg width='20' height='20'>
+                                    <use xlink:href='#slider-arrow'></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="account-tutorial__slider-link">
+                            Description
+                        </a>
+                    </div>
+                </div>
+                <strong class="account-tutorial__class-description">Duis eu amet adipisicing occaecat esse cillum culpa ad.</strong>
+                <p>
+                    Nostrud esse veniam exercitation voluptate. Culpa elit officia Lorem magna fugiat. Occaecat tempor proident esse qui dolore fugiat aliqua sunt. Lorem in laboris nisi laborum. Minim Lorem irure proident <strong>nulla commodo</strong> ullamco nostrud deserunt sunt. Esse occaecat et et aliquip magna elit.
+                </p>
+                <ul class="account-content__list">
+                    <li class="account-content__list-item">
+                        Nostrud esse veniam exercitation voluptate.
+                    </li>
+                    <li class="account-content__list-item">
+                        Culpa elit officia Lorem magna fugiat.
+                    </li>
+                    <li class="account-content__list-item">
+                        Occaecat tempor proident esse qui dolore fugiat aliqua sunt.
+                    </li>
+                </ul>
+                <div class="account-tutorial__img-wrapper">
+                    <img src="img/base/video-instuction-3.jpg" alt="alt" class="account-tutorial__img">
+                </div>
+                <strong class="account-tutorial__class-description">Duis eu amet adipisicing occaecat esse cillum culpa ad.</strong>
+                <p>
+                    Nostrud esse veniam exercitation voluptate. Culpa elit officia Lorem magna fugiat. Occaecat tempor proident esse qui dolore fugiat aliqua sunt. Lorem in laboris nisi laborum. <strong>Minim Lorem</strong> irure proident nulla commodo ullamco nostrud deserunt sunt. Esse occaecat et et aliquip magna elit.
+                </p>
+                <p>
+                    Occaecat commodo quis incididunt culpa. Occaecat aliquip dolore cillum dolore minim excepteur. Enim et laboris consectetur consequat aliqua adipisicing anim quis qui aute esse officia. Sit ex excepteur Lorem ad cupidatat nostrud. Ea sunt ipsum quis in elit deserunt aute quis incididunt adipisicing ipsum aliquip tempor elit.
+                </p>
             </div>
         </div>
     </div>
