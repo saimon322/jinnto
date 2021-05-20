@@ -1,4 +1,5 @@
 import '../img/svg-sprite/logo.svg';
+import '../img/svg-sprite/social-twitter.svg';
 import '../img/svg-sprite/social-facebook.svg';
 import '../img/svg-sprite/social-instagram.svg';
 import '../img/svg-sprite/social-youtube.svg';

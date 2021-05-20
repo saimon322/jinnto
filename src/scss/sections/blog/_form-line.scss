@@ -1,0 +1,19 @@
+.form-line {
+    &__box {
+        display: flex;
+    }
+
+    &__field {
+        flex-grow: 1;
+        padding-right: 62px;
+        padding-left: 17px;
+        border: 1px solid rgba($blue, .1);
+    }
+
+    &__button {
+        flex-shrink: 0;
+        margin-left: -45px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
