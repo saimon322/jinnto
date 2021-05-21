@@ -6,5 +6,6 @@ import './js/share-panel';
 import './js/powers';
 import './js/modal';
 import './js/check-all';
+import './js/fancybox';
 
 import './scss/style.scss';

@@ -1,7 +1,14 @@
 .account-main {
     background-color: $bg-green;
-    padding-bottom: 180px;
-    padding-top: 50px;
+    padding-bottom: 60px;
+
+    @include media-up(md) {
+        padding-bottom: 180px;
+    }
+
+    @include media-up(lg) {
+        padding-top: 50px;
+    }
 
     &__wrapper {
         margin: 0 -30px;
@@ -20,5 +27,19 @@
 
     &__content {
         overflow: hidden;
+    }
+
+    &__back-link {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: min-content 1fr;
+        margin: 20px 0;
+        align-items: center;
+        font-weight: 700;
+        color: $blue;
+
+        @include media-up(lg) {
+            display: none;
+        }
     }
 }

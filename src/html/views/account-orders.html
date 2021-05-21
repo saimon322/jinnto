@@ -1,10 +1,16 @@
 <%=_.template(require('../parts/header.html'))({
-    title: "Orders | Jinnto",
+    title: "My orders | Jinnto",
     menu: {}
 }) %>
 
 <main class="site-main account-main">
     <div class="container">
+        <a href="account-welcome.html" class="account-main__back-link">
+            <svg width="21" height="16">
+                <use href="#full-arrow-left"></use>
+            </svg>
+            Orders
+        </a>
         <div class="account-main__wrapper">
             <%=_.template(require("../parts/account-menu.html"))({
                 menu: {orders: 'current'}
@@ -80,15 +86,5 @@
         </div>
     </div>
 </main>
-<%=_.template(require('../parts/modals/modal-edit-info.html'))() %>
-<%=_.template(require('../parts/modals/modal-edit-payment.html'))() %>
-<%=_.template(require('../parts/modals/modal-edit-susbscription.html'))() %>
-<%=_.template(require('../parts/modals/modal-edit-email.html'))() %>
-
-<!-- Empty modals for demonstration to client
-    need to remove them after finish the frontend
--->
-<%=_.template(require('../parts/modals/modal-add-payment.html'))() %>
-<%=_.template(require('../parts/modals/modal-add-susbscription.html'))() %>
 
 <%=_.template(require('../parts/footer.html'))() %>

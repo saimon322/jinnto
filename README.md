@@ -26,24 +26,25 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 14. [Blog](https://jinnto.com/blog.html) – 13 h.
 15. Article – 8 h.
 16. Author – 5 h.
-17. [Affiliate page](https://jinnto.com/affilate.html) – 5 h.
+17. [Affiliate](https://jinnto.com/affilate.html) – 5 h.
 18. [Privacy Policy](https://jinnto.com/policy.html) – 30 min.
 19. [Terms & Conditions](https://jinnto.com/terms.html) – 30 min.
 20. [FAQ](https://jinnto.com/faq.html) – 4 h.
 21. [Contact Us](https://jinnto.com/contact-us.html) – 4 h.
-22. [Account](https://jinnto.com/contact-us.html) – 8 h.
-23. [Account login editing](https://jinnto.com/contact-us.html) (modal) – 2 h.
-24. [Account payment editing](https://jinnto.com/contact-us.html) (modal) – 4 h.
-25. [Account Subscriptions editing](https://jinnto.com/contact-us.html) (modal) – 3 h.
-26. [Account email editing](https://jinnto.com/contact-us.html) (modal) – 3 h.
-27. [Orders](https://jinnto.com/orders.html) – 2 h.
+22. [Account](https://jinnto.com/account-subscription.html) – 8 h.
+23. [Account login editing](https://jinnto.com/account.html) (modal) – 2 h.
+24. [Account payment editing](https://jinnto.com/account.html) (modal) – 4 h.
+25. [Account Subscriptions editing](https://jinnto.com/account.html) (modal) – 3 h.
+26. [Account email editing](https://jinnto.com/account.html) (modal) – 3 h.
+27. [Orders](https://jinnto.com/account-orders.html) – 2 h.
 28. [My promocode](https://jinnto.com/account-promo.html) – 2 h.
 29. [Video instructions](https://jinnto.com/account-videos.html) – 4 h.
-30. Video instruction – 4 h.
-31. Discounts – 3 h.
-32. Promo page template – 3 h.
-33. Checkout – 8 h.
-34. 404 – 1 h.
+30. [Video instruction](https://jinnto.com/account-tutorial.html) – 4 h.
+31. [Account welcome](https://jinnto.com/account-welcome.html) – 2 h.
+32. Discounts – 3 h.
+33. Promo page template – 3 h.
+34. Checkout – 8 h.
+35. 404 – 1 h.
 
 ---
 

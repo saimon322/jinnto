@@ -194,6 +194,18 @@ $(function() {
         })
     }
 
+    const accountTutorialSlider = $('.account-tutorial__slider');
+
+    if (accountTutorialSlider.length) {
+        let slider = new Swiper(('.account-tutorial__slider .swiper-container'), {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.account-tutorial__slider-btn--next',
+                prevEl: '.account-tutorial__slider-btn--prev',
+            },
+        })
+    }
+
     // Faq
     const $faq = $('.faq');
     if ($faq.length) {

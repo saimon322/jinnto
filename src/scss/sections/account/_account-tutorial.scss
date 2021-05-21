@@ -1,0 +1,103 @@
+.account-tutorial {
+    p {
+        margin: 20px 0;
+    }
+
+    strong {
+        color: $pink;
+
+        @include media-up(md) {
+            color: inherit;
+        }
+    }
+
+    &__class-description {
+        display: block;
+        margin-top: 40px;
+    }
+
+    &__img-wrapper {
+        margin: 0 -20px;
+
+        @include media-up(sm) {
+            margin: 0;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin: 20px 0;
+        height: 180px;
+        object-fit: cover;
+
+        @include media-up(md) {
+            border-radius: 15px;
+            height: 300px;
+        }
+    }
+
+    &__video-trigger {
+        position: relative;
+        display: block;
+
+        &::after {
+            @include media-up(md) {
+                content: '';
+                position: absolute;
+                top: calc(50% - 19px);
+                left: calc(50% - 19px);
+                bottom: 0;
+                width: 100%;
+                display: block;
+                width: 35px;
+                height: 35px;
+                background-image: url(img/icons/play.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                @include media-up(md) {
+                    width: 55px;
+                    height: 55px;
+                    top: calc(50% - 27.5px);
+                    left: calc(50% - 27.5px);
+                }
+            }
+        }
+    }
+
+    &__slider {
+        margin: 0 -20px;
+
+        @include media-up(md) {
+            margin: 0;
+        }
+    }
+
+    &__slider-controls {
+        position: relative;
+    }
+
+    &__slider-btn {
+        position: relative;
+        background: none;
+        border: none;
+        color: $blue;
+
+        &--prev {
+            transform: rotate(180deg);
+            margin-right: 22px;
+        }
+    }
+
+    &__slider-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+        @include media-up(md) {
+            padding: 0;
+        }
+    }
+}
