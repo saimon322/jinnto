@@ -3,6 +3,7 @@
     ========================================================================== */
 @import '~aos/dist/aos.css';
 @import '~swiper/swiper-bundle.css';
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css';
 
 /* ==========================================================================
     SPECIFICATION
@@ -138,6 +139,8 @@
 @import 'sections/account/account-orders';
 @import 'sections/account/account-promo';
 @import 'sections/account/account-video';
+@import 'sections/account/account-tutorial';
+@import 'sections/account/account-welcome';
 
 /* ==========================================================================
     BLOG
@@ -159,4 +162,3 @@
 @import 'sections/blog/filter';
 @import 'sections/blog/filter-dropdown';
 @import 'sections/blog/listbox';
-
