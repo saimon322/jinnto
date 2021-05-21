@@ -1,0 +1,54 @@
+.article {
+    @include media-up(md) {
+        padding: 50px 30px;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+    @include media-up(lg) {
+        padding: 50px;
+    }
+
+    &__head {
+        margin-bottom: 16px;
+
+        @include media-up(md) {
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__author {
+
+    }
+
+    &__date-update {
+        display: none;
+        align-self: center;
+        margin-left: auto;
+        font-size: 18px;
+        color: rgba($blue, .5);
+
+        @include media-up(md) {
+            display: block;
+        }
+    }
+
+    &__content {
+
+        .img-wide {
+            max-width: none;
+            width: calc(100% + 40px);
+            margin-right: -20px;
+            margin-left: -20px;
+
+            @include media-up(md) {
+                max-width: 100%;
+                width: 100%;
+                margin-right: 0;
+                margin-left: 0;
+                border-radius: 15px;
+            }
+        }
+    }
+}

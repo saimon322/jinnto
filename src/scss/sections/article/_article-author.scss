@@ -1,0 +1,45 @@
+.article-author {
+    display: flex;
+
+    &__avatar {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        object-fit: cover;
+        border-radius: 50%;
+
+        @include media-up(md) {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+    }
+
+    &__txt {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    &__name {
+        margin-right: 9px;
+        font-weight: 500;
+        font-size: 15px;
+        align-self: center;
+
+        @include media-up(md) {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+
+    &__date {
+        font-size: 15px;
+        color: rgba($blue, .5);
+
+        @include media-up(md) {
+            font-size: 18px;
+        }
+    }
+}
