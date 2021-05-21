@@ -307,4 +307,46 @@ $(function() {
     });
     // END FILTER
     ////////////////////////////////////////////////////////////////////////////
+
+    // START INIT ARTICLE SLIDER
+    ////////////////////////////////////////////////////////////////////////////
+    let sliders1 = document.querySelectorAll('.slider-1');
+    sliders1.forEach(slider => {
+        let container = slider.querySelector('.swiper-container');
+        let buttonPrev = slider.querySelector('.slider-1__button--prev');
+        let buttonNext = slider.querySelector('.slider-1__button--next');
+
+        let swiper = new Swiper(container, {
+            navigation: {
+                prevEl: buttonPrev,
+                nextEl: buttonNext,
+            },
+        });
+    });
+    // END INIT ARTICLE SLIDER
+    ////////////////////////////////////////////////////////////////////////////
+
+    // START INIT POSTS SLIDER
+    ////////////////////////////////////////////////////////////////////////////
+    let postsSliders = document.querySelectorAll('.posts-slider');
+
+    postsSliders.forEach(slider => {
+        let swiper = new Swiper(slider, {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            centerInsufficientSlides: true,
+            watchOverflow: true,
+            freeMode: true,
+            breakpoints: {
+                576: { // when window width is >= 576px
+                    spaceBetween: 20,
+                },
+                768: {
+                    spaceBetween: 30,
+                },
+            },
+        });
+    });
+    // END INIT POSTS SLIDER
+    ////////////////////////////////////////////////////////////////////////////
 }); // end ready

@@ -124,4 +124,22 @@
             }
         }
     }
+
+    & > *:first-child {
+        margin-top: 0;
+    }
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+
+    .img-wide {
+        margin-top: 17px;
+        margin-bottom: 17px;
+
+        @include media-up(md) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
 }
