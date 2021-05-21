@@ -10,21 +10,21 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 
 ## List of pages:
 
-1. [Homepage](https://jinnto.com/) - 30 h.
-2. [Our approach](https://jinnto.com/approach.html) – 9 h.
-3. [Sign in](https://jinnto.com/sign-in.html) – 3 h.
-4. [Sign up](https://jinnto.com/sign-up.html) – 1 h.
-5. [Reset password](https://jinnto.com/reset-password.html) – 1 h.
-6. [Email has been sent](https://jinnto.com/email-sent.html) – 1 h.
-7. [New password](https://jinnto.com/new-password.html) – 1 h.
-8. [Make a gift Box](http://jinnto.com/gift.html) – 6 h.
-9. [Make a gift Subs](http://jinnto.com/gift.html) – 5 h.
+ 1. [Homepage](https://jinnto.com/) - 30 h.
+ 2. [Our approach](https://jinnto.com/approach.html) – 9 h.
+ 3. [Sign in](https://jinnto.com/sign-in.html) – 3 h.
+ 4. [Sign up](https://jinnto.com/sign-up.html) – 1 h.
+ 5. [Reset password](https://jinnto.com/reset-password.html) – 1 h.
+ 6. [Email has been sent](https://jinnto.com/email-sent.html) – 1 h.
+ 7. [New password](https://jinnto.com/new-password.html) – 1 h.
+ 8. [Make a gift Box](http://jinnto.com/gift.html) – 6 h.
+ 9. [Make a gift Subs](http://jinnto.com/gift.html) – 5 h.
 10. [Refer a friend](http://jinnto.com/refer.html) – 4 h.
 11. [Subscription](http://jinnto.com/subscription.html) – 4 h.
 12. [Stay with Jinnto](http://jinnto.com/stay.html) - 4 h.
 13. [Product page](https://jinnto.com/product.html) – 9 h.
 14. [Blog](https://jinnto.com/blog.html) – 13 h.
-15. Article – 8 h.
+15. [Article](https://jinnto.com/article.html) – 8 h.
 16. Author – 5 h.
 17. [Affiliate](https://jinnto.com/affilate.html) – 5 h.
 18. [Privacy Policy](https://jinnto.com/policy.html) – 30 min.
