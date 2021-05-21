@@ -28,6 +28,8 @@
 @import 'common/bg-img';
 @import 'common/title-underline';
 @import 'common/circles';
+@import 'common/content';
+@import 'common/color-pink';
 
 /* ==========================================================================
     MODULES
@@ -163,3 +165,10 @@
 @import 'sections/blog/filter-dropdown';
 @import 'sections/blog/listbox';
 
+/* ==========================================================================
+   ARTICLE
+   ========================================================================== */
+@import 'sections/article/article';
+@import 'sections/article/article-author';
+@import 'sections/article/article-content';
+@import 'sections/article/txt-box-1';

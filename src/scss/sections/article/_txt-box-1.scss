@@ -1,0 +1,37 @@
+.txt-box-1 {
+    padding: 20px;
+    background-color: $bg-green;
+
+    & > *:first-child {
+        margin-top: 0;
+    }
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+
+    @include media-up(md) {
+        padding: 50px 30px;
+        border-radius: 15px;
+    }
+
+    h2 + * {
+        margin-top: 0;
+    }
+
+    ol {
+        list-style: decimal inside;
+    }
+
+    li {
+        margin-bottom: 1.33em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include media-up(md) {
+            margin-bottom: .72em;
+        }
+    }
+}
