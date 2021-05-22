@@ -22,4 +22,45 @@
             display: block;
         }
     }
+
+    &__subscribe-box {
+        position: relative;
+        display: none;
+        margin-bottom: 60px;
+        padding: 25px 0;
+
+        @include media-up(md) {
+            display: block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-image: linear-gradient(to right, $blue 55%, rgba(255, 255, 255, 0) 0%);
+            background-repeat: repeat-x;
+            background-position: bottom;
+            background-size: 9px 1px;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    &__social-links {
+        display: none;
+        margin-bottom: 60px;
+
+        @include media-up(md) {
+            display: block;
+        }
+    }
 }

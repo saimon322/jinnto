@@ -79,6 +79,7 @@
 
     &__title {
         margin-bottom: 6px;
+        font-weight: 500;
         line-height: 1.6;
 
         @include media-up(md) {
