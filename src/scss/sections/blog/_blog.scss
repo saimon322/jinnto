@@ -23,6 +23,10 @@
 
     @include media-up(lg) {
         padding: 100px 0 173px;
+
+        &--article {
+            padding-bottom: 120px;
+        }
     }
 
     &__sort-form {
@@ -43,7 +47,8 @@
         @include media-up(md) {
             position: relative;
             display: grid;
-            grid-template-columns: 262px 1fr;
+            //grid-template-columns: 262px 1fr;
+            grid-template-columns: 262px calc(100% - 292px); // 262px + 30px = 292px
             grid-template-areas: 'blog-aside blog-content';
             gap: 30px;
         }
@@ -54,7 +59,13 @@
     }
 
     &__aside {
+        .blog--article & {
+            display: none;
 
+            @include media-up(md) {
+                display: block;
+            }
+        }
     }
 
     &-aside {
@@ -66,6 +77,14 @@
 
     &__content  {
         margin-bottom: 60px;
+
+        .blog--article & {
+            margin-bottom: 0;
+        }
+
+        @include media-up(md) {
+            margin-bottom: 0;
+        }
     }
 
     &-content {
