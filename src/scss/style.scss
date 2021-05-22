@@ -49,6 +49,7 @@
 @import 'modules/section-advantages';
 @import 'modules/modal';
 @import 'modules/breadcrumbs';
+@import 'modules/section';
 
 /* ==========================================================================
     HOME PAGE
@@ -188,3 +189,9 @@
 @import 'sections/promo/promo-banner';
 @import 'sections/promo/promo-info';
 @import 'sections/promo/promo-offer';
+=======
+@import 'sections/article/txt-box-2';
+@import 'sections/article/slider-1';
+@import 'sections/article/blockquote';
+@import 'sections/article/posts-section';
+@import 'sections/article/posts-slider';

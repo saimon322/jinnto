@@ -1,0 +1,24 @@
+.posts-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: $bg-green;
+
+    &--article {
+        @include media-up(lg) {
+            padding-top: 0;
+            padding-bottom: 173px;
+        }
+    }
+
+    &__heading {
+        text-align: left;
+
+        @include media-up(md) {
+            text-align: center;
+        }
+    }
+
+    &__slider {
+
+    }
+}
