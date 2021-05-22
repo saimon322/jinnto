@@ -1,0 +1,16 @@
+.promo-banner {
+    &__text {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1.5;
+
+        strong {
+            color: $pink;
+        }
+
+        @include media-up(md) {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+}

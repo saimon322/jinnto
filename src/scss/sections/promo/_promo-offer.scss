@@ -1,0 +1,22 @@
+.promo-offer {
+    padding: 50px 0;
+
+    &__title {
+        max-width: 150px;
+
+        &::after {
+            width: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @include media-up(md) {
+            max-width: 100%;
+        }
+    }
+
+    @include media-up(lg) {
+        background: none;
+        padding-bottom: 200px;
+    }
+}

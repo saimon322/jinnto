@@ -1,0 +1,64 @@
+.promo-info {
+    overflow: hidden;
+    padding: 50px 0;
+
+    @include media-up(md) {
+        padding: 140px 0;
+    }
+
+    &__content {
+        @include media-up(md) {
+            order: 1;
+        }
+    }
+
+    &__img-wrapper {
+        position: relative;
+
+        @include media-up(md) {
+            order: 2;
+        }
+
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        &::after {
+            background-color: $bg-cyan;
+            width: 90px;
+            height: 90px;
+            bottom: calc(0% - 45px);
+            left: calc(0% - 45px);
+
+            @include media-up(lg) {
+                left: auto;
+                bottom: auto;
+                width: 150px;
+                height: 150px;
+                top: calc(0% - 75px);
+                left: calc(0% - 75px);
+            }
+        }
+
+        &::before {
+            background-color: $yellow;
+            width: 60px;
+            height: 60px;
+            top: calc(0% - 30px);
+            right: calc(0% - 30px);
+
+            @include media-up(lg) {
+                top: auto;
+                right: auto;
+                width: 120px;
+                height: 120px;
+                bottom: calc(0% - 60px);
+                right: calc(0% - 60px);
+            }
+        }
+    }
+}
