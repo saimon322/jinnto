@@ -1,0 +1,118 @@
+.error-page {
+    position: relative;
+    background-color: $bg-cyan;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+    &__header {
+        padding-bottom: 0;
+    }
+
+    &__header-content {
+        background: none;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: 126px;
+        height: 30px;
+        margin: 0 auto;
+
+        @include media-up(md) {
+            margin: 0;
+        }
+    }
+
+    &__error {
+        width: 185px;
+        height: 76px;
+        background-image: url(img/icons/404.svg);
+        background-size: contain;
+
+        @include media-up(md) {
+            width: 350px;
+            height: 145px;
+        }
+    }
+
+    &__content-wrapper {
+        background-image: url(img/bg/404-page-mobile.svg);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+
+        @include media-up(sm) {
+            background-image: url(img/bg/404-page-desktop.svg);
+        }
+    }
+
+    &__content {
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    &__error,
+    &__content {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__text {
+        margin-top: 25px;
+        text-align: center;
+
+        @include media-up(md) {
+            margin-top: 45px;
+            margin-bottom: 40px;
+        }
+
+        br {
+            display: none;
+
+            @include media-up(sm) {
+                display: block;
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $blue;
+        border-color: $blue;
+        padding: 15px 50px;
+
+        &:hover {
+            background-color: #fff;
+            color: $blue;
+        }
+
+        @include media-up(md) {
+            position: static;
+            left: auto;
+            transform: none;
+            background-color: $red;
+            border-color: $red;
+            display: block;
+            margin: 0 auto;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
