@@ -31,6 +31,7 @@
 @import 'common/circles';
 @import 'common/content';
 @import 'common/color-pink';
+@import 'common/toggler';
 
 /* ==========================================================================
     MODULES
@@ -170,12 +171,6 @@
 @import 'sections/blog/listbox';
 
 /* ==========================================================================
-    DISCOUNTS
-    ========================================================================== */
-@import 'sections/discounts/discounts-banner';
-@import 'sections/discounts/discounts-main';
-
-/* ==========================================================================
    ARTICLE
    ========================================================================== */
 @import 'sections/article/article';
@@ -184,12 +179,25 @@
 @import 'sections/article/txt-box-1';
 
 /* ==========================================================================
+   AUTHOR
+   ========================================================================== */
+@import 'sections/author/author';
+@import 'sections/author/author-main';
+@import 'sections/author/author-info';
+@import 'sections/author/author-articles';
+
+/* ==========================================================================
+    DISCOUNTS
+    ========================================================================== */
+@import 'sections/discounts/discounts-banner';
+@import 'sections/discounts/discounts-main';
+
+/* ==========================================================================
    PROMO
    ========================================================================== */
 @import 'sections/promo/promo-banner';
 @import 'sections/promo/promo-info';
 @import 'sections/promo/promo-offer';
-=======
 @import 'sections/article/txt-box-2';
 @import 'sections/article/slider-1';
 @import 'sections/article/blockquote';

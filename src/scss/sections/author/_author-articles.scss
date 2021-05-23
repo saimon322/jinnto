@@ -1,0 +1,25 @@
+.author-articles {
+    padding-top: 50px;
+
+    @include media-up(md) {
+        padding-top: 80px;
+    }
+
+    @include media-up(lg) {
+        padding-top: 100px;
+    }
+
+    &__posts-list {
+
+    }
+
+    &__toggler-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+        @include media-up(md) {
+            margin-top: 50px;
+        }
+    }
+}

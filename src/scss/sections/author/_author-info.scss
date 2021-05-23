@@ -1,0 +1,48 @@
+.author-info {
+    grid-area: author-info;
+
+    &__wrapper {
+        padding: 30px 20px;
+        border-radius: 10px;
+        background: #fff;
+
+        @include media-up(md) {
+            padding: 50px 30px;
+            border-radius: 15px;
+        }
+
+        @include media-up(lg) {
+            padding: 50px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+
+        @include media-up(md) {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 160%;
+        color: $blue-80;
+
+        @include media-up(md) {
+            margin-bottom: 50px;
+            font-size: 20px;
+            line-height: 170%;
+        }
+
+        p {
+            margin-bottom: 1.6em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

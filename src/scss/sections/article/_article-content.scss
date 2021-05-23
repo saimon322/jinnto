@@ -39,10 +39,8 @@
 
     .slider-1__item:first-child .slider-1__img,
     .slider-1__item:last-child .slider-1__img {
-        border-radius: 0;
-
-        @include media-up(md) {
-            border-radius: 15px;
+        @include media-down(sm) {
+            border-radius: 0;
         }
     }
 
