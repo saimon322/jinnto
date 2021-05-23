@@ -68,13 +68,6 @@
         }
     }
 
-    &-aside {
-        &__wrapper {
-            position: sticky;
-            top: 80px;
-        }
-    }
-
     &__content  {
         margin-bottom: 60px;
 
@@ -85,9 +78,5 @@
         @include media-up(md) {
             margin-bottom: 0;
         }
-    }
-
-    &-content {
-
     }
 }

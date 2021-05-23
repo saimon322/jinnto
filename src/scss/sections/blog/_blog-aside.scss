@@ -2,6 +2,9 @@
     grid-area: blog-aside;
 
     &__wrapper {
+        position: sticky;
+        top: 80px;
+        
         & > *:first-child {
             margin-top: 0;
         }

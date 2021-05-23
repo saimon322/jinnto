@@ -1,4 +1,10 @@
 .posts-slider {
+    padding: 0 20px;
+
+    @include media-up(md) {
+        padding: 0;
+    }
+    
     &__wrapper {
 
     }
