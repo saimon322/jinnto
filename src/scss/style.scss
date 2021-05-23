@@ -31,6 +31,7 @@
 @import 'common/circles';
 @import 'common/content';
 @import 'common/color-pink';
+@import 'common/toggler';
 
 /* ==========================================================================
     MODULES
@@ -49,6 +50,7 @@
 @import 'modules/section-advantages';
 @import 'modules/modal';
 @import 'modules/breadcrumbs';
+@import 'modules/section';
 
 /* ==========================================================================
     HOME PAGE
@@ -169,18 +171,26 @@
 @import 'sections/blog/listbox';
 
 /* ==========================================================================
-    DISCOUNTS
-    ========================================================================== */
-@import 'sections/discounts/discounts-banner';
-@import 'sections/discounts/discounts-main';
-
-/* ==========================================================================
    ARTICLE
    ========================================================================== */
 @import 'sections/article/article';
 @import 'sections/article/article-author';
 @import 'sections/article/article-content';
 @import 'sections/article/txt-box-1';
+
+/* ==========================================================================
+   AUTHOR
+   ========================================================================== */
+@import 'sections/author/author';
+@import 'sections/author/author-main';
+@import 'sections/author/author-info';
+@import 'sections/author/author-articles';
+
+/* ==========================================================================
+    DISCOUNTS
+    ========================================================================== */
+@import 'sections/discounts/discounts-banner';
+@import 'sections/discounts/discounts-main';
 
 /* ==========================================================================
    PROMO
@@ -193,3 +203,12 @@
    ERROR PAGE / 404
    ========================================================================== */
 @import 'sections/404/error-page';
+
+/* ==========================================================================
+    ARTICLE
+   ========================================================================== */
+@import 'sections/article/txt-box-2';
+@import 'sections/article/slider-1';
+@import 'sections/article/blockquote';
+@import 'sections/article/posts-section';
+@import 'sections/article/posts-slider';

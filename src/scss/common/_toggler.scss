@@ -1,0 +1,23 @@
+.toggler {
+    span {
+        &:first-child {
+            display: inline;
+        }
+
+        &:last-child {
+            display: none;
+        }
+    }
+
+    &--active {
+        span {
+            &:first-child {
+                display: none;
+            }
+
+            &:last-child {
+                display: inline;
+            }
+        }
+    }
+}

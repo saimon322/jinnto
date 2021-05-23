@@ -16,11 +16,31 @@
         }
     }
 
-    .txt-box-1 {
+    .txt-box-1,
+    .txt-box-2 {
         margin: 30px -20px;
 
         @include media-up(md) {
             margin: 35px 0;
+        }
+    }
+
+    .slider-1__container {
+        margin-right: -20px;
+        margin-left: -20px;
+        border-radius: 0;
+
+        @include media-up(md) {
+            margin-right: 0;
+            margin-left: 0;
+            border-radius: 15px;
+        }
+    }
+
+    .slider-1__item:first-child .slider-1__img,
+    .slider-1__item:last-child .slider-1__img {
+        @include media-down(sm) {
+            border-radius: 0;
         }
     }
 
@@ -61,6 +81,48 @@
 
         .fact-stars__text {
             margin: 0;
+        }
+    }
+
+    .blockquote {
+        margin-right: -20px;
+        margin-left: -20px;
+
+        @include media-up(md) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        @include media-between(md, md) {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .blockquote__heading {
+            @include media-between(md, md) {
+                margin-bottom: 16px;
+                padding-right: 47px;
+            }
+
+            &::after {
+                @include media-between(md, md) {
+                    width: 37px;
+                    height: 28px;
+                }
+            }
+        }
+
+        &__title {
+            @include media-between(md, md) {
+                font-size: 17px;
+            }
+        }
+
+        .blockquote__txt {
+            @include media-between(md, md) {
+                padding-left: 0;
+                font-size: 18px;
+            }
         }
     }
 }

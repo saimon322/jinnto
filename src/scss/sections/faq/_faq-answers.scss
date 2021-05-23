@@ -1,6 +1,10 @@
 .faq-answers {
     padding: 20px 0 60px;
 
+    @include media-up(md) {
+        padding: 60px 0;
+    }
+
     @include media-up(lg) {
         padding: 60px 0 170px;
     }
@@ -10,61 +14,94 @@
         margin: 0 auto;
     }
 
-    &__button-wrapper {
+    &__header {
+        position: relative;
+        padding: 14px 14px 14px 36px;
         color: #fff;
 
-        &::before {
-            display: none;
+        @include media-up(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
         }
     }
 
-    &__content-item {
-        &:nth-child(1) {
-            .faq-answers__button-wrapper {
+    &__header-title {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 150%;
+
+        @include media-up(md) {
+            font-weight: normal;
+        }
+    }
+
+    &__header-button {
+        display: none;
+        border-color: #fff;
+        background-color: #fff;
+
+        @include media-up(md) {
+            display: block;    
+        }
+    }
+
+    &__item {
+        &:nth-child(4n +1) {
+            .faq-answers__header {
                 background-color: $pink;
             }
 
-            .faq-answers__item-button {
+            .faq-answers__header-button {
                 color: $pink;
+
+                &:hover {
+                    background-color: $pink;
+                    color: #fff;
+                }
             }
         }
 
         &:nth-child(2) {
-            .faq-answers__button-wrapper {
+            .faq-answers__header {
                 background-color: $green;
             }
 
-            .faq-answers__item-button {
+            .faq-answers__header-button {
                 color: $green;
+
+                &:hover {
+                    background-color: $green;
+                    color: #fff;
+                }
             }
         }
 
         &:nth-child(3) {
-            .faq-answers__button-wrapper {
+            .faq-answers__header {
                 background-color: $orange;
             }
 
-            .faq-answers__item-button {
+            .faq-answers__header-button {
                 color: $orange;
+
+                &:hover {
+                    background-color: $orange;
+                    color: #fff;
+                }
             }
         }
     }
 
-    &__content-item + &__content-item {
+    &__item + &__item {
         margin-top: 40px;
 
         @include media-up(lg) {
             margin-top: 70px;
         }
-    }
-
-    &__item-button {
-        position: absolute;
-        top: 50%;
-        right: 30px;
-        transform: translateY(-50%);
-        color: $pink;
-        background-color: #fff;
     }
 
     &__nav {
@@ -123,7 +160,7 @@
         }
     }
 
-    &__view-all {
+    &__mobile-button {
         display: block;
         margin: 25px auto 0;
         text-align: center;

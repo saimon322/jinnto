@@ -11,9 +11,11 @@
                     <article class="article">
                         <div class="article__head article__head">
                             <div class="article__author article-author">
-                                <img class="article-author__avatar" src="img/base/article-author.jpg" alt="">
+                                <a class="article-author__avatar" href="author.html">
+                                    <img class="article-author__avatar-img" src="img/base/article-author.jpg" alt="">
+                                </a>
                                 <div class="article-author__txt">
-                                    <p class="article-author__name">by Sandra Lit</p>
+                                    <p class="article-author__name">by <a href="author.html">Sandra Lit</a></p>
                                     <time class="article-author__date" datetime="2021-05-18T18:05:52+03:00">March 15, 2020</time>
                                 </div>
                             </div><!-- / .article-author -->
@@ -46,9 +48,36 @@
                                 esse officia. Sit ex excepteur Lorem ad cupidatat nostrud. Ea sunt ipsum quis in elit
                                 deserunt aute quis incididunt adipisicing ipsum aliquip tempor elit.
                             </p>
-                            <div class="">
-                                SLIDER
-                            </div>
+                            <div class="slider-1">
+                                <div class="slider-1__container swiper-container">
+                                    <div class="slider-1__wrapper swiper-wrapper">
+                                        <div class="slider-1__item swiper-slide">
+                                            <img class="slider-1__img" src="img/base/article-img-3.jpg" alt="">
+                                        </div>
+                                        <div class="slider-1__item swiper-slide">
+                                            <img class="slider-1__img" src="img/base/article-img-1.jpg" alt="">
+                                        </div>
+                                        <div class="slider-1__item swiper-slide">
+                                            <img class="slider-1__img" src="img/base/article-img-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-1__bottom">
+                                    <div class="slider-1__nav">
+                                        <button class="slider-1__button slider-1__button--prev" type="button">
+                                            <svg width="22" height="17">
+                                                <use href="#arrow-left"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="slider-1__button slider-1__button--next" type="button">
+                                            <svg width="22" height="17">
+                                                <use href="#arrow-right"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="slider-1__desc">Description</p>
+                                </div>
+                            </div><!-- / .slider-1 -->
                             <h2>Duis eu amet adipisicing occaecat esse cillum culpa ad.</h2>
                             <p>
                                 Nostrud esse veniam exercitation voluptate. Culpa elit officia Lorem magna fugiat.
@@ -90,31 +119,31 @@
                                 laborum. Minim Lorem irure proident nulla commodo ullamco nostrud deserunt sunt. Esse
                                 occaecat et et aliquip magna elit.
                             </p>
-                            <p>
+                            <p class="txt-box-2">
                                 Sit ex excepteur Lorem ad cupidatat nostrud. Ea sunt ipsum quis in elit deserunt aute
                                 quis incididunt adipisicing ipsum aliquip tempor elit.
-                            </p>
+                            </p><!-- / .txt-box-2 -->
                             <p>
                                 Occaecat commodo quis incididunt culpa. Occaecat aliquip dolore cillum dolore minim
                                 excepteur. Enim et laboris consectetur consequat aliqua adipisicing anim quis qui aute
                                 esse officia. Sit ex excepteur Lorem ad cupidatat nostrud. Ea sunt ipsum quis in elit
                                 deserunt aute quis incididunt adipisicing ipsum aliquip tempor elit.
                             </p>
-                            <figure>
-                                <figcaption>
-                                    <img src="" alt="">
-                                    <p>Tomothy Russell, Сhild psychologist</p>
+                            <figure class="blockquote">
+                                <figcaption class="blockquote__heading">
+                                    <img class="blockquote__avatar" src="img/base/blockquote.jpg" alt="">
+                                    <p class="blockquote__title">Tomothy Russell, Сhild psychologist</p>
                                 </figcaption>
-                                <blockquote>
+                                <blockquote class="blockquote__txt">
                                     <p>
-                                        “Ipsum tempor veniam nulla culpa ipsum aliqua. Eiusmod cupidatat commodo sunt
+                                        “ Ipsum tempor veniam nulla culpa ipsum aliqua. Eiusmod cupidatat commodo sunt
                                         nostrud amet nisi commodo aliquip Lorem adipisicing amet nostrud sit. Voluptate
                                         qui enim occaecat officia ex eiusmod anim labore commodo fugiat eu officia
                                         nostrud elit. Aute Lorem cillum amet id labore aute sit officia adipisicing duis
-                                        duis.”
+                                        duis. ”
                                     </p>
                                 </blockquote>
-                            </figure>
+                            </figure><!-- / .blockquote -->
                             <p>
                                 Occaecat commodo quis incididunt culpa. Occaecat aliquip dolore cillum dolore minim
                                 excepteur. Enim et laboris consectetur consequat aliqua adipisicing anim quis qui aute
@@ -232,6 +261,72 @@
             </div>
         </div>
     </section>
+
+    <section class="posts-section posts-section--article section">
+        <div class="posts-section__heading section__heading container container--sm">
+            <h2 class="title-underline title-underline--yellow">Related posts</h2>
+        </div>
+        <div class="posts-section__slider posts-slider swiper-container">
+            <div class="posts-slider__wrapper swiper-wrapper">
+                <div class="posts-slider__item swiper-slide">
+                    <a class="post-item" href="article.html">
+                        <div class="post-item__img-box">
+                            <figure class="post-item__figure">
+                                <img class="post-item__img" src="img/base/blog-2.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="post-item__body">
+                            <p class="post-item__subtitle">DIY ideas</p>
+                            <h3 class="post-item__title">At-home resources for kids and parents during Covid-19</h3>
+                            <time class="post-item__date" datetime="2021-05-18T18:05:52+03:00">March 15, 2020 by Sandra</time>
+                        </div>
+                    </a><!-- / .post-item -->
+                </div>
+                <div class="posts-slider__item swiper-slide">
+                    <a class="post-item" href="article.html">
+                        <div class="post-item__img-box">
+                            <figure class="post-item__figure">
+                                <img class="post-item__img" src="img/base/blog-3.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="post-item__body">
+                            <p class="post-item__subtitle">DIY ideas</p>
+                            <h3 class="post-item__title">At-home resources for kids and parents during Covid-19</h3>
+                            <time class="post-item__date" datetime="2021-05-18T18:05:52+03:00">March 15, 2020 by Sandra</time>
+                        </div>
+                    </a><!-- / .post-item -->
+                </div>
+                <div class="posts-slider__item swiper-slide">
+                    <a class="post-item" href="article.html">
+                        <div class="post-item__img-box">
+                            <figure class="post-item__figure">
+                                <img class="post-item__img" src="img/base/blog-4.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="post-item__body">
+                            <p class="post-item__subtitle">DIY ideas</p>
+                            <h3 class="post-item__title">At-home resources for kids and parents during Covid-19</h3>
+                            <time class="post-item__date" datetime="2021-05-18T18:05:52+03:00">March 15, 2020 by Sandra</time>
+                        </div>
+                    </a><!-- / .post-item -->
+                </div>
+                <div class="posts-slider__item swiper-slide">
+                    <a class="post-item" href="article.html">
+                        <div class="post-item__img-box">
+                            <figure class="post-item__figure">
+                                <img class="post-item__img" src="img/base/blog-5.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="post-item__body">
+                            <p class="post-item__subtitle">DIY ideas</p>
+                            <h3 class="post-item__title">At-home resources for kids and parents during Covid-19</h3>
+                            <time class="post-item__date" datetime="2021-05-18T18:05:52+03:00">March 15, 2020 by Sandra</time>
+                        </div>
+                    </a><!-- / .post-item -->
+                </div>
+            </div>
+        </div><!-- / .posts-slider -->
+    </section><!-- / .posts-section .section -->
 </div>
 
 <%=_.template(require("../parts/footer.html"))() %>

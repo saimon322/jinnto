@@ -1,0 +1,15 @@
+.section {
+
+    &__heading {
+        margin-bottom: 34px;
+        text-align: center;
+
+        @include media-up(md) {
+            margin-bottom: 63px;
+        }
+    }
+
+    &__title {
+
+    }
+}

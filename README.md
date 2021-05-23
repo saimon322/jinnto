@@ -25,7 +25,7 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 13. [Product page](https://jinnto.com/product.html) – 9 h.
 14. [Blog](https://jinnto.com/blog.html) – 13 h.
 15. [Article](https://jinnto.com/article.html) – 8 h.
-16. Author – 5 h.
+16. [Author](https://jinnto.com/author.html) – 5 h.
 17. [Affiliate](https://jinnto.com/affilate.html) – 5 h.
 18. [Privacy Policy](https://jinnto.com/policy.html) – 30 min.
 19. [Terms & Conditions](https://jinnto.com/terms.html) – 30 min.
@@ -41,8 +41,8 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 29. [Video instructions](https://jinnto.com/account-videos.html) – 4 h.
 30. [Video instruction](https://jinnto.com/account-tutorial.html) – 4 h.
 31. [Account welcome](https://jinnto.com/account-welcome.html) – 2 h.
-32. Discounts – 3 h.
-33. Promo page template – 3 h.
+32. [Discounts](https://jinnto.com/discounts.html) – 3 h.
+33. [Promo page template](https://jinnto.com/promo.html) – 3 h.
 34. Checkout – 8 h.
 35. 404 – 1 h.
 

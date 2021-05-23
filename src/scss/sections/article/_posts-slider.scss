@@ -1,0 +1,29 @@
+.posts-slider {
+    padding: 0 20px;
+
+    @include media-up(md) {
+        padding: 0;
+    }
+    
+    &__wrapper {
+
+    }
+
+    &__item {
+        width: 240px;
+    }
+
+    &__button {
+        padding: 15px;
+        background: 0 0;
+        border: none;
+
+        &--prev {
+
+        }
+
+        &--next {
+
+        }
+    }
+}
