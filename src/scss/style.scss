@@ -32,6 +32,7 @@
 @import 'common/content';
 @import 'common/color-pink';
 @import 'common/toggler';
+@import 'common/promo-section';
 
 /* ==========================================================================
     MODULES
@@ -51,6 +52,7 @@
 @import 'modules/modal';
 @import 'modules/breadcrumbs';
 @import 'modules/section';
+@import 'modules/form';
 
 /* ==========================================================================
     HOME PAGE
@@ -203,6 +205,14 @@
    ERROR PAGE / 404
    ========================================================================== */
 @import 'sections/404/error-page';
+
+/* ==========================================================================
+    CHECKOUT
+   ========================================================================== */
+@import 'sections/checkout/checkout-header';
+@import 'sections/checkout/checkout-main';
+@import 'sections/checkout/checkout-summary';
+@import 'sections/checkout/checkout-info';
 
 /* ==========================================================================
     ARTICLE

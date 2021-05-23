@@ -31,7 +31,7 @@ module.exports = (env, argv) => {
                 errors: true,
             },
             host: localIpAddress,
-            port: 8081,
+            port: 3000,
             // hot: true,
             liveReload: true
             // writeToDisk: true,

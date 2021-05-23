@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Checkout | Jinnto</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#3DD98E">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preloading fonts -->
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="checkout-header header">
+        <div class="header__main">
+            <div class="container checkout-header__content">
+                <a href="/" class="header__logo checkout-header__logo">
+                    <svg width='106' height='25'>
+                        <use xlink:href='#logo'></use>
+                    </svg>
+                </a>
+                <h2 class="checkout-header__title">
+                    Secure Checkout
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main checkout-main">
+        <div class="container checkout-main__wrapper">
+            <section class="checkout-summary checkout-main__summary">
+                <h4 class="checkout-summary__title">
+                    Order summary
+                </h4>
+                <div class="checkout-summary__order">
+                    <div class="checkout-summary__item">
+                        <img src="img/base/checkout-item.jpg" alt="order" class="checkout-summary__item-img">
+                        <div class="checkout-summary__item-info">
+                            <div class="checkout-summary__item-title">
+                                Monthly Subscription
+                            </div>
+                            <div class="checkout-summary__item-price checkout-summary__price">
+                                $24.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="checkout-summary__prices">
+                    <li class="checkout-summary__prices-item">
+                        <p>Subtotal:</p>
+                        <p>$24.99</p>
+                    </li>
+                    <li class="checkout-summary__prices-item">
+                        <p>Total:</p>
+                        <p>$24.99</p>
+                    </li>
+                </ul>
+                <div class="checkout-summary__coupon">
+                    <h5 class="checkout-summary__coupon-title">
+                        Have a coupon code?
+                    </h5>
+                    <div class="promo-section">
+                        <input name="promocode" type="text" class="promo-section__input" placeholder="Enter promo code">
+                        <button class="btn btn--blue promo-section__btn">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="checkout-info checkout-main__info">
+                <ul class="checkout-info__sections">
+                    <li class="checkout-info__section">
+                        <h2 class="checkout-info__section-title">
+                            Enter your information to subscribe
+                        </h2>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="purchase-name" class="form__label">Your first name*</label>
+                                <input type="text" name="First name" id="purchase-name" class="form__input" required>
+                            </div>
+                            <div class="form__field">
+                                <label for="purchase-email" class="form__label">Email *</label>
+                                <input type="text" name="email" id="purchase-email" class="form__input" required>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="checkout-info__section">
+                        <h2 class="checkout-info__section-title">
+                            Shipping adress
+                        </h2>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="delivery-first-name" class="form__label">First name for delivery *</label>
+                                <input type="text" name="First name delivery" id="delivery-first-name" class="form__input" required>
+                            </div>
+                            <div class="form__field">
+                                <label for="delivery-last-name" class="form__label">Last name for delivery *</label>
+                                <input type="text" name="Last name delivery" id="delivery-last-name" class="form__input" required>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="delivery-address-line-1" class="form__label">Address line 1 *</label>
+                                <input type="text" name="Adress line 1" id="delivery-address-line-1" class="form__input" required>
+                            </div>
+                            <div class="form__field">
+                                <label for="delivery-address-line-2" class="form__label">Address line 2 </label>
+                                <input type="text" name="Adress line 2" id="delivery-address-line-2" class="form__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="delivery-city" class="form__label">City *</label>
+                                <input type="text" name="City" id="delivery-city" class="form__input" required>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__field">
+                                    <label for="delivery-state" class="form__label">State *</label>
+                                    <input type="text" name="State" id="delivery-state" class="form__input" required>
+                                </div>
+                                <div class="form__field">
+                                    <label for="delivery-city-2" class="form__label">City *</label>
+                                    <input type="text" name="City 2" id="delivery-city-2" class="form__input" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="country" class="form__label">Billing country</label>
+                                <div class="form__select-wrapper">
+                                    <select name="Country" id="country" class="form__input form__input--select" required value="United States">
+                                        <option>United States</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__field">
+                                <label for="phone" class="form__label">Phone *</label>
+                                <input type="text" name="Phone" id="phone" class="form__input" required>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="checkout-info__section">
+                        <h2 class="checkout-info__section-title">
+                            Billing information
+                        </h2>
+                        <div class="form__field">
+                            <label for="card-number" class="form__label">Card number</label>
+                            <div class="form__input--number">
+                                <input type="text" name="Card number" id="card-number" class="form__input" required">
+                            </div>
+                            <p>We accept Visa, Mastercard, American Express, Discover, and Diners Club</p>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="expiry-date" class="form__label">Expiry date</label>
+                                <input type="text" name="Expiry date" id="expiry-date" class="form__input" required>
+                            </div>
+                            <div class="form__field">
+                                <label for="card-cvv" class="form__label">CVC / CVV</label>
+                                <div class="form__input--cvv">
+                                    <input type="text" name="cvv" id="card-cvv" class="form__input form__input--cvv" required>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="checkout-info__bottom">
+                    <p class="checkout-info__terms-text">
+                        By checking out you agree you have read and consent to our
+                        <a href="/terms.html" class="checkout-info__terms-link">Terms & Conditions</a>
+                    </p>
+                    <button type="submit" class="btn btn--red checkout-info__btn">
+                        Checkout
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+<%=_.template(require('../parts/footer.html'))() %>
