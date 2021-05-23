@@ -1,5 +1,10 @@
 .author-main {
     grid-area: author-main;
+    margin-bottom: 16px;
+
+    @include media-up(md) {
+        margin-bottom: 0;
+    }
 
     &__wrapper {
         position: sticky;
