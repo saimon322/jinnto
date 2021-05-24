@@ -45,6 +45,8 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: min-content min-content;
         align-items: center;
+        position: relative;
+        z-index: 10;
 
         @include media-up(xl) {
             column-gap: 50px;
