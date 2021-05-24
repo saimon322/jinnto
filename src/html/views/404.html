@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>404 | Jinnto</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#3DD98E">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preloading fonts -->
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="site-main error-page">
+    <div class="error-page__header header">
+        <div class="container error-page__header-content header__main">
+            <a href="/" class="header__logo error-page__logo">
+                <svg width='106' height='25'>
+                    <use xlink:href='#logo'></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="error-page__content-wrapper">
+        <div class="error-page__content">
+            <div class="error-page__error"></div>
+            <p class="error-page__text">
+                The page you are looking for does not exist. <br>
+                Please go back to the main page.
+            </p>
+            <a href="/" class="error-page__btn btn btn--red">
+                Go to homepage
+            </a>
+        </div>
+    </div>
+</main>
+
+<script src="js/app.bundle.js"></script>
+</body>
+</html>

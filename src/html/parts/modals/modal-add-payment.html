@@ -7,39 +7,41 @@
                 </h4>
                 <button class="modal__close-btn" aria-label="Close modal" data-micromodal-close></button>
             </div>
-            <div class="modal__content" id="modal-add-payment-content">
-                <div class="modal__field">
-                    <label for="modal_card-number" class="modal__label">Card number</label>
-                    <div class="modal__input--number">
-                        <input type="text" name="card number" id="modal_card-number" class="modal__input" placeholder="Card number" required>
+            <div class="modal__content form" id="modal-add-payment-content">
+                <div class="form__field">
+                    <label for="modal_card-number" class="form__label">Card number</label>
+                    <div class="form__input--number">
+                        <input type="text" name="card number" id="modal_card-number" class="form__input" placeholder="Card number" required>
                     </div>
                 </div>
-                <div class="modal__field">
-                    <label for="modal_card-name" class="modal__label">Cardholder name</label>
-                    <input type="text" name="Cardholder name" id="modal_card-name" class="modal__input" placeholder="Cardholder name" required>
+                <div class="form__field">
+                    <label for="modal_card-name" class="form__label">Cardholder name</label>
+                    <input type="text" name="Cardholder name" id="modal_card-name" class="form__input" placeholder="Cardholder name" required>
                 </div>
-                <div class="modal__row">
-                    <div class="modal__field">
-                        <label for="modal_card-date" class="modal__label">Expiry date</label>
-                        <input type="text" name="Expiry date" id="modal_card-date" class="modal__input" placeholder="Expiry date" required>
+                <div class="form__row">
+                    <div class="form__field">
+                        <label for="modal_card-date" class="form__label">Expiry date</label>
+                        <input type="text" name="Expiry date" id="modal_card-date" class="form__input" placeholder="Expiry date" required>
                     </div>
-                    <div class="modal__field">
-                        <label for="modal_card-cvv" class="modal__label">CVC / CVV</label>
-                        <div class="modal__input--cvv">
-                            <input type="text" name="cvv" id="modal_card-cvv" class="modal__input modal__input--cvv" placeholder="CVV" required>
+                    <div class="form__field">
+                        <label for="modal_card-cvv" class="form__label">CVC / CVV</label>
+                        <div class="form__input--cvv">
+                            <input type="text" name="cvv" id="modal_card-cvv" class="form__input form__input--cvv" placeholder="CVV" required>
                         </div>
                     </div>
                 </div>
-                <div class="modal__field">
-                    <label for="modal_card-country" class="modal__label">Billing country</label>
-                    <select name="Billing country" id="modal_card-country" class="modal__input" required>
-                        <option disabled>Choose country</option>
-                        <option>United States</option>
-                    </select>
+                <div class="form__field">
+                    <label for="modal_card-country" class="form__label">Billing country</label>
+                    <div class="modal__select-wrapper">
+                        <select name="Billing country" id="modal_card-country" class="form__input form__input--select" required>
+                            <option disabled>Choose country</option>
+                            <option>United States</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="modal__field">
-                    <label for="modal_card-zip" class="modal__label">ZIP code</label>
-                    <input type="text" name="ZIP code" id="modal_card-zip" class="modal__input" placeholder="ZIP code" required>
+                <div class="form__field">
+                    <label for="modal_card-zip" class="form__label">ZIP code</label>
+                    <input type="text" name="ZIP code" id="modal_card-zip" class="form__input" placeholder="ZIP code" required>
                 </div>
             </div>
             <div class="modal__bottom">

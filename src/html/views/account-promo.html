@@ -16,7 +16,7 @@
                 menu: {promo: 'current'}
             }) %>
 
-            <div class="account-main__content account-promo">
+            <div class="account-main__content">
                 <div class="account-info  account-content">
                     <h3 class="account-info__title">
                         My promocode
@@ -24,9 +24,9 @@
                     <p class="account-promo__text">
                         Enter the promo code and get a discount for your next purchase.
                     </p>
-                    <div class="account-promo__promo-wrapper">
-                        <input name="promocode" type="text" class="account-promo__input" placeholder="Enter promo code">
-                        <button class="btn btn--blue account-promo__btn">
+                    <div class="promo-section">
+                        <input name="promocode" type="text" class="account-promo__input promo-section__input" placeholder="Enter promo code">
+                        <button class="btn btn--blue promo-section__btn">
                             Apply
                         </button>
                     </div>
@@ -87,6 +87,5 @@
             </div>
         </div>
     </div>
-</main>
 
 <%=_.template(require('../parts/footer.html'))() %>
