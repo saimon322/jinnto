@@ -1,0 +1,209 @@
+.form {
+    &__field {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:focus-within {
+            .modal__label {
+                color: $blue;
+            }
+
+            .modal__input {
+                border-color: $blue;
+            }
+        }
+
+        p {
+            display: none;
+
+            @include media-up(sm) {
+                display: block;
+                font-size: 12px;
+                line-height: 34px;
+                color: $blue-50;
+            }
+        }
+    }
+
+    &__label {
+        display: block;
+        text-align: left;
+        font-size: 12px;
+        line-height: 180%;
+        margin-bottom: 4px;
+        cursor: pointer;
+        transition: color 0.2s;
+
+        @include media-up(md) {
+            display: inline-block;
+        }
+    }
+
+    &__input {
+        border: 1px solid $blue-10;
+        padding: 10px 20px;
+        transition: border-color 0.2s;
+        color: $blue;
+        background: none;
+        display: block;
+        border-radius: 50px;
+        width: 100%;
+        outline: none;
+
+        @include media-up(md) {
+            padding: 12px 20px;
+        }
+
+        &--cvv {
+            &::after {
+                background-image: url(img/icons/card-back.svg);
+            }
+        }
+
+        &--number {
+            &::after {
+                background-image: url(img/icons/card.svg);
+            }
+        }
+
+        &--cvv,
+        &--number {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 20px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &--select {
+            appearance: none;
+
+            option:disabled {
+                display: none;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__select-wrapper {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            position: absolute;
+            right: 23px;
+            top: calc(50% - 4px);
+            content: '';
+            width: 14px;
+            height: 7px;
+            display: block;
+            background-image: url(img/icons/arrow-down.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none;
+        }
+    }
+
+    &__inputs {
+        margin-top: 30px;
+
+        @include media-up(md) {
+            margin-top: 60px;
+        }
+    }
+
+    &__checkbox-wrapper {
+        padding-left: 35px;
+        display: block;
+        position: relative;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(1) {
+            .modal__checkbox-offer-name {
+                color: $pink;
+            }
+
+            .modal__checkbox--custom {
+                color: $pink;
+            }
+        }
+
+        &:nth-child(2) {
+            .modal__checkbox-offer-name {
+                color: $green;
+            }
+
+            .modal__checkbox--custom {
+                color: $green;
+            }
+        }
+
+        &:nth-child(3) {
+            .modal__checkbox-offer-name {
+                color: $orange;
+            }
+
+            .modal__checkbox--custom {
+                color: $orange;
+            }
+        }
+
+        &:nth-child(4) {
+            .modal__checkbox-offer-name {
+                color: $cyan;
+            }
+
+            .modal__checkbox--custom {
+                color: $cyan;
+            }
+        }
+    }
+
+    &__checkbox--custom {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $blue-80;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        top: calc(50% - 12px);
+    }
+
+    &__checkbox--custom svg {
+        opacity: 0;
+    }
+
+    &__checkbox:checked + &__checkbox--custom svg {
+        opacity: 1;
+    }
+
+    &__row + &__field,
+    &__row + &__row {
+        margin-top: 10px;
+    }
+}

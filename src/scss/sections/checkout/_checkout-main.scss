@@ -1,0 +1,44 @@
+.checkout-main {
+    background-color: $bg-green;
+    padding-top: 20px;
+
+    @include media-up(lg) {
+        padding: 50px 0 205px;
+    }
+
+    &__wrapper {
+        @include media-up(lg) {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            gap: 40px;
+        }
+    }
+
+    &__summary {
+        margin-bottom: 35px;
+
+        @include media-up(lg) {
+            margin-bottom: 0;
+            margin-top: 70px;
+            order: 2;
+            width: 100%;
+            max-width: 260px;
+            height: fit-content;
+            position: sticky;
+            top: 70px;
+        }
+    }
+
+    &__info {
+        @include media-up(lg) {
+            order: 1;
+        }
+
+        @include media-up(xl) {
+            max-width: 650px;
+            width: 100%;
+            margin-left: auto;
+        }
+    }
+}

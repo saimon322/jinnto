@@ -1,25 +1,4 @@
 .account-promo {
-    &__promo-wrapper {
-        position: relative;
-        max-width: 420px;
-    }
-
-    &__input {
-        border: 1px solid $blue-10;
-        padding: 10px 20px;
-
-        @include media-up(md) {
-            padding: 12px 20px;
-        }
-    }
-
-    &__btn {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-    }
-
     &__text {
         margin: 15px 0 25px;
 

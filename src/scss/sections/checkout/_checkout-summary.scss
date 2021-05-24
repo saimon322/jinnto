@@ -1,0 +1,59 @@
+.checkout-summary {
+    &__title {
+        font-weight: 700;
+        margin-bottom: 16px;
+
+        @include media-up(lg) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__price {
+        font-weight: 700;
+    }
+
+    &__order {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__item-img {
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+        object-fit: scale-down;
+    }
+
+    &__item-title {
+        margin-bottom: 5px;
+    }
+
+    &__prices {
+        border-bottom: 1px solid $blue-20;
+        margin-bottom: 15px;
+    }
+
+    &__prices-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        &:last-child {
+            font-weight: 700;
+        }
+    }
+
+    &__coupon-title {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 34px;
+    }
+}
