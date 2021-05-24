@@ -10,7 +10,7 @@
         @include media-up(lg) {
             position: relative;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             gap: 40px;
         }
     }
