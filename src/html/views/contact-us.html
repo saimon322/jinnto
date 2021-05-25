@@ -20,18 +20,13 @@
         </div>
     </section>
 
-    <section class="contact-stars">
-        <div class="container">
-            <div class="contact-stars__wrapper">
-                <h4 class="product-stars__subtitle">
-                    Customer care department
-                </h4>
-                <p class="product-stars__text">
-                    customercare@jinnto.com
-                </p>
-            </div>
-        </div>
-    </section>
+    <%=_.template(require('../parts/fact-stars.html'))({
+        section_class: "contact-stars",
+        subtitle: "Customer care department",
+        title: "customercare@jinnto.com",
+        title_class: "",
+        text: "",
+    }) %>
 
     <section class="contact-form">
         <div class="container">

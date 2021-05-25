@@ -45,12 +45,12 @@
         background-color: #fff;
 
         @include media-up(md) {
-            display: block;    
+            display: block;
         }
     }
 
     &__item {
-        &:nth-child(4n +1) {
+        &:nth-child(4n + 1) {
             .faq-answers__header {
                 background-color: $pink;
             }
@@ -104,82 +104,20 @@
         }
     }
 
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        width: 250px;
-        margin: 40px auto;
-        align-items: center;
-
-        @include media-up(lg) {
-            margin-top: 60px;
-        }
-    }
-
-    &__nav-button {
-        display: block;
-        width: 21px;
-        height: 16px;
-        background: none;
-        border: none;
-        color: $blue;
-
-        &:hover {
-            color: $orange;
-        }
-    }
-
-    &__nav-pages {
-        display: flex;
-        width: 130px;
-        justify-content: space-between;
-    }
-
-    &__nav-link {
-        display: block;
-        font-size: 15px;
-        line-height: 34px;
-    }
-
-    &__nav-link.current {
-        position: relative;
-        font-weight: 600;
-
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 16px;
-            height: 9px;
-            background-color: $yellow;
-            border-radius: 4px;
-            bottom: 7px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: -1;
-        }
-    }
-
     &__mobile-button {
-        display: block;
-        margin: 25px auto 0;
-        text-align: center;
-        background: none;
         color: $red;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+        background: none;
         border: none;
-        border-bottom: 1px solid $red;
-        transition: color 0.2s, border-color 0.2s;
+        text-decoration: underline;
+        margin: 30px auto 0;
+        display: block;
 
-        &:hover {
-            color: $blue-80;
-            border-color: $blue-80;
-        }
-
-        @include media-up(lg) {
+        @include media-up(md) {
             display: none;
         }
+    }
+
+    &__breadcrumbs {
+        margin: 40px auto 0;
     }
 }
