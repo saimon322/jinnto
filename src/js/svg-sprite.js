@@ -18,3 +18,7 @@ import '../img/svg-sprite/play.svg';
 import '../img/icons/check.svg';
 import '../img/svg-sprite/icon-close.svg';
 import '../img/icons/full-arrow-left.svg';
+import '../img/svg-sprite/twitter-color.svg';
+import '../img/svg-sprite/youtube-color.svg';
+import '../img/svg-sprite/instagram-color.svg';
+import '../img/svg-sprite/facebook-color.svg';
