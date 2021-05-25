@@ -43,8 +43,8 @@ Design: https://www.figma.com/file/1sp4OQkfqwn62IDob3AZA2/Jinnto
 31. [Account welcome](https://jinnto.com/account-welcome.html) – 2 h.
 32. [Discounts](https://jinnto.com/discounts.html) – 3 h.
 33. [Promo page template](https://jinnto.com/promo.html) – 3 h.
-34. Checkout – 8 h.
-35. 404 – 1 h.
+34. [Checkout](https://jinnto.com/checkout.html) – 8 h.
+35. [404](https://jinnto.com/404.html) – 1 h.
 
 ---
 
