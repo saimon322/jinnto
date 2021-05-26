@@ -15,9 +15,36 @@
                         <div class="author-main__name">
                             Sandra Lit
                         </div>
-                        <div class="author-main__socials">
-
-                        </div>
+                        <ul class="author-main__socials socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link author-main__social-link" aria-label="Our twitter" title="Our twitter" target="_blank" rel="noreferrer noopener">
+                                    <svg width='18' height='18'>
+                                        <use xlink:href='#twitter-color'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link author-main__social-link" aria-label="Our youtube" title="Our youtube" target="_blank" rel="noreferrer noopener">
+                                    <svg width='18' height='18'>
+                                        <use xlink:href='#youtube-color'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link author-main__social-link" aria-label="Our instagram" title="Our instagram" target="_blank" rel="noreferrer noopener">
+                                    <svg width='18' height='18'>
+                                        <use xlink:href='#instagram-color'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link author-main__social-link" aria-label="Our facebook" title="Our facebook" target="_blank" rel="noreferrer noopener">
+                                    <svg width='18' height='18'>
+                                        <use xlink:href='#facebook-color'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="author__info author-info">
@@ -27,9 +54,32 @@
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                         </div>
-                        <div class="author-info__details">
-
-                        </div>
+                        <ul class="author-info__details">
+                            <li class="author-info__detail">
+                                <div class="author-info__detail-title">
+                                    Job Title
+                                </div>
+                                <div class="author-info__detail-value">
+                                    Consultant
+                                </div>
+                            </li>
+                            <li class="author-info__detail">
+                                <div class="author-info__detail-title">
+                                    Company
+                                </div>
+                                <div class="author-info__detail-value">
+                                    Pingle
+                                </div>
+                            </li>
+                            <li class="author-info__detail">
+                                <div class="author-info__detail-title">
+                                    Location
+                                </div>
+                                <div class="author-info__detail-value">
+                                    London, United Kingdom
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -38,9 +88,8 @@
                 <div class="section__heading">
                     <h2 class="title-underline title-underline--yellow">Author's articles (10)</h2>
                 </div>
-                
-                <ul class="author-articles__posts-list posts-list">
-                    <li class="posts-list__item">
+                <ul class="author-articles__posts-list posts-list" data-load-more-content>
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
@@ -54,7 +103,7 @@
                             </div>
                         </a><!-- / .post-item -->
                     </li>
-                    <li class="posts-list__item">
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
@@ -68,7 +117,7 @@
                             </div>
                         </a><!-- / .post-item -->
                     </li>
-                    <li class="posts-list__item">
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
@@ -82,7 +131,7 @@
                             </div>
                         </a><!-- / .post-item -->
                     </li>
-                    <li class="posts-list__item">
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
@@ -124,11 +173,11 @@
                             </div>
                         </a>
                     </li>
-                    <li class="posts-list__item">
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
-                                    <img class="post-item__img" src="img/base/blog-8.jpg" alt="">
+                                    <img class="post-item__img" src="img/base/blog-4.jpg" alt="">
                                 </figure>
                             </div>
                             <div class="post-item__body">
@@ -138,11 +187,11 @@
                             </div>
                         </a>
                     </li>
-                    <li class="posts-list__item">
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
-                                    <img class="post-item__img" src="img/base/blog-9.jpg" alt="">
+                                    <img class="post-item__img" src="img/base/blog-4.jpg" alt="">
                                 </figure>
                             </div>
                             <div class="post-item__body">
@@ -152,11 +201,11 @@
                             </div>
                         </a>
                     </li>
-                    <li class="posts-list__item">
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
-                                    <img class="post-item__img" src="img/base/blog-10.jpg" alt="">
+                                    <img class="post-item__img" src="img/base/blog-4.jpg" alt="">
                                 </figure>
                             </div>
                             <div class="post-item__body">
@@ -166,11 +215,11 @@
                             </div>
                         </a>
                     </li>
-                    <li class="posts-list__item">
+                    <li class="posts-list__item" data-load-more-item>
                         <a class="post-item post-item--2" href="article.html">
                             <div class="post-item__img-box">
                                 <figure class="post-item__figure">
-                                    <img class="post-item__img" src="img/base/blog-11.jpg" alt="">
+                                    <img class="post-item__img" src="img/base/blog-4.jpg" alt="">
                                 </figure>
                             </div>
                             <div class="post-item__body">
@@ -184,10 +233,10 @@
 
                 <!-- Сделать скрипт по аналогии с faq.js (toggler),
                     на десктоп можно поставить фикс высоту
-                    но тут сложнее с ограничением высоты до 4 постов на мобайл, 
+                    но тут сложнее с ограничением высоты до 4 постов на мобайл,
                     не успел придумать решения -->
                 <div class="author-articles__toggler-wrapper">
-                    <button class="author-articles__toggler toggler btn btn--blue">
+                    <button class="author-articles__toggler toggler btn btn--blue" id="loadMoreBtn">
                         View <span>all</span><span>less</span>
                     </button>
                 </div>

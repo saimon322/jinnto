@@ -45,4 +45,32 @@
             }
         }
     }
+
+    &__detail {
+        display: flex;
+        align-items: center;
+        gap: 55px;
+        padding: 16px 0 10px;
+        border-bottom: 1px solid $blue-20;
+        align-items: center;
+        line-height: 1.6;
+
+        @include media-up(lg) {
+            gap: 100px;
+        }
+    }
+
+    &__detail-title {
+        color: $blue-80;
+        width: 100px;
+    }
+
+    &__detail-value {
+        font-weight: 500;
+        font-size: 15px;
+
+        @include media-up(md) {
+            font-size: 20px;
+        }
+    }
 }
