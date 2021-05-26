@@ -127,7 +127,12 @@
                 background-image: url(img/icons/play.svg);
                 background-repeat: no-repeat;
                 background-position: center;
+                transition: transform .5s;
             }
+        }
+
+        &:hover::after {
+            transform: scale(1.3);
         }
     }
 

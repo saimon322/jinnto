@@ -54,6 +54,7 @@
 @import 'modules/breadcrumbs';
 @import 'modules/section';
 @import 'modules/form';
+@import 'modules/slider-1';
 
 /* ==========================================================================
     HOME PAGE
@@ -180,6 +181,11 @@
 @import 'sections/article/article-author';
 @import 'sections/article/article-content';
 @import 'sections/article/txt-box-1';
+@import 'sections/article/txt-box-2';
+@import 'sections/article/blockquote';
+@import 'sections/article/posts-section';
+@import 'sections/article/posts-slider';
+@import 'sections/article/comments';
 
 /* ==========================================================================
    AUTHOR
@@ -214,12 +220,3 @@
 @import 'sections/checkout/checkout-main';
 @import 'sections/checkout/checkout-summary';
 @import 'sections/checkout/checkout-info';
-
-/* ==========================================================================
-    ARTICLE
-   ========================================================================== */
-@import 'sections/article/txt-box-2';
-@import 'sections/article/slider-1';
-@import 'sections/article/blockquote';
-@import 'sections/article/posts-section';
-@import 'sections/article/posts-slider';

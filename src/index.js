@@ -7,6 +7,6 @@ import './js/modal';
 import './js/check-all';
 import './js/fancybox';
 import './js/faq';
-import 'simplebar';
+import './js/comments';
 
 import './scss/style.scss';

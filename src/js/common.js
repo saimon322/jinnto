@@ -2,6 +2,7 @@ import AOS from 'aos';
 import Swiper from 'swiper/swiper-bundle.min.js';
 import Parallax from 'parallax-js';
 import './svg-sprite';
+import 'simplebar';
 // WAI-ARIA Authoring Practices 1.1 / Listbox
 // https://www.w3.org/TR/wai-aria-practices-1.1
 // utils.js + listbox.js + listbox-scrollable.js = listbox.js
