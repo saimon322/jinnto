@@ -49,23 +49,28 @@
     &__detail {
         display: flex;
         align-items: center;
-        gap: 55px;
+        gap: 10px;
         padding: 16px 0 10px;
         border-bottom: 1px solid $blue-20;
         align-items: center;
         line-height: 1.6;
 
         @include media-up(lg) {
-            gap: 100px;
+            gap: 20px;
         }
     }
 
     &__detail-title {
         color: $blue-80;
-        width: 100px;
+        width: 37%;
+
+        @include media-up(md) {
+            width: 28%;
+        }
     }
 
     &__detail-value {
+        flex: 1 1 0;
         font-weight: 500;
         font-size: 15px;
 

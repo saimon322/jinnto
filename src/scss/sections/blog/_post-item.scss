@@ -12,25 +12,46 @@
     }
 
     &--2 {
-        flex-direction: row;
-        background-color: transparent;
-        border-radius: 0;
+        @include media-down(sm) {
+            flex-direction: row;
+            background-color: transparent;
+            border-radius: 0;            
+        }
+    }
 
-        @include media-up(sm) {
-            flex-direction: column;
-            background-color: #fff;
-            border-radius: 15px;
+    &--3 {
+        height: 142px;
+
+        @include media-down(sm) {
+            flex-direction: row;
+        }
+
+        @include media-up(md) {
+            height: 394px;
+        }
+
+        @media (min-width: 840px) {
+            height: 417px;
+        }
+
+        @include media-up(xl) {
+            height: 367px;
         }
     }
 
     &__img-box {
         .post-item--2 & {
-            width: 140px;
-            flex-shrink: 0;
-            margin-right: 20px;
+            @include media-down(sm) {
+                width: 140px;
+                flex-shrink: 0;
+                margin-right: 20px;
+            }
+        }
 
-            @include media-up(sm) {
-                width: 100%;
+        .post-item--3 & {
+            @include media-down(sm) {
+                width: 39%;
+                flex-shrink: 0;
             }
         }
     }
@@ -50,12 +71,26 @@
         }
 
         .post-item--2 & {
-            padding-bottom: 92.086%;
-            border-radius: 10px;
+            @include media-down(sm) {
+                padding-bottom: 92.086%;
+                border-radius: 10px;
+            }
+        }
 
-            @include media-up(sm) {
-                padding-bottom: 80.83%;
-                border-radius: 15px 15px 0 0;
+        .post-item--3 & {
+            height: 100%;
+            padding: 0;
+
+            @include media-down(sm) {
+                border-radius: 10px 0px 0px 10px;                
+            }
+
+            @include media-up(md) {
+                height: 250px;
+            }
+
+            @include media-up(xl) {
+                height: 200px;
             }
         }
     }
@@ -85,12 +120,17 @@
         }
 
         .post-item--2 & {
-            display: block;
-            padding: 0;
+            @include media-down(sm) {
+                display: block;
+                padding: 0;
+                
+            }
+        }
 
-            @include media-up(sm) {
-                display: flex;
-                padding: 18px 20px;
+        .post-item--3 & {
+            @include media-down(sm) {
+                display: block;
+                padding: 10px 19px;                
             }
         }
     }
@@ -98,6 +138,7 @@
     &__subtitle {
         margin-bottom: 6px;
         font-size: 12px;
+        line-height: 19px;
         color: rgba($blue, .5);
 
         @include media-up(md) {
@@ -110,6 +151,11 @@
         margin-bottom: 6px;
         font-weight: 500;
         line-height: 1.6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
 
         @include media-up(md) {
             margin-bottom: 12px;
@@ -122,6 +168,11 @@
         margin-top: auto;
         font-size: 12px;
         color: rgba($blue, .5);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
 
         @include media-up(md) {
             font-size: 15px;

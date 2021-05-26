@@ -14,10 +14,14 @@
         @include media-up(md) {
             position: relative;
             display: grid;
-            //grid-template-columns: 262px 1fr;
-            grid-template-columns: 262px calc(100% - 292px); // 262px + 30px = 292px
+            grid-template-columns: 262px 1fr;
             grid-template-areas: 'author-main author-info';
             gap: 30px;
+        }
+
+        @include media-up(lg) {
+            grid-template-columns: 327px 1fr;
+            gap: 40px;            
         }
     }
 }

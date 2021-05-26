@@ -59,10 +59,20 @@
         }
     }
 
+    &__socials-item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
     &__social-link {
         background-color: $bg-green;
-        border: none;
-        width: 45px;
-        height: 45px;
+        border-color: transparent;
+        width: 46px;
+        height: 46px;
+
+        &:hover {
+            border-color: $red;
+        }
     }
 }
