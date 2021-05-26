@@ -59,7 +59,10 @@
         }
     }
 
-    &__socials {
-
+    &__social-link {
+        background-color: $bg-green;
+        border: none;
+        width: 45px;
+        height: 45px;
     }
 }
