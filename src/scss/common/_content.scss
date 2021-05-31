@@ -117,7 +117,7 @@
 
         strong {
             border-bottom: 2px solid $pink;
-            transition: border-bottom.25s;
+            transition: border-color .25s;
 
             &:hover {
                 border-color: $pink--dark;
