@@ -12,7 +12,7 @@
 
         gap: 10px;
 
-        @include media-up(md) {
+        @include media-up(sm) {
             grid-template-areas:
                 'head status'
                 'prices status';
@@ -20,6 +20,11 @@
 
         @include media-up(lg) {
             padding: 30px;
+            padding-right: 40px;
+        }
+
+        @include media-up(xl) {
+            padding-right: 60px;
         }
 
         &:last-child {
@@ -59,10 +64,6 @@
         grid-area: status;
         align-self: center;
         justify-self: end;
-
-        @include media-up(md) {
-            justify-self: center;
-        }
 
         &--successfull {
             color: $green;
