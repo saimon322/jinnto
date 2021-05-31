@@ -44,4 +44,13 @@
             margin-top: 40px;
         }
     }
+
+    h4 {
+        margin-top: 10px;
+
+        @include media-up(lg) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
 }
