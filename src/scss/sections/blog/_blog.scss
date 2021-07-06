@@ -1,34 +1,33 @@
-.blog {
+.blog-page {
     padding: 32px 0 24px;
-
-    &--article {
-        padding: 0 0 50px;
-    }
 
     @include media-up(sm) {
         background-color: $bg-green;
-
-        &--article {
-            background-color: #fff;
-        }
     }
 
     @include media-up(md) {
         padding: 80px 0;
-
-        &--article {
-            background-color: $bg-green;
-        }
     }
 
     @include media-up(lg) {
         padding: 100px 0 173px;
+    }
+}
 
-        &--article {
-            padding-bottom: 120px;
-        }
+.blog-article {
+    padding: 0 0 50px;
+
+    @include media-up(md) {
+        padding: 80px 0;
+        background-color: $bg-green;
     }
 
+    @include media-up(lg) {
+        padding: 100px 0 120px;
+    }
+}
+
+.blog {
     &__sort-form {
         width: fit-content;
         margin-left: auto;
@@ -59,7 +58,7 @@
     }
 
     &__aside {
-        .blog--article & {
+        .blog-article & {
             display: none;
 
             @include media-up(md) {
@@ -71,7 +70,7 @@
     &__content  {
         margin-bottom: 60px;
 
-        .blog--article & {
+        .blog-article & {
             margin-bottom: 0;
         }
 

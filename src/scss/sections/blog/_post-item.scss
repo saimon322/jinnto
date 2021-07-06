@@ -20,22 +20,8 @@
     }
 
     &--3 {
-        height: 142px;
-
         @include media-down(sm) {
             flex-direction: row;
-        }
-
-        @include media-up(md) {
-            height: 394px;
-        }
-
-        @media (min-width: 840px) {
-            height: 417px;
-        }
-
-        @include media-up(xl) {
-            height: 367px;
         }
     }
 
@@ -89,7 +75,7 @@
                 height: 250px;
             }
 
-            @include media-up(xl) {
+            @media (min-width: 1110px) {
                 height: 200px;
             }
         }

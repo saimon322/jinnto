@@ -283,29 +283,36 @@ $(function() {
     // reserve a place for a filter
     const $filter = $('.filter');
     if ($filter.length) {
-        $body.css({'paddingBottom': `${43 + $filter.height()}px`});
+        $body.css({'paddingBottom': `${$filter.height()}px`});
+        
+        const filterPagePadding = () => {
+            let padding = window.matchMedia('(max-width: 767px)').matches ? $filter.height() : 0;
+            $body.css({'paddingBottom': `${padding}px`});
+        }
+        filterPagePadding();
+        window.addEventListener('resize', filterPagePadding);
+
+        // show/hide filter dropdown
+        $('.filter__button').on('click', function () {
+            let $filterDropdown = $(this).closest('.filter__item').find('.filter-dropdown');
+            let $filterDropdownHead = $filterDropdown.find('.filter-dropdown__head');
+    
+            $filterDropdown.addClass('filter-dropdown--show');
+            bodyFixPosition();
+            fixFilterHeight($filterDropdownHead);
+        });
+    
+        function fixFilterHeight($filterDropdownHead) {
+            let $filterDropdownHeadHeight = $filterDropdownHead.height();
+            $page[0].style.setProperty('--filter-dropdown-head-height', `${$filterDropdownHeadHeight}px`);
+        }
+    
+        $('.filter-dropdown__close').on('click', function () {
+            let $filterDropdown = $(this).closest('.filter__item').find('.filter-dropdown');
+            $filterDropdown.removeClass('filter-dropdown--show');
+            bodyUnfixPosition();
+        });
     }
-
-    // show/hide filter dropdown
-    $('.filter__button').on('click', function () {
-        let $filterDropdown = $(this).closest('.filter__item').find('.filter-dropdown');
-        let $filterDropdownHead = $filterDropdown.find('.filter-dropdown__head');
-
-        $filterDropdown.addClass('filter-dropdown--show');
-        bodyFixPosition();
-        fixFilterHeight($filterDropdownHead);
-    });
-
-    function fixFilterHeight($filterDropdownHead) {
-        let $filterDropdownHeadHeight = $filterDropdownHead.height();
-        $page[0].style.setProperty('--filter-dropdown-head-height', `${$filterDropdownHeadHeight}px`);
-    }
-
-    $('.filter-dropdown__close').on('click', function () {
-        let $filterDropdown = $(this).closest('.filter__item').find('.filter-dropdown');
-        $filterDropdown.removeClass('filter-dropdown--show');
-        bodyUnfixPosition();
-    });
     // END FILTER
     ////////////////////////////////////////////////////////////////////////////
 

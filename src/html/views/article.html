@@ -4,7 +4,7 @@
 }) %>
 
 <main class="site-main">
-    <section class="blog blog--article">
+    <section class="blog-article">
         <div class="container container--sm">
             <div class="blog__wrapper">
                 <div class="blog__content blog-content">
@@ -160,6 +160,7 @@
                         </div>
 
                         <div class="comments__list">
+                            <!-- First 2 comments -->
                             <div class="comments__item comment">
                                 <div class="comment__header">
                                     <div class="comment__author">Serenity Flores</div>
@@ -191,10 +192,47 @@
                                     <p>Ullamco consectetur adipisicing ut eiusmod. Quis mollit nulla et velit cupidatat ut sit id quis sunt in Lorem tempor. Incididunt ea ipsum eu occaecat cillum aliqua labore anim duis deserunt ex.</p>
                                 </div>
                             </div>
+
+                            <!-- Other comments -->
+                            <div class="comments__hidden-list" id="loadMoreTarget">
+                                <div class="comments__item comment">
+                                    <div class="comment__header">
+                                        <div class="comment__author">Serenity Flores</div>
+                                        <div class="comment__date">November 4, 2016 10:17 AM</div>
+                                        <a href="#" class="comment__reply-button comments-scroll">Reply</a>
+                                    </div>
+                                    <div class="comment__text">
+                                        <p>Ullamco consectetur adipisicing ut eiusmod. Quis mollit nulla et velit cupidatat ut sit id quis sunt in Lorem tempor. Incididunt ea ipsum eu occaecat cillum aliqua labore anim duis deserunt ex.</p>
+                                    </div>
+    
+                                    <div class="comments__item comment comment--reply">
+                                        <div class="comment__header">
+                                            <div class="comment__author">Kristin Watson</div>
+                                            <div class="comment__date">November 4, 2016 10:17 AM</div>
+                                            <a href="#" class="comment__reply-button comments-scroll">Reply</a>
+                                        </div>
+                                        <div class="comment__text">
+                                            <p>Ullamco consectetur adipisicing ut eiusmod. Quis mollit nulla et velit cupidatat ut sit id quis sunt in Lorem tempor. Incididunt ea ipsum eu occaecat cillum aliqua labore anim duis deserunt ex.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments__item comment">
+                                    <div class="comment__header">
+                                        <div class="comment__author">Theresa Webb</div>
+                                        <div class="comment__date">November 4, 2016 10:17 AM</div>
+                                        <a href="#" class="comment__reply-button comments-scroll">Reply</a>
+                                    </div>
+                                    <div class="comment__text">
+                                        <p>Ullamco consectetur adipisicing ut eiusmod. Quis mollit nulla et velit cupidatat ut sit id quis sunt in Lorem tempor. Incididunt ea ipsum eu occaecat cillum aliqua labore anim duis deserunt ex.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="comments__more">
-                            <button type="button" class="comments__more-button btn btn--blue">More</button>
+                            <button class="comments__more-button toggler btn btn--blue" id="loadMoreBtn">
+                                <span>More</span><span>Less</span>
+                            </button>
                         </div>
 
                         <div class="comments__form comments-form">

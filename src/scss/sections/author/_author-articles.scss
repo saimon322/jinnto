@@ -9,31 +9,6 @@
         padding-top: 100px;
     }
 
-    &__list {
-        overflow: hidden;
-        transition: height 1s;
-
-        &--hidden {
-            height: 616px;
-
-            @include media-up(sm) {
-                height: 314px;
-            }
-
-            @include media-up(md) {
-                height: 818px;
-            }
-
-            @media (min-width: 840px) {
-                height: 417px;
-            }
-
-            @include media-up(xl) {
-                height: 367px;
-            }
-        }
-    }
-
     &__toggler-wrapper {
         display: flex;
         justify-content: center;
@@ -41,6 +16,24 @@
 
         @include media-up(md) {
             margin-top: 50px;
+        }
+    }
+
+    &__hidden-list {
+        padding-top: 16px;
+
+        @include media-up(md) {
+            padding-top: 30px;
+        }
+    }
+
+    .posts-list {
+        @include media-only(md) {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        @include media-up(lg) {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
     }
 }

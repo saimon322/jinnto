@@ -8,6 +8,6 @@ import './js/check-all';
 import './js/fancybox';
 import './js/faq';
 import './js/comments';
-import './js/author-posts';
+import './js/loadMore';
 
 import './scss/style.scss';

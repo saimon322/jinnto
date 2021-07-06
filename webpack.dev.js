@@ -48,6 +48,7 @@ module.exports = (env, argv) => {
                             loader: MiniCssExtractPlugin.loader,
                             options: {
                                 hmr: true,
+                                sourceMap: true,
                                 reloadAll: true,
                             },
                         },

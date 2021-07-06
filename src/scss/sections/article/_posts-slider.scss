@@ -1,7 +1,7 @@
 .posts-slider {
     padding: 0 20px;
 
-    @include media-up(md) {
+    @include media-up(xl) {
         padding: 0;
     }
     
@@ -17,13 +17,5 @@
         padding: 15px;
         background: 0 0;
         border: none;
-
-        &--prev {
-
-        }
-
-        &--next {
-
-        }
     }
 }

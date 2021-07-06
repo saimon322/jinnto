@@ -4,8 +4,9 @@
     bottom: 0;
     width: 100%;
     z-index: 101;
+    border-top: 1px solid $white-10;
 
-    @include media-up(sm) {
+    @include media-up(md) {
         display: none;
     }
 

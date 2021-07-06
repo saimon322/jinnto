@@ -2,8 +2,10 @@
     grid-area: blog-aside;
 
     &__wrapper {
-        position: sticky;
-        top: 80px;
+        @include media-up(md) {
+            position: sticky;
+            top: 80px;
+        }
         
         & > *:first-child {
             margin-top: 0;
@@ -66,14 +68,4 @@
             display: block;
         }
     }
-
-    //.widget-posts {
-    //    .blog--article & {
-    //        display: none;
-    //
-    //        @include media-up(md) {
-    //            display: block;
-    //        }
-    //    }
-    //}
 }
