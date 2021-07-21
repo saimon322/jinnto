@@ -9,5 +9,6 @@ import './js/fancybox';
 import './js/faq';
 import './js/comments';
 import './js/loadMore';
+import './js/article-rating';
 
 import './scss/style.scss';

@@ -39,12 +39,12 @@
         width: 100%;
         height: 742px;
         background-position: center;
-        background-image: url(../img/bg/powers-dots-mobile.svg);
+        background-image: url(img/bg/powers-dots-mobile.svg);
 
         @include media-up(lg) {
             height: 24.8vw;
             padding: 0;
-            background-image: url(../img/bg/powers-dots-desktop.svg);            
+            background-image: url(img/bg/powers-dots-desktop.svg);            
         }
     }
 
@@ -57,10 +57,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url(../img/bg/powers-lines-mobile.svg);
+        background-image: url(img/bg/powers-lines-mobile.svg);
 
         @include media-up(lg) {
-            background-image: url(../img/bg/powers-lines-desktop.svg);            
+            background-image: url(img/bg/powers-lines-desktop.svg);            
         }
     }
 

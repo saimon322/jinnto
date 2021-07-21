@@ -1,55 +1,18 @@
 .breadcrumbs {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-    align-items: center;
+    font-size: 15px;
+    line-height: 34px;
+    color: $blue-80;
+    margin-bottom: 5px;
 
-    @include media-up(lg) {
-        margin-top: 60px;
+    @include media-down(sm) {
+        display: none;
     }
 
-    &__nav-button {
-        display: block;
-        width: 21px;
-        height: 16px;
-        background: none;
-        border: none;
-        color: $blue;
-
-        &:hover {
-            color: $orange;
-        }
+    &__link {
+        margin-right: 10px;
     }
 
-    &__nav-pages {
-        display: flex;
-        width: 130px;
-        justify-content: space-between;
-    }
-
-    &__nav-link {
-        display: block;
-        font-size: 15px;
-        line-height: 34px;
-    }
-
-    &__nav-link.current {
-        position: relative;
-        z-index: 1;
-        font-weight: 600;
-
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 16px;
-            height: 9px;
-            background-color: $yellow;
-            border-radius: 4px;
-            bottom: 7px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: -1;
-        }
+    &__separator {
+        margin-right: 10px;
     }
 }

@@ -6,6 +6,13 @@
 <main class="site-main">
     <section class="blog-article">
         <div class="container container--sm">
+            <div class="breadcrumbs">
+                <a href="/" class="breadcrumbs__link">Homepage</a>
+                <span class="breadcrumbs__separator">/</span>
+                <a href="/" class="breadcrumbs__link">Blog</a>
+                <span class="breadcrumbs__separator">/</span>
+                <span class="breadcrumbs__current">DIY ideas</span>
+            </div>
             <div class="blog__wrapper">
                 <div class="blog__content blog-content">
                     <article class="article">
@@ -150,6 +157,25 @@
                                 esse officia. Sit ex excepteur Lorem ad cupidatat nostrud. Ea sunt ipsum quis in elit
                                 deserunt aute quis incididunt adipisicing ipsum aliquip tempor elit.
                             </p>
+                            <div class="article-rating">
+                                <h2 class="article-rating__title">Rate this article</h2>
+                                <fieldset class="article-rating__stars">
+                                    <input type="radio" id="rating5" name="rating" value="5">
+                                    <label for="rating5" title="5"></label>
+                                    <input type="radio" id="rating4" name="rating" value="4">
+                                    <label for="rating4" title="4"></label>
+                                    <input type="radio" id="rating3" name="rating" value="3">
+                                    <label for="rating3" title="3"></label>
+                                    <input type="radio" id="rating2" name="rating" value="2">
+                                    <label for="rating2" title="2"></label>
+                                    <input type="radio" id="rating1" name="rating" value="1">
+                                    <label for="rating1" title="1"></label>
+                                </fieldset>
+                                <div class="article-rating__result">
+                                    Average score: <span>4.4</span> / 5.
+                                    Count of marks: <span>14</span>
+                                </div>
+                            </div>
                         </div><!-- / .article-content .content -->
                     </article><!-- / .article -->
 

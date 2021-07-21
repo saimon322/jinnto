@@ -119,7 +119,7 @@
     .approach-stages__stage-text::after {
         position: absolute;
         bottom: -80px;
-        content: url('../img/icons/red-bottle.svg');
+        content: url('img/icons/red-bottle.svg');
 
         @include media-up(md) {
             display: none;
@@ -176,7 +176,7 @@
         position: absolute;
         bottom: -120px;
         right: -110px;
-        content: url('../img/icons/green-bottle.svg');
+        content: url('img/icons/green-bottle.svg');
 
         @include media-up(md) {
             display: none;

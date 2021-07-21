@@ -3,9 +3,7 @@ import Swiper from 'swiper/swiper-bundle.min.js';
 import Parallax from 'parallax-js';
 import './svg-sprite';
 import 'simplebar';
-// WAI-ARIA Authoring Practices 1.1 / Listbox
-// https://www.w3.org/TR/wai-aria-practices-1.1
-// utils.js + listbox.js + listbox-scrollable.js = listbox.js
+import 'hammerjs'
 import './listbox';
 
 $(function() {
@@ -224,67 +222,37 @@ $(function() {
         document.documentElement.style.setProperty('--vh', vh + 'px');
     });
 
-    // START IOS SCROLLING BUG FIX
-    ////////////////////////////////////////////////////////////////////////////
-    // 1. Фиксация <body>
-    function bodyFixPosition() {
-
+    // IOS SCROLLING BUG FIX
+    function bodyFixPosition(timeout) {
         setTimeout( function() {
-            /* Ставим необходимую задержку, чтобы не было «конфликта» в случае, если функция фиксации вызывается сразу после расфиксации (расфиксация отменяет действия расфиксации из-за одновременного действия) */
-
             if ( !document.body.hasAttribute('data-body-scroll-fix') ) {
-
-                // Получаем позицию прокрутки
                 let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-                // Ставим нужные стили
-                document.body.setAttribute('data-body-scroll-fix', scrollPosition); // Cтавим атрибут со значением прокрутки
+                document.body.setAttribute('data-body-scroll-fix', scrollPosition);
                 document.body.style.overflow = 'hidden';
                 document.body.style.position = 'fixed';
                 document.body.style.top = '-' + scrollPosition + 'px';
                 document.body.style.left = '0';
                 document.body.style.width = '100%';
-
             }
-
-        }, 15 ); /* Можно задержку ещё меньше, но у меня работало хорошо именно с этим значением на всех устройствах и браузерах */
-
+        }, timeout ? timeout : 15);
     }
 
-    // 2. Расфиксация <body>
     function bodyUnfixPosition() {
-
         if ( document.body.hasAttribute('data-body-scroll-fix') ) {
-
-            // Получаем позицию прокрутки из атрибута
             let scrollPosition = document.body.getAttribute('data-body-scroll-fix');
-
-            // Удаляем атрибут
             document.body.removeAttribute('data-body-scroll-fix');
-
-            // Удаляем ненужные стили
             document.body.style.overflow = '';
             document.body.style.position = '';
             document.body.style.top = '';
             document.body.style.left = '';
             document.body.style.width = '';
-
-            // Прокручиваем страницу на полученное из атрибута значение
             window.scroll(0, scrollPosition);
-
         }
-
     }
-    // END IOS SCROLLING BUG FIX
-    ////////////////////////////////////////////////////////////////////////////
 
     // START FILTER
-    ////////////////////////////////////////////////////////////////////////////
-    // reserve a place for a filter
     const $filter = $('.filter');
-    if ($filter.length) {
-        $body.css({'paddingBottom': `${$filter.height()}px`});
-        
+    if ($filter.length) {        
         const filterPagePadding = () => {
             let padding = window.matchMedia('(max-width: 767px)').matches ? $filter.height() : 0;
             $body.css({'paddingBottom': `${padding}px`});
@@ -298,23 +266,30 @@ $(function() {
             let $filterDropdownHead = $filterDropdown.find('.filter-dropdown__head');
     
             $filterDropdown.addClass('filter-dropdown--show');
-            bodyFixPosition();
-            fixFilterHeight($filterDropdownHead);
+            bodyFixPosition(300);
         });
-    
-        function fixFilterHeight($filterDropdownHead) {
-            let $filterDropdownHeadHeight = $filterDropdownHead.height();
-            $page[0].style.setProperty('--filter-dropdown-head-height', `${$filterDropdownHeadHeight}px`);
-        }
     
         $('.filter-dropdown__close').on('click', function () {
-            let $filterDropdown = $(this).closest('.filter__item').find('.filter-dropdown');
-            $filterDropdown.removeClass('filter-dropdown--show');
-            bodyUnfixPosition();
+            filtersHide();
         });
+
+        
+        if (window.matchMedia('(max-width: 767px)').matches) {
+            let filterDropdowns = document.querySelectorAll('.filter__dropdown');
+            filterDropdowns.forEach((item) => {
+                let hammer = new Hammer(item);
+                hammer.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL  });
+                hammer.on('swipedown', function() {
+                    filtersHide();
+                });
+            })
+        }
+
+        function filtersHide() {
+            $('.filter-dropdown').removeClass('filter-dropdown--show');
+            bodyUnfixPosition();
+        }
     }
-    // END FILTER
-    ////////////////////////////////////////////////////////////////////////////
 
     // START INIT ARTICLE SLIDER
     ////////////////////////////////////////////////////////////////////////////

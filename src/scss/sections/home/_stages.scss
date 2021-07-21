@@ -325,7 +325,7 @@
 
         &__icon {
             &:nth-child(1) {
-                background-image: url(../img/icons/red-microscope.svg);
+                background-image: url(img/icons/red-microscope.svg);
                 background-size: 44px;
 
                 @include media-up(lg) {
@@ -341,7 +341,7 @@
             }
 
             &:nth-child(2) {
-                background-image: url(../img/icons/red-bottle.svg);
+                background-image: url(img/icons/red-bottle.svg);
                 background-size: 51px;
                 right: 3%;
                 bottom: 3%;
@@ -383,7 +383,7 @@
 
         &__icon {
             &:nth-child(1) {
-                background-image: url(../img/icons/green-battery.svg);
+                background-image: url(img/icons/green-battery.svg);
                 background-size: 44px;
 
                 @include media-up(lg) {
@@ -399,7 +399,7 @@
             }
 
             &:nth-child(2) {
-                background-image: url(../img/icons/green-star.svg);
+                background-image: url(img/icons/green-star.svg);
                 background-size: 10px;
                 left: 3%;
                 top: 10%;
@@ -452,7 +452,7 @@
 
         &__icon {
             &:nth-child(1) {
-                background-image: url(../img/icons/orange-skeleton.svg);
+                background-image: url(img/icons/orange-skeleton.svg);
                 background-size: 22px;
 
                 @include media-up(lg) {
@@ -468,7 +468,7 @@
             }
 
             &:nth-child(2) {
-                background-image: url(../img/icons/orange-eyelashes.svg);
+                background-image: url(img/icons/orange-eyelashes.svg);
                 background-size: 44px;
                 right: 3%;
                 bottom: 3%;

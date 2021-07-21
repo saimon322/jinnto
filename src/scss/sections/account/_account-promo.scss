@@ -16,12 +16,11 @@
     &__promo {
         display: grid;
         padding: 20px;
-        border-radius: 10px;
         margin-top: 15px;
         margin-bottom: 20px;
         grid-template-areas:
             'head head'
-            'promoname  status';
+            'promoname status';
 
         gap: 10px;
         border-bottom: 1px solid $blue-20;
@@ -34,6 +33,7 @@
             grid-template-areas:
                 'head status'
                 'promoname status';
+            grid-template-columns: 2fr 1fr;
         }
 
         @include media-up(lg) {

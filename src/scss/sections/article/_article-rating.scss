@@ -1,0 +1,45 @@
+.article-rating {
+    &__title {
+        text-align: center;
+    }
+
+    &__stars {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: block;
+            width: 55px;
+            height: 52px;
+            background-image: url(img/icons/star.svg);
+            background-size: 41px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        label:hover, 
+        label:hover ~ label, 
+        input:checked ~ label {
+            background-image: url(img/icons/star-active.svg);
+        }
+    }
+
+    &__result {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+
+        &--active span {
+            color: $red;
+        }
+    }
+}

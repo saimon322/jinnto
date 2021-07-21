@@ -15,15 +15,22 @@
 
     <section class="blog-page">
         <div class="container container--sm">
-            <form class="blog__sort-form sort-form" action="#" method="post">
-                <label class="sort-form__label" for="sort-form-field">Sort by:</label>
-                <p class="sort-form__field-box">
-                    <select class="sort-form__field" id="sort-form-field" name="sort-by">
-                        <option>Latest</option>
-                        <option>Most popular</option>
-                    </select>
-                </p>
-            </form><!-- / .sort-form -->
+            <div class="blog__header">
+                <div class="breadcrumbs">
+                    <a href="/" class="breadcrumbs__link">Homepage</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <span class="breadcrumbs__current">Blog</span>
+                </div>
+                <form class="blog__sort-form sort-form" action="#" method="post">
+                    <label class="sort-form__label" for="sort-form-field">Sort by:</label>
+                    <p class="sort-form__field-box">
+                        <select class="sort-form__field" id="sort-form-field" name="sort-by">
+                            <option>Latest</option>
+                            <option>Most popular</option>
+                        </select>
+                    </p>
+                </form><!-- / .sort-form -->
+            </div>
             <div class="blog__wrapper">
                 <div class="blog__content blog-content">
                     <ul class="blog-content__posts-list posts-list">
@@ -277,35 +284,35 @@
                             </a><!-- / .post-item -->
                         </li>
                     </ul><!-- / .posts-list -->
-                    <nav class="breadcrumbs">
-                        <a href="#" class="breadcrumbs__nav-button">
+                    <nav class="pagination">
+                        <a href="#" class="pagination__nav-button">
                             <svg width="21" height="16">
                                 <use href="#arrow-left"></use>
                             </svg>
                         </a>
-                        <ul class="breadcrumbs__nav-pages">
-                            <li class="breadcrumbs__nav-page">
-                                <a href="#" class="breadcrumbs__nav-link current">1</a>
+                        <ul class="pagination__nav-pages">
+                            <li class="pagination__nav-page">
+                                <a href="#" class="pagination__nav-link current">1</a>
                             </li>
-                            <li class="breadcrumbs__nav-page">
-                                <a href="#" class="breadcrumbs__nav-link">2</a>
+                            <li class="pagination__nav-page">
+                                <a href="#" class="pagination__nav-link">2</a>
                             </li>
-                            <li class="breadcrumbs__nav-page">
-                                <a href="#" class="breadcrumbs__nav-link">3</a>
+                            <li class="pagination__nav-page">
+                                <a href="#" class="pagination__nav-link">3</a>
                             </li>
-                            <li class="breadcrumbs__nav-page">
-                                <a href="#" class="breadcrumbs__nav-link">...</a>
+                            <li class="pagination__nav-page">
+                                <a href="#" class="pagination__nav-link">...</a>
                             </li>
-                            <li class="breadcrumbs__nav-page">
-                                <a href="#" class="breadcrumbs__nav-link">8</a>
+                            <li class="pagination__nav-page">
+                                <a href="#" class="pagination__nav-link">8</a>
                             </li>
                         </ul>
-                        <a href="#" class="breadcrumbs__nav-button">
+                        <a href="#" class="pagination__nav-button">
                             <svg width="21" height="16">
                                 <use href='#arrow-right'></use>
                             </svg>
                         </a>
-                    </nav><!-- / .breadcrumbs -->
+                    </nav><!-- / .pagination -->
                 </div><!-- / .blog-content -->
                 <aside class="blog__aside blog-aside">
                     <div class="blog-aside__wrapper">

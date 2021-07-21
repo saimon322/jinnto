@@ -63,7 +63,7 @@
         top: 31px;
         width: 10px;
         height: 5px;
-        background: url(../img/icons/faq-arrow.svg) center / contain no-repeat;
+        background: url(img/icons/faq-arrow.svg) center / contain no-repeat;
         transition: transform 0.25s;
 
         @include media-up(lg) {

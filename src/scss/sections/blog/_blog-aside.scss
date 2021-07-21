@@ -1,5 +1,9 @@
 .blog-aside {
     grid-area: blog-aside;
+    
+    @include media-up(md) {
+        padding-top: 50px;
+    }
 
     &__wrapper {
         @include media-up(md) {

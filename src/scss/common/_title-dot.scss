@@ -1,0 +1,44 @@
+.title-dot {
+    position: relative;
+    text-indent: 21px;
+
+    @include media-up(md) {
+        text-indent: 25px;
+    }
+
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: $red;
+        border-radius: 50%;
+
+        @include media-up(md) {
+            width: 10px;
+            height: 10px;
+            top: 12px;
+        }
+
+        @include media-up(lg) {
+            top: 15px;
+        }
+    }
+
+    &--out {
+        text-indent: 0;
+
+        &:before {
+            left: -25px;
+
+            @include media-up(md) {
+                left: -29px;
+            }
+        }
+    }
+}
